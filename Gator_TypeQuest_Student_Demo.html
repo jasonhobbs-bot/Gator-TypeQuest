@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gator TypeQuest | Student Demo</title>
+  <style>
+    :root {
+      --pine: #103e36;
+      --forest: #176c52;
+      --mint: #dcffe9;
+      --sky: #b5eafc;
+      --ink: #17342e;
+      --cream: #fffdf4;
+      --yellow: #ffd66f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #e9f4ed;
+    }
+    button, textarea { font: inherit; }
+    button { cursor: pointer; }
+    button:focus-visible, textarea:focus-visible {
+      outline: 4px solid #ffb52a; outline-offset: 3px;
+    }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      padding: 14px clamp(16px, 4vw, 50px); color: #fff;
+      background: var(--pine);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: .03em; }
+    .brand-icon { font-size: 34px; }
+    .brand small { display: block; font-size: 11px; letter-spacing: .16em; color: #b5e8d1; }
+    .demo-tag { border: 1px solid #8dd9b9; border-radius: 99px; padding: 7px 11px; font-size: 12px; font-weight: 750; }
+    main { max-width: 1180px; padding: 28px 18px 70px; margin: auto; }
+    .hero {
+      display: grid; grid-template-columns: 1.3fr 1fr; min-height: 325px;
+      overflow: hidden; border-radius: 27px;
+      background: linear-gradient(125deg, #125840 5%, #1d9a79 73%, #58caa0);
+      box-shadow: 0 16px 35px #214b3b25;
+    }
+    .hero-copy { padding: clamp(26px, 4vw, 52px); color: white; z-index: 1; }
+    .eyebrow { font-weight: 800; font-size: 12px; letter-spacing: .17em; color: #c1ffe0; }
+    h1 { font-size: clamp(32px, 4.6vw, 55px); letter-spacing: -.05em; line-height: 1.04; margin: 10px 0 13px; }
+    .hero-copy p { max-width: 490px; font-size: 17px; color: #edfff3; }
+    .primary {
+      border: 0; border-radius: 15px; padding: 15px 22px;
+      background: var(--yellow); color: #303018; font-weight: 850;
+      box-shadow: 0 6px 0 #c4973e;
+    }
+    .primary:hover { filter: brightness(1.04); }
+    .primary:active { transform: translateY(3px); box-shadow: 0 3px 0 #c4973e; }
+    .hero-art {
+      position: relative; display: flex; align-items: center; justify-content: center;
+      isolation: isolate;
+      background: radial-gradient(circle at 60% 30%, #dcff94 0 12%, transparent 12.5%),
+        linear-gradient(160deg, #8bdaf1, #b5efc5 59%, #408d62 59%);
+    }
+    .hero-art::before, .hero-art::after { content: ""; position: absolute; bottom: -25px; border-radius: 50%; }
+    .hero-art::before { width: 120%; height: 125px; background: #1e784f; left: -15%; }
+    .hero-art::after { width: 110%; height: 65px; background: #0c604e; left: 18%; }
+    .gator { font-size: clamp(90px, 15vw, 177px); z-index: 1; transform: rotate(-8deg); filter: drop-shadow(7px 12px 0 #0d594a40); }
+    .coin { position: absolute; z-index: 2; font-size: 36px; }
+    .coin-a { top: 19%; left: 19%; }.coin-b { top: 40%; right: 12%; }
+    .dashboard { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 18px 0 31px; }
+    .stat { padding: 16px 19px; border-radius: 18px; background: #fff; border: 1px solid #d9e9e0; }
+    .stat span { display: block; font-size: 13px; color: #66776d; font-weight: 650; }
+    .stat strong { font-size: 27px; color: var(--forest); }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+    h2 { margin: 0 0 14px; font-size: 25px; letter-spacing: -.03em; }
+    .section-heading p { margin: 0 0 14px; color: #64796d; font-size: 14px; }
+    .worlds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .world { position: relative; background: #fff; border-radius: 19px; overflow: hidden; border: 1px solid #d9e9e0; }
+    .world-art { min-height: 112px; padding: 18px; display: flex; align-items: center; justify-content: center; font-size: 57px; }
+    .world:nth-child(1) .world-art { background: linear-gradient(110deg, #c9f8cc, #8bd5b2); }
+    .world:nth-child(2) .world-art { background: linear-gradient(110deg, #ddf6a5, #80d6a1); }
+    .world:nth-child(3) .world-art { background: linear-gradient(110deg, #b9f2fb, #6ab8ec); }
+    .world:nth-child(4) .world-art { background: linear-gradient(110deg, #ffecba, #f9b86b); }
+    .world:nth-child(5) .world-art { background: linear-gradient(110deg, #fdd49f, #ee8f6b); }
+    .world:nth-child(6) .world-art { background: linear-gradient(110deg, #e7f9ff, #a4d3f8); }
+    .world:nth-child(7) .world-art { background: linear-gradient(110deg, #d4f0ff, #96bdf5); }
+    .world:nth-child(8) .world-art { background: linear-gradient(110deg, #e8d9ff, #aaa5f7); }
+    .world:nth-child(9) .world-art { background: linear-gradient(110deg, #f5dbff, #f6b5a4); }
+    .world-info { padding: 15px 17px 18px; }
+    .world-info small { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; font-weight: 800; color: #557365; }
+    .world-info h3 { margin: 5px 0 4px; font-size: 17px; }
+    .world-info p { margin: 0; color: #657a6f; font-size: 13px; }
+    .world.locked { opacity: .75; }
+    .world.locked .world-art { filter: saturate(.66); }
+    .lock { position: absolute; right: 12px; top: 12px; padding: 4px 9px; border-radius: 99px; background: #ffffffdf; font-size: 11px; font-weight: 800; }
+    .notice { margin-top: 24px; padding: 15px 19px; background: #fff9df; border: 1px solid #e9d69b; border-radius: 14px; font-size: 14px; }
+    dialog.lesson {
+      width: min(94vw, 740px); max-height: 90vh; overflow: auto; padding: 30px;
+      color: var(--ink); background: var(--cream); border: 0; border-radius: 24px;
+      box-shadow: 0 24px 80px #0006;
+    }
+    dialog.lesson::backdrop { background: #08241fd9; }
+    .lesson-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .lesson-top h2 { margin: 0; }
+    .close { background: white; border: 1px solid #cadacf; border-radius: 11px; padding: 7px 12px; }
+    .prompt { padding: 22px; border-radius: 15px; background: #e6f6eb; font-size: clamp(18px, 2.8vw, 27px); line-height: 1.9; letter-spacing: .025em; font-weight: 700; }
+    .prompt .right { color: #147b51; background: #ccf4d7; }
+    .prompt .wrong { color: #a1242a; background: #ffd6d6; }
+    .prompt .current { border-bottom: 3px solid #ef9e25; }
+    textarea { width: 100%; resize: vertical; min-height: 95px; margin-top: 16px; padding: 15px; border: 2px solid #9fbeb0; border-radius: 12px; color: var(--ink); background: white; }
+    .metrics { display: flex; gap: 16px; flex-wrap: wrap; font-weight: 750; margin-top: 16px; }
+    .metrics span { background: #e3f3ea; border-radius: 12px; padding: 9px 13px; }
+    .lesson-hint { color: #546a5d; font-size: 13px; }
+    #result { font-weight: 800; min-height: 1.6em; color: #166546; }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-art { min-height: 190px; }
+      .dashboard { grid-template-columns: repeat(2, 1fr); }
+      .worlds { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .worlds { grid-template-columns: 1fr; }
+      .demo-tag { font-size: 10px; }
+      .brand { font-size: 13px; }
+      dialog.lesson { padding: 17px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+
+    /* ------------------------------------------------------------
+       Step 5 / Part 2: Guided keyboard coach
+       ------------------------------------------------------------ */
+    .coach-shell { margin: 34px 0 40px; padding: clamp(18px, 3.4vw, 32px); border: 1px solid #a3d6bc; border-radius: 26px; background: linear-gradient(148deg, #f9fffb, #e4f6ef); box-shadow: 0 10px 25px #154d3d12; }
+    .coach-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; flex-wrap: wrap; }
+    .coach-top h2 { margin: 4px 0 6px; font-size: clamp(24px, 3vw, 32px); }
+    .coach-top p { margin: 0; color: #526e62; max-width: 730px; }
+    .coach-badge { display: inline-block; padding: 5px 10px; border-radius: 99px; background: #136d51; color: white; font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+    .coach-toolbar { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+    .coach-field { display: grid; gap: 5px; font-weight: 800; color: #345f4e; font-size: 13px; }
+    .coach-field select { min-width: 175px; padding: 11px 13px; border-radius: 12px; border: 2px solid #86b99d; color: #163f32; font: inherit; background: #fff; }
+    .coach-lesson-count { align-self: center; margin-left: auto; color: #42705c; font-size: 14px; font-weight: 750; }
+    .coach-grid { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(250px, 1fr); gap: 14px; }
+    .coach-practice, .coach-guide, .keyboard-box { background: #fff; border: 1px solid #cde2d6; border-radius: 18px; padding: clamp(16px, 2vw, 22px); }
+    .coach-practice h3, .coach-guide h3 { margin: 0 0 9px; font-size: 21px; }
+    .coach-practice small { color: #4a765e; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .coach-intro { margin: 0 0 16px; color: #56766a; font-size: 14px; }
+    .coach-prompt { padding: 15px; background: #e6f7ea; border: 2px dashed #96caaa; border-radius: 13px; min-height: 65px; line-height: 1.8; font-size: clamp(19px, 2.5vw, 28px); letter-spacing: .04em; font-weight: 750; overflow-wrap: anywhere; white-space: pre-wrap; }
+    .coach-prompt span.ok { color: #126c45; background: #cef2d9; }
+    .coach-prompt span.no { color: #a22127; background: #ffd7d7; }
+    .coach-prompt span.now { border-bottom: 4px solid #eea83a; background: #fff5cd; }
+    .coach-practice input { width: 100%; margin-top: 13px; padding: 13px 14px; border: 2px solid #8fbca4; border-radius: 12px; background: #fff; font-size: 19px; letter-spacing: .035em; color: #163f32; }
+    .coach-practice input:disabled { background: #eff8f1; color: #28694b; }
+    .coach-practice input:focus-visible, .coach-field select:focus-visible, .keycap:focus-visible { outline: 3px solid #ffa93c; outline-offset: 2px; }
+    .coach-progress { height: 9px; border-radius: 99px; background: #dcece3; margin-top: 14px; overflow: hidden; }
+    .coach-progress > div { width: 0; height: 100%; background: linear-gradient(90deg, #2ea874, #8cd563); transition: width .14s linear; }
+    .coach-metrics { display: flex; gap: 9px; flex-wrap: wrap; margin: 13px 0 4px; }
+    .coach-metrics span { display: inline-block; background: #edf7f1; color: #27624a; padding: 6px 10px; border-radius: 10px; font-weight: 750; font-size: 13px; }
+    .coach-outcome { min-height: 45px; margin: 12px 0; color: #215f49; font-weight: 750; font-size: 14px; }
+    .coach-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .coach-actions button { border: none; padding: 11px 17px; border-radius: 12px; font-weight: 800; }
+    .coach-retry { background: #e8f1ec; color: #246049; }
+    .coach-next { background: #fdd76b; color: #463916; }
+    .coach-next:disabled { opacity: .45; cursor: not-allowed; }
+    .coach-guide { background: linear-gradient(150deg, #0d604d, #1b8472); color: #fff; }
+    .coach-guide h3 { color: #d3ffee; }
+    .coach-key-display { font-size: clamp(48px, 6.5vw, 78px); font-weight: 900; line-height: 1; padding: 12px 0 4px; }
+    .coach-finger { font-size: 18px; font-weight: 800; color: #f8e494; }
+    .coach-guide .coach-tip { color: #e5fff1; font-size: 14px; margin: 14px 0; }
+    .coach-handlabel { color: #a6f5d6; font-size: 11px; font-weight: 850; letter-spacing: .12em; margin-top: 16px; }
+    .coach-finger-guide { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+    .coach-finger-guide span { background: #ffffff1e; border-radius: 9px; padding: 6px 8px; font-size: 12px; }
+    .coach-finger-guide strong { color: #ffeca5; }
+    .keyboard-box { margin-top: 14px; overflow-x: auto; }
+    .keyboard-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+    .keyboard-top h3 { margin: 0 0 10px; }
+    .keyboard-top p { margin: 0 0 10px; color: #577365; font-size: 12px; }
+    .virtual-keyboard { display: grid; gap: 7px; min-width: 540px; max-width: 900px; margin: 0 auto; user-select: none; }
+    .keyboard-row { display: flex; justify-content: center; gap: 5px; }
+    .keycap { flex: 1; min-width: 0; min-height: 45px; padding: 4px 1px; border: 1px solid #b5c9bc; border-bottom-width: 4px; border-radius: 9px; background: #eef3f0; color: #28483e; font-size: 15px; font-weight: 800; line-height: 1.2; transition: background .1s ease, transform .12s ease, box-shadow .12s ease; }
+    .keycap[data-finger="lp"], .keycap[data-finger="rp"] { border-top: 5px solid #d38ba8; }
+    .keycap[data-finger="lr"], .keycap[data-finger="rr"] { border-top: 5px solid #e4b566; }
+    .keycap[data-finger="lm"], .keycap[data-finger="rm"] { border-top: 5px solid #8cb8e8; }
+    .keycap[data-finger="li"], .keycap[data-finger="ri"] { border-top: 5px solid #85cba6; }
+    .keycap[data-finger="thumb"] { border-top: 5px solid #b2a5e2; }
+    .keycap.wide { flex: 1.7; font-size: 12px; }
+    .keycap.space { flex: 5; }
+    .keycap.is-target { background: #fff0a3; border-color: #d9991c; box-shadow: 0 0 0 3px #fbd268ab; transform: translateY(-2px); animation: gtq-key-glow 1.35s ease-in-out infinite; }
+    .keycap.is-pressed { background: #a2ebc0; transform: translateY(2px); }
+    .keycap.is-wrong { background: #ffc6c6; }
+    .keycap.is-shift { background: #d9dcff; }
+    .coach-legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 13px; color: #566c62; font-size: 12px; }
+    .coach-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: middle; margin-right: 4px; }
+    @keyframes gtq-key-glow { 50% { box-shadow: 0 0 0 5px #fbd26855; } }
+    @media (max-width: 800px) { .coach-grid { grid-template-columns: 1fr; } .coach-lesson-count { margin-left: 0; } }
+    @media (prefers-reduced-motion: reduce) { .keycap.is-target { animation: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="brand-icon" aria-hidden="true">🐊</span><div>GATOR TYPEQUEST<small>GILBERT ELEMENTARY</small></div></div>
+    <div class="demo-tag">DEMO · NO STUDENT DATA</div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">THE GREAT KEYBOARD ADVENTURE</div>
+        <h1 id="hero-title">Ready to type,<br>Gator?</h1>
+        <p>Learn new keys, unlock nine worlds, and grow your typing skills through 36 weeks of adventures.</p>
+        <button class="primary" id="startLesson">⌨️ Start a typing quest</button>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="coin coin-a">⭐</span><span class="gator">🐊</span><span class="coin coin-b">🪙</span></div>
+    </section>
+
+    <section class="dashboard" aria-label="Demo statistics">
+      <div class="stat"><span>Demo coins</span><strong id="coins">0 🪙</strong></div>
+      <div class="stat"><span>Typing accuracy</span><strong id="accuracy">—</strong></div>
+      <div class="stat"><span>Typing speed</span><strong id="wpm">—</strong></div>
+      <div class="stat"><span>Worlds to explore</span><strong>9</strong></div>
+    </section>
+
+
+    <section class="coach-shell" id="keyboardCoach" aria-labelledby="coachTitle">
+      <div class="coach-top">
+        <div>
+          <span class="coach-badge">NEW · GUIDED PRACTICE</span>
+          <h2 id="coachTitle">⌨️ The Gator Keyboard Coach</h2>
+          <p>Watch the next key glow, see which finger to use, and practice at your own pace. Accuracy comes first!</p>
+        </div>
+      </div>
+      <div class="coach-toolbar">
+        <label class="coach-field" for="coachGrade">Choose your grade
+          <select id="coachGrade">
+            <option value="PK">Pre-K · Key explorer</option>
+            <option value="K">Kindergarten · Letter finder</option>
+            <option value="1">1st grade · First words</option>
+            <option value="2" selected>2nd grade · Home row</option>
+            <option value="3">3rd grade · Word builder</option>
+            <option value="4">4th grade · Sentence pro</option>
+            <option value="5">5th grade · Typing champion</option>
+          </select>
+        </label>
+        <span id="coachLessonCount" class="coach-lesson-count">Quest 1 of 3</span>
+      </div>
+      <div class="coach-grid">
+        <article class="coach-practice" aria-labelledby="coachLessonTitle">
+          <small>Gator Training Camp · Practice mission</small>
+          <h3 id="coachLessonTitle">Home-row warm-up</h3>
+          <p class="coach-intro" id="coachIntro">Place your fingers on the home row.</p>
+          <div id="coachPrompt" class="coach-prompt" aria-label="Text to type"></div>
+          <label for="coachInput"><strong>Type or tap the keys here:</strong></label>
+          <input id="coachInput" type="text" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" inputmode="text" aria-describedby="coachHint">
+          <div class="coach-progress" aria-label="Typing line progress"><div id="coachProgressFill"></div></div>
+          <div class="coach-metrics">
+            <span id="coachAccuracy">Accuracy: —</span>
+            <span id="coachSpeed">Speed: —</span>
+            <span id="coachFinished">Completed: 0/3</span>
+          </div>
+          <p id="coachOutcome" class="coach-outcome" role="status" aria-live="polite">Type the glowing key to begin.</p>
+          <div class="coach-actions">
+            <button type="button" class="coach-retry" id="coachReset">↻ Try again</button>
+            <button type="button" class="coach-next" id="coachNext" disabled>Next quest →</button>
+          </div>
+        </article>
+        <aside class="coach-guide" aria-labelledby="fingerTitle">
+          <h3 id="fingerTitle">🐊 Gator's finger tip</h3>
+          <div class="coach-handlabel">NEXT KEY</div>
+          <div class="coach-key-display" id="coachNextKey">A</div>
+          <div class="coach-finger" id="coachFinger">Left pinky</div>
+          <p class="coach-tip" id="coachHint">Watch the glowing key. Rest your hands on A S D F and J K L ;</p>
+          <div class="coach-handlabel">HOME-ROW STARTING POSITION</div>
+          <div class="coach-finger-guide" aria-label="Home row finger positions">
+            <span><strong>Left:</strong> A S D F</span><span><strong>Right:</strong> J K L ;</span><span><strong>Space:</strong> Thumb</span>
+          </div>
+        </aside>
+      </div>
+      <div class="keyboard-box">
+        <div class="keyboard-top"><h3>See your keyboard</h3><p>Glowing key = next key · Tap keys for exploration, or use a physical keyboard</p></div>
+        <div class="virtual-keyboard" id="coachKeyboard" role="group" aria-label="Interactive practice keyboard"></div>
+        <div class="coach-legend"><span><i style="background:#d38ba8"></i>Pinkies</span><span><i style="background:#e4b566"></i>Ring fingers</span><span><i style="background:#8cb8e8"></i>Middle fingers</span><span><i style="background:#85cba6"></i>Index fingers</span><span><i style="background:#b2a5e2"></i>Thumbs</span></div>
+      </div>
+    </section>
+
+    <div class="section-heading">
+      <h2>🗺️ Your adventure map</h2>
+      <p>Nine worlds · Four weeks each · 36-week program</p>
+    </div>
+    <section class="worlds" aria-label="Typing adventure worlds">
+      <article class="world"><div class="world-art" aria-hidden="true">🏕️🐊</div><div class="world-info"><small>Weeks 1–4 · Preview</small><h3>Gator Training Camp</h3><p>Meet your keyboard and learn the basics.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🌴🌿</div><div class="world-info"><small>Weeks 5–8</small><h3>Jungle Adventure</h3><p>Home-row keys and finger control.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🌊💎</div><div class="world-info"><small>Weeks 9–12</small><h3>Treasure Lagoon</h3><p>Word-building and accuracy.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🏜️🏎️</div><div class="world-info"><small>Weeks 13–16</small><h3>Desert Dash</h3><p>Top and bottom keyboard rows.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🌋🔥</div><div class="world-info"><small>Weeks 17–20</small><h3>Volcano Escape</h3><p>Capital letters and punctuation.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">❄️🏰</div><div class="world-info"><small>Weeks 21–24</small><h3>Frozen Fortress</h3><p>Complete sentences and fluency.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">☁️🦅</div><div class="world-info"><small>Weeks 25–28</small><h3>Sky Kingdom</h3><p>Paragraphs and typing stamina.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🚀🪐</div><div class="world-info"><small>Weeks 29–32</small><h3>Space Quest</h3><p>Real-world typing challenges.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">👑🏆</div><div class="world-info"><small>Weeks 33–36</small><h3>Gator Championship</h3><p>Celebrate growing keyboard mastery.</p></div></article>
+    </section>
+    <div class="notice"><strong>Development preview:</strong> All scores, coins, and lessons on this page are fictional or temporary. Nothing is sent to Google Sheets or saved after you reload the page.</div>
+  </main>
+
+  <dialog id="lesson" class="lesson" aria-labelledby="lessonTitle">
+    <div class="lesson-top"><h2 id="lessonTitle">⌨️ First typing quest</h2><button class="close" id="closeLesson" type="button">✕ Close</button></div>
+    <p>Type the sentence below exactly. Take your time—accuracy comes first!</p>
+    <div class="prompt" id="prompt" aria-label="Sentence to type"></div>
+    <label for="typingInput"><strong>Your typing:</strong></label>
+    <textarea id="typingInput" rows="3" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-describedby="lessonHint"></textarea>
+    <p id="lessonHint" class="lesson-hint">Use a physical keyboard for touch-typing practice. There is no countdown timer.</p>
+    <div class="metrics"><span id="liveAccuracy">Accuracy: —</span><span id="liveWpm">WPM: —</span></div>
+    <p id="result" role="status" aria-live="polite"></p>
+    <button type="button" class="primary" id="restartLesson">↻ Try again</button>
+  </dialog>
+
+  <script>
+    'use strict';
+    const phrase = 'the green gator jumps over three logs';
+    const dialog = document.getElementById('lesson');
+    const typingInput = document.getElementById('typingInput');
+    const promptElement = document.getElementById('prompt');
+    const result = document.getElementById('result');
+    let startedAt = null;
+    let coins = 0;
+    let rewarded = false;
+
+    function paintPrompt(typed = '') {
+      promptElement.replaceChildren();
+      [...phrase].forEach((character, index) => {
+        const span = document.createElement('span');
+        span.textContent = character;
+        if (index < typed.length) span.className = typed[index] === character ? 'right' : 'wrong';
+        else if (index === typed.length) span.className = 'current';
+        promptElement.appendChild(span);
+      });
+    }
+    function resetLesson() {
+      startedAt = null;
+      rewarded = false;
+      typingInput.value = '';
+      typingInput.disabled = false;
+      typingInput.maxLength = phrase.length;
+      result.textContent = '';
+      document.getElementById('liveAccuracy').textContent = 'Accuracy: —';
+      document.getElementById('liveWpm').textContent = 'WPM: —';
+      paintPrompt();
+      typingInput.focus();
+    }
+    document.getElementById('startLesson').addEventListener('click', () => {
+      dialog.showModal();
+      resetLesson();
+    });
+    document.getElementById('closeLesson').addEventListener('click', () => dialog.close());
+    document.getElementById('restartLesson').addEventListener('click', resetLesson);
+    typingInput.addEventListener('input', () => {
+      const typed = typingInput.value;
+      if (!typed) { startedAt = null; paintPrompt(); return; }
+      if (startedAt === null) startedAt = performance.now();
+      const correct = [...typed].filter((char, i) => char === phrase[i]).length;
+      const accuracy = Math.round((correct / typed.length) * 100);
+      const elapsedMinutes = Math.max((performance.now() - startedAt) / 60000, 1 / 60);
+      const wpm = Math.round((correct / 5) / elapsedMinutes);
+      document.getElementById('liveAccuracy').textContent = `Accuracy: ${accuracy}%`;
+      document.getElementById('liveWpm').textContent = `WPM: ${wpm}`;
+      paintPrompt(typed);
+      if (typed === phrase && !rewarded) {
+        rewarded = true;
+        coins += 25;
+        document.getElementById('coins').textContent = `${coins} 🪙`;
+        document.getElementById('accuracy').textContent = `${accuracy}%`;
+        document.getElementById('wpm').textContent = `${wpm}`;
+        result.textContent = '🌟 Quest complete! You earned 25 demo coins. Great job!';
+        typingInput.disabled = true;
+      }
+    });
+    paintPrompt();
+  </script>
+
+  <script>
+    // Step 5 Part 2: self-contained keyboard coach (demo data only).
+    (() => {
+      'use strict';
+      const tracks = {
+        PK: [
+          { title:'Find G', text:'g', tip:'Find the glowing G key. Tap it or press it on your keyboard.' },
+          { title:'Find A', text:'a', tip:'Can you find A? Use the glowing key as your clue.' },
+          { title:'Find T', text:'t', tip:'Great exploring! Find T to finish your practice.' }
+        ],
+        K: [
+          { title:'Meet A', text:'a', tip:'Find A on the keyboard. Slow and steady!' },
+          { title:'Meet S', text:'s', tip:'Find S, right beside A.' },
+          { title:'Two home-row keys', text:'as', tip:'Type A and then S. Watch each key light up.' }
+        ],
+        1: [
+          { title:'Type CAT', text:'cat', tip:'Type each letter in cat, in order.' },
+          { title:'Type DOG', text:'dog', tip:'Follow the glowing letters to type dog.' },
+          { title:'Type GATOR', text:'gator', tip:'You know these letters! Type gator.' }
+        ],
+        2: [
+          { title:'Home-row warm-up', text:'asdf jkl;', tip:'Place your left hand on A S D F and right hand on J K L ;' },
+          { title:'Home-row words', text:'sad lad', tip:'Find each letter without rushing. Accuracy is the goal.' },
+          { title:'Smooth finger moves', text:'fall salad', tip:'Keep your hands near home row as you type.' }
+        ],
+        3: [
+          { title:'Build a phrase', text:'the green gator', tip:'Use both hands, and press Space with a thumb.' },
+          { title:'Practice word flow', text:'jump over logs', tip:'Keep your eyes on the prompt and aim for accuracy.' },
+          { title:'Typing with care', text:'type with care', tip:'Type the whole line and correct any mistakes.' }
+        ],
+        4: [
+          { title:'Capitals and periods', text:'The gator jumps.', tip:'Use Shift for the capital T and finish with a period.' },
+          { title:'Sentence practice', text:'I can type well.', tip:'Try the opposite-hand Shift key for a capital I.' },
+          { title:'Accuracy mission', text:'Accuracy comes first.', tip:'Build accuracy before increasing your speed.' }
+        ],
+        5: [
+          { title:'Fluency challenge', text:'Practice makes progress.', tip:'Use Shift for the first letter and watch your punctuation.' },
+          { title:'Confident typing', text:'I can type with accuracy.', tip:'Type smoothly and fix mistakes as they happen.' },
+          { title:'Typing champion', text:'My typing gets stronger each day.', tip:'Finish the sentence and aim for a clean, accurate result.' }
+        ]
+      };
+      const rows = [
+        [['q'],['w'],['e'],['r'],['t'],['y'],['u'],['i'],['o'],['p'],['['],[']'],['backspace','⌫','wide']],
+        [['a'],['s'],['d'],['f'],['g'],['h'],['j'],['k'],['l'],[';'],["'"]],
+        [['shift','⇧ Shift','wide'],['z'],['x'],['c'],['v'],['b'],['n'],['m'],[','],['.'],['/'],['shift','Shift ⇧','wide']],
+        [['space','Space','space']]
+      ];
+      const fingerMap = {
+        q:'lp',a:'lp',z:'lp',w:'lr',s:'lr',x:'lr',e:'lm',d:'lm',c:'lm',
+        r:'li',t:'li',f:'li',g:'li',v:'li',b:'li',
+        y:'ri',u:'ri',h:'ri',j:'ri',n:'ri',m:'ri',
+        i:'rm',k:'rm',',':'rm',o:'rr',l:'rr','.':'rr',
+        p:'rp',';':'rp','/':'rp',"'":'rp','[':'rp',']':'rp',
+        space:'thumb',backspace:'rp',shift:'lp'
+      };
+      const fingerNames = {
+        lp:'Left pinky',lr:'Left ring finger',lm:'Left middle finger',li:'Left index finger',
+        ri:'Right index finger',rm:'Right middle finger',rr:'Right ring finger',rp:'Right pinky',thumb:'Either thumb'
+      };
+      const el = id => document.getElementById(id);
+      let grade='2', index=0, began=null, awarded=new Set(), shift=false, done=false;
+      let pressedTimeout=0;
+      const gradeSelector=el('coachGrade'), input=el('coachInput'), keyboard=el('coachKeyboard');
+      const allButtons=[];
+      function createKeyboard() {
+        rows.forEach(row => {
+          const line=document.createElement('div');
+          line.className='keyboard-row';
+          row.forEach(([key, label, width]) => {
+            const button=document.createElement('button');
+            button.type='button';
+            button.className='keycap'+(width?' '+width:'');
+            button.dataset.key=key;
+            button.dataset.finger=fingerMap[key]||'rp';
+            button.textContent=label||(key.length===1?key.toUpperCase():key);
+            button.setAttribute('aria-label',key==='space'?'Spacebar':key==='backspace'?'Backspace':key==='shift'?'Shift key':`Key ${button.textContent}`);
+            button.addEventListener('click',()=>tapKey(key));
+            allButtons.push(button);
+            line.appendChild(button);
+          });
+          keyboard.appendChild(line);
+        });
+      }
+      function lesson(){return tracks[grade][index];}
+      function numDone(){return tracks[grade].filter((_,i)=>awarded.has(`${grade}:${i}`)).length;}
+      function displayChar(char) { return char===' '?'Space':char==='backspace'?'⌫':char||'✓'; }
+      function firstMistake(text, target) {
+        for(let i=0;i<text.length;i++) if(text[i]!==target[i]) return i;
+        return -1;
+      }
+      function fingerHint(char) {
+        if(char===' ') return { key:'space',name:'Either thumb',hint:'Press Space with a thumb, then return to home row.' };
+        if(!char) return { key:'',name:'Quest complete!',hint:'You made it! Choose the next quest when you are ready.' };
+        const key=char.toLowerCase();
+        const finger=fingerMap[key]||'rp';
+        if(char!==key && /[A-Z]/.test(char)) {
+          const otherHand=finger.startsWith('l')?'right':'left';
+          return { key, name:`${fingerNames[finger]} + ${otherHand} Shift`, hint:`Hold the ${otherHand} Shift key and tap ${char}.` };
+        }
+        return {key,name:fingerNames[finger],hint:`Use your ${fingerNames[finger].toLowerCase()} to press ${displayChar(char)}. Return to your home-row position.`};
+      }
+      function highlightKey(key,isUpper=false) {
+        allButtons.forEach(b=>{
+          const isTarget=b.dataset.key===key;
+          b.classList.toggle('is-target',isTarget);
+          b.classList.toggle('is-shift',b.dataset.key==='shift'&&shift&&!isTarget);
+        });
+        if(isUpper) {
+          // A capital also needs Shift; show both possible Shift keys.
+          allButtons.filter(b=>b.dataset.key==='shift').forEach(b=>b.classList.add('is-target'));
+        }
+      }
+      function paint() {
+        const target=lesson().text, typed=input.value;
+        const mistake=firstMistake(typed,target);
+        const next=done?'':mistake>=0?'backspace':target[typed.length]||'';
+        const hint=fingerHint(next);
+        el('coachPrompt').replaceChildren();
+        [...target].forEach((char,i)=>{
+          const span=document.createElement('span');
+          span.textContent=char;
+          if(i<typed.length) span.className=typed[i]===char?'ok':'no';
+          else if(i===typed.length) span.className='now';
+          el('coachPrompt').appendChild(span);
+        });
+        el('coachPrompt').setAttribute('aria-label',`Text to type: ${target}`);
+        el('coachNextKey').textContent=displayChar(next);
+        el('coachFinger').textContent=hint.name;
+        el('coachHint').textContent=mistake>=0?'A red letter means a mistake. Press Backspace to correct it.':hint.hint;
+        highlightKey(hint.key,!!next&&next!=='backspace'&&next!==next.toLowerCase());
+        el('coachProgressFill').style.width=`${Math.min(100,(typed.length/target.length)*100)}%`;
+      }
+      function reset() {
+        began=null; done=false; shift=false;
+        el('coachLessonTitle').textContent=lesson().title;
+        el('coachIntro').textContent=lesson().tip;
+        el('coachLessonCount').textContent=`Quest ${index+1} of ${tracks[grade].length}`;
+        el('coachFinished').textContent=`Completed: ${numDone()}/${tracks[grade].length}`;
+        input.disabled=false;input.value='';input.maxLength=lesson().text.length;
+        el('coachAccuracy').textContent='Accuracy: —';
+        el('coachSpeed').textContent='Speed: —';
+        el('coachOutcome').textContent='Type the glowing key to begin.';
+        el('coachNext').disabled=true;
+        el('coachNext').textContent='Next quest →';
+        paint();
+      }
+      function compute() {
+        const typed=input.value,target=lesson().text;
+        if(typed.length&&!began) began=performance.now();
+        if(!typed.length) began=null;
+        let right=0;for(let i=0;i<typed.length;i++) if(typed[i]===target[i]) right++;
+        const accuracy=typed.length?Math.round(100*right/typed.length):null;
+        const minutes=began?Math.max((performance.now()-began)/60000,1/60):null;
+        const wpm=minutes?Math.round(right/5/minutes):null;
+        el('coachAccuracy').textContent=accuracy===null?'Accuracy: —':`Accuracy: ${accuracy}%`;
+        el('coachSpeed').textContent=wpm===null?'Speed: —':`Speed: ${wpm} WPM`;
+        if(typed===target&&!done){
+          done=true; input.disabled=true;
+          const mark=`${grade}:${index}`;
+          const firstTime=!awarded.has(mark);
+          if(firstTime){
+            awarded.add(mark);
+            coins+=10;
+            el('coins').textContent=`${coins} 🪙`;
+          }
+          el('accuracy').textContent=`${accuracy}%`;
+          el('wpm').textContent=`${wpm} WPM`;
+          el('coachFinished').textContent=`Completed: ${numDone()}/${tracks[grade].length}`;
+          el('coachOutcome').textContent=firstTime?'🌟 Great job! Quest complete. You earned 10 demo coins.':'🌟 Great job! You completed this quest again.';
+          if(index<tracks[grade].length-1) el('coachNext').disabled=false;
+          else el('coachNext').textContent='All three quests complete ✓';
+        } else if(!done) {
+          const mistake=firstMistake(typed,target);
+          el('coachOutcome').textContent=mistake>=0?'Almost! Fix the red letter with Backspace.':typed?'Nice work. Keep going!':'Type the glowing key to begin.';
+        }
+        paint();
+      }
+      function tapKey(key) {
+        if(key==='shift'){shift=!shift;paint();input.focus();return;}
+        if(input.disabled)return;
+        if(key==='backspace') input.value=input.value.slice(0,-1);
+        else if(input.value.length<lesson().text.length) {
+          const ch=key==='space'?' ':shift?key.toUpperCase():key;
+          input.value+=ch;
+          shift=false;
+        }
+        input.dispatchEvent(new Event('input',{bubbles:true}));
+        if(!input.disabled)input.focus();
+      }
+      input.addEventListener('input',compute);
+      input.addEventListener('paste',event=>event.preventDefault());
+      input.addEventListener('keydown', event=> {
+        let key=event.key.toLowerCase();
+        if(key===' ')key='space';
+        if(key==='backspace')key='backspace';
+        allButtons.forEach(b=>b.classList.toggle('is-pressed',b.dataset.key===key));
+        clearTimeout(pressedTimeout);
+        pressedTimeout=setTimeout(()=>allButtons.forEach(b=>b.classList.remove('is-pressed')),140);
+      });
+      gradeSelector.addEventListener('change',()=>{grade=gradeSelector.value;index=0;reset();input.focus();});
+      el('coachReset').addEventListener('click',()=>{reset();input.focus();});
+      el('coachNext').addEventListener('click',()=>{
+        if(!done||index>=tracks[grade].length-1)return;
+        index++;reset();input.focus();
+      });
+      // A quick link from the existing dashboard to guided practice.
+      const coachJump=document.createElement('button');
+      coachJump.type='button';coachJump.className='primary';coachJump.id='startCoach';
+      coachJump.textContent='🌟 Guided keyboard coach';
+      coachJump.style.marginLeft='8px';coachJump.style.marginTop='8px';
+      coachJump.addEventListener('click',()=>{el('keyboardCoach').scrollIntoView({behavior:'smooth',block:'start'}); input.focus({preventScroll:true});});
+      el('startLesson').insertAdjacentElement('afterend',coachJump);
+      createKeyboard();reset();
+    })();
+  </script>
+</body>
+</html>
