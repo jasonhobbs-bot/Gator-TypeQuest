@@ -123,6 +123,116 @@
       dialog.lesson { padding: 17px; }
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+
+    /* ------------------------------------------------------------
+       Step 5 / Part 2: Guided keyboard coach
+       ------------------------------------------------------------ */
+    .coach-shell { margin: 34px 0 40px; padding: clamp(18px, 3.4vw, 32px); border: 1px solid #a3d6bc; border-radius: 26px; background: linear-gradient(148deg, #f9fffb, #e4f6ef); box-shadow: 0 10px 25px #154d3d12; }
+    .coach-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; flex-wrap: wrap; }
+    .coach-top h2 { margin: 4px 0 6px; font-size: clamp(24px, 3vw, 32px); }
+    .coach-top p { margin: 0; color: #526e62; max-width: 730px; }
+    .coach-badge { display: inline-block; padding: 5px 10px; border-radius: 99px; background: #136d51; color: white; font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+    .coach-toolbar { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+    .coach-field { display: grid; gap: 5px; font-weight: 800; color: #345f4e; font-size: 13px; }
+    .coach-field select { min-width: 175px; padding: 11px 13px; border-radius: 12px; border: 2px solid #86b99d; color: #163f32; font: inherit; background: #fff; }
+    .coach-lesson-count { align-self: center; margin-left: auto; color: #42705c; font-size: 14px; font-weight: 750; }
+    .coach-grid { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(250px, 1fr); gap: 14px; }
+    .coach-practice, .coach-guide, .keyboard-box { background: #fff; border: 1px solid #cde2d6; border-radius: 18px; padding: clamp(16px, 2vw, 22px); }
+    .coach-practice h3, .coach-guide h3 { margin: 0 0 9px; font-size: 21px; }
+    .coach-practice small { color: #4a765e; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .coach-intro { margin: 0 0 16px; color: #56766a; font-size: 14px; }
+    .coach-prompt { padding: 15px; background: #e6f7ea; border: 2px dashed #96caaa; border-radius: 13px; min-height: 65px; line-height: 1.8; font-size: clamp(19px, 2.5vw, 28px); letter-spacing: .04em; font-weight: 750; overflow-wrap: anywhere; white-space: pre-wrap; }
+    .coach-prompt span.ok { color: #126c45; background: #cef2d9; }
+    .coach-prompt span.no { color: #a22127; background: #ffd7d7; }
+    .coach-prompt span.now { border-bottom: 4px solid #eea83a; background: #fff5cd; }
+    .coach-practice input { width: 100%; margin-top: 13px; padding: 13px 14px; border: 2px solid #8fbca4; border-radius: 12px; background: #fff; font-size: 19px; letter-spacing: .035em; color: #163f32; }
+    .coach-practice input:disabled { background: #eff8f1; color: #28694b; }
+    .coach-practice input:focus-visible, .coach-field select:focus-visible, .keycap:focus-visible { outline: 3px solid #ffa93c; outline-offset: 2px; }
+    .coach-progress { height: 9px; border-radius: 99px; background: #dcece3; margin-top: 14px; overflow: hidden; }
+    .coach-progress > div { width: 0; height: 100%; background: linear-gradient(90deg, #2ea874, #8cd563); transition: width .14s linear; }
+    .coach-metrics { display: flex; gap: 9px; flex-wrap: wrap; margin: 13px 0 4px; }
+    .coach-metrics span { display: inline-block; background: #edf7f1; color: #27624a; padding: 6px 10px; border-radius: 10px; font-weight: 750; font-size: 13px; }
+    .coach-outcome { min-height: 45px; margin: 12px 0; color: #215f49; font-weight: 750; font-size: 14px; }
+    .coach-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .coach-actions button { border: none; padding: 11px 17px; border-radius: 12px; font-weight: 800; }
+    .coach-retry { background: #e8f1ec; color: #246049; }
+    .coach-next { background: #fdd76b; color: #463916; }
+    .coach-next:disabled { opacity: .45; cursor: not-allowed; }
+    .coach-guide { background: linear-gradient(150deg, #0d604d, #1b8472); color: #fff; }
+    .coach-guide h3 { color: #d3ffee; }
+    .coach-key-display { font-size: clamp(48px, 6.5vw, 78px); font-weight: 900; line-height: 1; padding: 12px 0 4px; }
+    .coach-finger { font-size: 18px; font-weight: 800; color: #f8e494; }
+    .coach-guide .coach-tip { color: #e5fff1; font-size: 14px; margin: 14px 0; }
+    .coach-handlabel { color: #a6f5d6; font-size: 11px; font-weight: 850; letter-spacing: .12em; margin-top: 16px; }
+    .coach-finger-guide { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+    .coach-finger-guide span { background: #ffffff1e; border-radius: 9px; padding: 6px 8px; font-size: 12px; }
+    .coach-finger-guide strong { color: #ffeca5; }
+    .keyboard-box { margin-top: 14px; overflow-x: auto; }
+    .keyboard-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+    .keyboard-top h3 { margin: 0 0 10px; }
+    .keyboard-top p { margin: 0 0 10px; color: #577365; font-size: 12px; }
+    .virtual-keyboard { display: grid; gap: 7px; min-width: 540px; max-width: 900px; margin: 0 auto; user-select: none; }
+    .keyboard-row { display: flex; justify-content: center; gap: 5px; }
+    .keycap { flex: 1; min-width: 0; min-height: 45px; padding: 4px 1px; border: 1px solid #b5c9bc; border-bottom-width: 4px; border-radius: 9px; background: #eef3f0; color: #28483e; font-size: 15px; font-weight: 800; line-height: 1.2; transition: background .1s ease, transform .12s ease, box-shadow .12s ease; }
+    .keycap[data-finger="lp"], .keycap[data-finger="rp"] { border-top: 5px solid #d38ba8; }
+    .keycap[data-finger="lr"], .keycap[data-finger="rr"] { border-top: 5px solid #e4b566; }
+    .keycap[data-finger="lm"], .keycap[data-finger="rm"] { border-top: 5px solid #8cb8e8; }
+    .keycap[data-finger="li"], .keycap[data-finger="ri"] { border-top: 5px solid #85cba6; }
+    .keycap[data-finger="thumb"] { border-top: 5px solid #b2a5e2; }
+    .keycap.wide { flex: 1.7; font-size: 12px; }
+    .keycap.space { flex: 5; }
+    .keycap.is-target { background: #fff0a3; border-color: #d9991c; box-shadow: 0 0 0 3px #fbd268ab; transform: translateY(-2px); animation: gtq-key-glow 1.35s ease-in-out infinite; }
+    .keycap.is-pressed { background: #a2ebc0; transform: translateY(2px); }
+    .keycap.is-wrong { background: #ffc6c6; }
+    .keycap.is-shift { background: #d9dcff; }
+    .coach-legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 13px; color: #566c62; font-size: 12px; }
+    .coach-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: middle; margin-right: 4px; }
+    @keyframes gtq-key-glow { 50% { box-shadow: 0 0 0 5px #fbd26855; } }
+    @media (max-width: 800px) { .coach-grid { grid-template-columns: 1fr; } .coach-lesson-count { margin-left: 0; } }
+    @media (prefers-reduced-motion: reduce) { .keycap.is-target { animation: none; } }
+
+    /* ------------------------------------------------------------
+       Step 5 / Part 3: Gator Jungle Adventure game
+       ------------------------------------------------------------ */
+    .jungle-section{margin:38px 0 34px;padding:clamp(15px,2.3vw,26px);border-radius:27px;background:linear-gradient(150deg,#112e30,#164e43 68%,#195a65);color:#fff;box-shadow:0 20px 40px #112d2d33;}
+    .jungle-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+    .jungle-heading h2{font-size:clamp(25px,3.2vw,34px);margin:3px 0 8px;color:#ffeb9c}
+    .jungle-heading p{margin:0;max-width:690px;color:#d8f0e4;font-size:14px}
+    .jungle-chip{display:inline-flex;align-items:center;gap:7px;border-radius:99px;border:1px solid #8addaa;background:#ffffff13;padding:7px 11px;color:#e8ffe7;font-size:12px;font-weight:800}
+    .jungle-status{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}
+    .jungle-status span{display:inline-block;background:#ffffff16;border:1px solid #ffffff22;border-radius:11px;padding:7px 11px;font-size:13px;font-weight:780;color:#e8fff1}
+    .jungle-frame{position:relative;border:5px solid #0b2728;border-radius:18px;overflow:hidden;background:#a6e8ef;box-shadow:inset 0 0 0 2px #f6f5cc66}
+    #jungleCanvas{display:block;width:100%;height:auto;touch-action:none;}
+    .jungle-veil{position:absolute;inset:0;background:linear-gradient(90deg,#0b2a2bdc,#153b37b5);display:flex;justify-content:center;align-items:center;padding:18px;text-align:center}
+    .jungle-welcome{max-width:500px;padding:24px;border:1px solid #c8f6b055;border-radius:20px;background:#082c29d9;box-shadow:0 12px 40px #0005}
+    .jungle-welcome h3{font-size:clamp(24px,3vw,33px);color:#ffdf85;margin:0 0 10px}
+    .jungle-welcome p{color:#e2fff4;margin:0 0 15px;font-size:14px}
+    .jungle-veil[hidden], .jungle-challenge[hidden]{display:none!important}
+    .jungle-btn{display:inline-flex;justify-content:center;align-items:center;gap:6px;padding:11px 16px;border:0;border-radius:12px;font-size:14px;font-weight:850;background:#ffe08b;color:#263b2d;box-shadow:0 4px 0 #a68531}
+    .jungle-btn:hover{filter:brightness(1.05)}.jungle-btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+    .jungle-btn.secondary{color:#eaffee;background:#255d51;box-shadow:0 4px 0 #0a3931;border:1px solid #81ba99}
+    .jungle-controls{display:flex;align-items:center;justify-content:space-between;gap:13px;flex-wrap:wrap;margin-top:15px}
+    .jungle-guide{font-size:12px;color:#d3f2db;max-width:540px;line-height:1.5}
+    .jungle-actions{display:flex;gap:9px;flex-wrap:wrap}
+    .jungle-touch{display:flex;gap:9px;align-items:center}
+    .jungle-touch button{width:53px;height:51px;touch-action:none;user-select:none;border:1px solid #94d8a7;border-radius:13px;background:#2b745f;color:#fff;font-size:24px;font-weight:900}
+    .jungle-touch button:active,.jungle-touch button.held{background:#ffdb7c;color:#27443d}
+    .jungle-challenge{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#072824d9;padding:12px;z-index:3;overflow:auto}
+    .jungle-challenge-card{background:#fffcf0;border:3px solid #f0c75d;color:#1a4734;width:min(610px,100%);max-height:100%;overflow:auto;padding:clamp(14px,2.1vw,25px);border-radius:20px;box-shadow:0 18px 42px #0006}
+    .jungle-challenge-card h3{margin:0 0 5px;font-size:clamp(19px,2.5vw,27px)}
+    .jungle-challenge-card p{margin:0 0 12px;font-size:14px;color:#53695e}
+    .jungle-prompt{font-size:clamp(17px,2.7vw,26px);padding:12px 14px;min-height:51px;background:#e9f6dd;border:1px solid #b9d3b0;border-radius:10px;font-weight:850;white-space:pre-wrap;overflow-wrap:anywhere}
+    .jungle-prompt .ok{background:#c0e9bf;color:#166844}.jungle-prompt .wrong{background:#ffd8d6;color:#b12b37}.jungle-prompt .next{border-bottom:3px solid #dc9f18}
+    #jungleAnswer{width:100%;margin-top:10px;border:2px solid #62977c;border-radius:10px;padding:11px 12px;color:#17462f;font-size:18px;}
+    .jungle-challenge-note{font-size:13px;margin-top:7px;color:#4f6b5e}
+    .jungle-challenge-metrics{display:flex;gap:8px;flex-wrap:wrap;margin-top:7px}
+    .jungle-challenge-metrics span{border-radius:8px;background:#dceee2;font-size:12px;font-weight:800;padding:5px 9px}
+    .jungle-toast{position:absolute;top:15px;left:50%;transform:translateX(-50%);border-radius:12px;background:#082d29dc;color:#fff5b9;padding:9px 18px;font-weight:850;text-align:center;z-index:2;pointer-events:none;max-width:85%;font-size:14px;opacity:0;transition:opacity .2s}
+    .jungle-toast.visible{opacity:1}
+    .jungle-results{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:15px 0}
+    .jungle-results span{background:#184c42;border:1px solid #80b292;padding:8px 15px;border-radius:11px;font-size:13px}
+    @media(max-width:650px){.jungle-welcome{padding:12px}.jungle-welcome p{font-size:12px}.jungle-welcome h3{font-size:21px}.jungle-veil{padding:8px}.jungle-section{padding:11px}.jungle-controls{align-items:flex-start}.jungle-touch button{width:48px;height:46px}.jungle-challenge-card{padding:11px}.jungle-challenge-card p{font-size:12px}.jungle-prompt{padding:8px}.jungle-challenge-metrics{margin-top:5px}}
+    @media(prefers-reduced-motion:reduce){.jungle-toast{transition:none}}
   </style>
 </head>
 <body>
@@ -146,6 +256,107 @@
       <div class="stat"><span>Typing accuracy</span><strong id="accuracy">—</strong></div>
       <div class="stat"><span>Typing speed</span><strong id="wpm">—</strong></div>
       <div class="stat"><span>Worlds to explore</span><strong>9</strong></div>
+    </section>
+
+
+    <section class="coach-shell" id="keyboardCoach" aria-labelledby="coachTitle">
+      <div class="coach-top">
+        <div>
+          <span class="coach-badge">NEW · GUIDED PRACTICE</span>
+          <h2 id="coachTitle">⌨️ The Gator Keyboard Coach</h2>
+          <p>Watch the next key glow, see which finger to use, and practice at your own pace. Accuracy comes first!</p>
+        </div>
+      </div>
+      <div class="coach-toolbar">
+        <label class="coach-field" for="coachGrade">Choose your grade
+          <select id="coachGrade">
+            <option value="PK">Pre-K · Key explorer</option>
+            <option value="K">Kindergarten · Letter finder</option>
+            <option value="1">1st grade · First words</option>
+            <option value="2" selected>2nd grade · Home row</option>
+            <option value="3">3rd grade · Word builder</option>
+            <option value="4">4th grade · Sentence pro</option>
+            <option value="5">5th grade · Typing champion</option>
+          </select>
+        </label>
+        <span id="coachLessonCount" class="coach-lesson-count">Quest 1 of 3</span>
+      </div>
+      <div class="coach-grid">
+        <article class="coach-practice" aria-labelledby="coachLessonTitle">
+          <small>Gator Training Camp · Practice mission</small>
+          <h3 id="coachLessonTitle">Home-row warm-up</h3>
+          <p class="coach-intro" id="coachIntro">Place your fingers on the home row.</p>
+          <div id="coachPrompt" class="coach-prompt" aria-label="Text to type"></div>
+          <label for="coachInput"><strong>Type or tap the keys here:</strong></label>
+          <input id="coachInput" type="text" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" inputmode="text" aria-describedby="coachHint">
+          <div class="coach-progress" aria-label="Typing line progress"><div id="coachProgressFill"></div></div>
+          <div class="coach-metrics">
+            <span id="coachAccuracy">Accuracy: —</span>
+            <span id="coachSpeed">Speed: —</span>
+            <span id="coachFinished">Completed: 0/3</span>
+          </div>
+          <p id="coachOutcome" class="coach-outcome" role="status" aria-live="polite">Type the glowing key to begin.</p>
+          <div class="coach-actions">
+            <button type="button" class="coach-retry" id="coachReset">↻ Try again</button>
+            <button type="button" class="coach-next" id="coachNext" disabled>Next quest →</button>
+          </div>
+        </article>
+        <aside class="coach-guide" aria-labelledby="fingerTitle">
+          <h3 id="fingerTitle">🐊 Gator's finger tip</h3>
+          <div class="coach-handlabel">NEXT KEY</div>
+          <div class="coach-key-display" id="coachNextKey">A</div>
+          <div class="coach-finger" id="coachFinger">Left pinky</div>
+          <p class="coach-tip" id="coachHint">Watch the glowing key. Rest your hands on A S D F and J K L ;</p>
+          <div class="coach-handlabel">HOME-ROW STARTING POSITION</div>
+          <div class="coach-finger-guide" aria-label="Home row finger positions">
+            <span><strong>Left:</strong> A S D F</span><span><strong>Right:</strong> J K L ;</span><span><strong>Space:</strong> Thumb</span>
+          </div>
+        </aside>
+      </div>
+      <div class="keyboard-box">
+        <div class="keyboard-top"><h3>See your keyboard</h3><p>Glowing key = next key · Tap keys for exploration, or use a physical keyboard</p></div>
+        <div class="virtual-keyboard" id="coachKeyboard" role="group" aria-label="Interactive practice keyboard"></div>
+        <div class="coach-legend"><span><i style="background:#d38ba8"></i>Pinkies</span><span><i style="background:#e4b566"></i>Ring fingers</span><span><i style="background:#8cb8e8"></i>Middle fingers</span><span><i style="background:#85cba6"></i>Index fingers</span><span><i style="background:#b2a5e2"></i>Thumbs</span></div>
+      </div>
+    </section>
+
+
+    <section class="jungle-section" id="jungleAdventure" aria-labelledby="jungleTitle">
+      <div class="jungle-heading">
+        <div><span class="jungle-chip">🌴 STEP 5 · PART 3 · PLAYABLE GAME</span><h2 id="jungleTitle">Jungle Adventure: The Lost Keys</h2><p>Run, jump, gather coins, and open three typing gates to reach the Golden Keyboard. The challenges adapt to the grade selected in the Keyboard Coach above.</p></div>
+        <span class="jungle-chip">★ One complete demo level</span>
+      </div>
+      <div class="jungle-status" aria-live="polite">
+        <span id="jungleGateStat">⌨️ Typing gates: 0 / 3</span>
+        <span id="jungleCoinStat">🪙 Jungle coins: 0</span>
+        <span id="jungleHeartStat">❤️❤️❤️</span>
+        <span id="jungleCheckpointStat">🚩 Checkpoint: Start</span>
+      </div>
+      <div class="jungle-frame" id="jungleFrame">
+        <canvas id="jungleCanvas" width="1100" height="490" role="img" aria-label="Side-scrolling jungle adventure with a gator, platforms, typing gates and a golden keyboard"></canvas>
+        <div class="jungle-toast" id="jungleToast" role="status" aria-live="polite"></div>
+        <div class="jungle-veil" id="jungleVeil">
+          <div class="jungle-welcome"><h3 id="jungleWelcomeTitle">🐊 Ready, Gator?</h3><p id="jungleWelcomeText">Collect glowing coins, avoid thorns, and type to unlock three gates. Find the Golden Keyboard at the end!</p><button class="jungle-btn" id="jungleBegin" type="button">▶ Play Jungle Adventure</button></div>
+        </div>
+        <div class="jungle-challenge" id="jungleChallenge" hidden>
+          <div class="jungle-challenge-card">
+            <h3 id="jungleChallengeTitle">⌨️ Typing Gate</h3>
+            <p id="jungleChallengeHelp">Type the glowing words to unlock the gate.</p>
+            <div id="junglePrompt" class="jungle-prompt" aria-label="Typing challenge text"></div>
+            <label for="jungleAnswer"><strong>Your typing</strong></label>
+            <input id="jungleAnswer" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+            <div class="jungle-challenge-metrics"><span id="jungleAccuracy">Accuracy: —</span><span id="jungleWpm">Speed: —</span></div>
+            <div class="jungle-challenge-note" id="jungleChallengeFeedback" role="status">Accuracy comes first. You can use Backspace to fix a mistake.</div>
+            <button class="jungle-btn secondary" type="button" id="jungleChallengeCancel">↩ Return to map</button>
+          </div>
+        </div>
+      </div>
+      <div class="jungle-controls">
+        <div class="jungle-touch" aria-label="Game controls"><button type="button" id="jungleLeft" aria-label="Move left">◀</button><button type="button" id="jungleRight" aria-label="Move right">▶</button><button type="button" id="jungleJump" aria-label="Jump">⬆</button></div>
+        <div class="jungle-actions"><button type="button" class="jungle-btn secondary" id="junglePause">⏸ Pause</button><button type="button" class="jungle-btn secondary" id="jungleRestart">↻ Restart level</button></div>
+        <div class="jungle-guide">Desktop: ← → or A / D to move, Space or ↑ to jump. On iPads, use the three large buttons. Typing challenges open automatically at gates.</div>
+      </div>
+      <div class="notice" style="margin-top:14px;background:#f9e8ac;color:#264233;border-color:#ffebbc"><strong>Safe demo:</strong> This is a playable preview, not a live student account. Progress and coins reset when the page is refreshed. It doesn't send information to Google Apps Script.</div>
     </section>
 
     <div class="section-heading">
@@ -240,5 +451,513 @@
     });
     paintPrompt();
   </script>
+
+  <script>
+    // Step 5 Part 2: self-contained keyboard coach (demo data only).
+    (() => {
+      'use strict';
+      const tracks = {
+        PK: [
+          { title:'Find G', text:'g', tip:'Find the glowing G key. Tap it or press it on your keyboard.' },
+          { title:'Find A', text:'a', tip:'Can you find A? Use the glowing key as your clue.' },
+          { title:'Find T', text:'t', tip:'Great exploring! Find T to finish your practice.' }
+        ],
+        K: [
+          { title:'Meet A', text:'a', tip:'Find A on the keyboard. Slow and steady!' },
+          { title:'Meet S', text:'s', tip:'Find S, right beside A.' },
+          { title:'Two home-row keys', text:'as', tip:'Type A and then S. Watch each key light up.' }
+        ],
+        1: [
+          { title:'Type CAT', text:'cat', tip:'Type each letter in cat, in order.' },
+          { title:'Type DOG', text:'dog', tip:'Follow the glowing letters to type dog.' },
+          { title:'Type GATOR', text:'gator', tip:'You know these letters! Type gator.' }
+        ],
+        2: [
+          { title:'Home-row warm-up', text:'asdf jkl;', tip:'Place your left hand on A S D F and right hand on J K L ;' },
+          { title:'Home-row words', text:'sad lad', tip:'Find each letter without rushing. Accuracy is the goal.' },
+          { title:'Smooth finger moves', text:'fall salad', tip:'Keep your hands near home row as you type.' }
+        ],
+        3: [
+          { title:'Build a phrase', text:'the green gator', tip:'Use both hands, and press Space with a thumb.' },
+          { title:'Practice word flow', text:'jump over logs', tip:'Keep your eyes on the prompt and aim for accuracy.' },
+          { title:'Typing with care', text:'type with care', tip:'Type the whole line and correct any mistakes.' }
+        ],
+        4: [
+          { title:'Capitals and periods', text:'The gator jumps.', tip:'Use Shift for the capital T and finish with a period.' },
+          { title:'Sentence practice', text:'I can type well.', tip:'Try the opposite-hand Shift key for a capital I.' },
+          { title:'Accuracy mission', text:'Accuracy comes first.', tip:'Build accuracy before increasing your speed.' }
+        ],
+        5: [
+          { title:'Fluency challenge', text:'Practice makes progress.', tip:'Use Shift for the first letter and watch your punctuation.' },
+          { title:'Confident typing', text:'I can type with accuracy.', tip:'Type smoothly and fix mistakes as they happen.' },
+          { title:'Typing champion', text:'My typing gets stronger each day.', tip:'Finish the sentence and aim for a clean, accurate result.' }
+        ]
+      };
+      const rows = [
+        [['q'],['w'],['e'],['r'],['t'],['y'],['u'],['i'],['o'],['p'],['['],[']'],['backspace','⌫','wide']],
+        [['a'],['s'],['d'],['f'],['g'],['h'],['j'],['k'],['l'],[';'],["'"]],
+        [['shift','⇧ Shift','wide'],['z'],['x'],['c'],['v'],['b'],['n'],['m'],[','],['.'],['/'],['shift','Shift ⇧','wide']],
+        [['space','Space','space']]
+      ];
+      const fingerMap = {
+        q:'lp',a:'lp',z:'lp',w:'lr',s:'lr',x:'lr',e:'lm',d:'lm',c:'lm',
+        r:'li',t:'li',f:'li',g:'li',v:'li',b:'li',
+        y:'ri',u:'ri',h:'ri',j:'ri',n:'ri',m:'ri',
+        i:'rm',k:'rm',',':'rm',o:'rr',l:'rr','.':'rr',
+        p:'rp',';':'rp','/':'rp',"'":'rp','[':'rp',']':'rp',
+        space:'thumb',backspace:'rp',shift:'lp'
+      };
+      const fingerNames = {
+        lp:'Left pinky',lr:'Left ring finger',lm:'Left middle finger',li:'Left index finger',
+        ri:'Right index finger',rm:'Right middle finger',rr:'Right ring finger',rp:'Right pinky',thumb:'Either thumb'
+      };
+      const el = id => document.getElementById(id);
+      let grade='2', index=0, began=null, awarded=new Set(), shift=false, done=false;
+      let pressedTimeout=0;
+      const gradeSelector=el('coachGrade'), input=el('coachInput'), keyboard=el('coachKeyboard');
+      const allButtons=[];
+      function createKeyboard() {
+        rows.forEach(row => {
+          const line=document.createElement('div');
+          line.className='keyboard-row';
+          row.forEach(([key, label, width]) => {
+            const button=document.createElement('button');
+            button.type='button';
+            button.className='keycap'+(width?' '+width:'');
+            button.dataset.key=key;
+            button.dataset.finger=fingerMap[key]||'rp';
+            button.textContent=label||(key.length===1?key.toUpperCase():key);
+            button.setAttribute('aria-label',key==='space'?'Spacebar':key==='backspace'?'Backspace':key==='shift'?'Shift key':`Key ${button.textContent}`);
+            button.addEventListener('click',()=>tapKey(key));
+            allButtons.push(button);
+            line.appendChild(button);
+          });
+          keyboard.appendChild(line);
+        });
+      }
+      function lesson(){return tracks[grade][index];}
+      function numDone(){return tracks[grade].filter((_,i)=>awarded.has(`${grade}:${i}`)).length;}
+      function displayChar(char) { return char===' '?'Space':char==='backspace'?'⌫':char||'✓'; }
+      function firstMistake(text, target) {
+        for(let i=0;i<text.length;i++) if(text[i]!==target[i]) return i;
+        return -1;
+      }
+      function fingerHint(char) {
+        if(char===' ') return { key:'space',name:'Either thumb',hint:'Press Space with a thumb, then return to home row.' };
+        if(!char) return { key:'',name:'Quest complete!',hint:'You made it! Choose the next quest when you are ready.' };
+        const key=char.toLowerCase();
+        const finger=fingerMap[key]||'rp';
+        if(char!==key && /[A-Z]/.test(char)) {
+          const otherHand=finger.startsWith('l')?'right':'left';
+          return { key, name:`${fingerNames[finger]} + ${otherHand} Shift`, hint:`Hold the ${otherHand} Shift key and tap ${char}.` };
+        }
+        return {key,name:fingerNames[finger],hint:`Use your ${fingerNames[finger].toLowerCase()} to press ${displayChar(char)}. Return to your home-row position.`};
+      }
+      function highlightKey(key,isUpper=false) {
+        allButtons.forEach(b=>{
+          const isTarget=b.dataset.key===key;
+          b.classList.toggle('is-target',isTarget);
+          b.classList.toggle('is-shift',b.dataset.key==='shift'&&shift&&!isTarget);
+        });
+        if(isUpper) {
+          // A capital also needs Shift; show both possible Shift keys.
+          allButtons.filter(b=>b.dataset.key==='shift').forEach(b=>b.classList.add('is-target'));
+        }
+      }
+      function paint() {
+        const target=lesson().text, typed=input.value;
+        const mistake=firstMistake(typed,target);
+        const next=done?'':mistake>=0?'backspace':target[typed.length]||'';
+        const hint=fingerHint(next);
+        el('coachPrompt').replaceChildren();
+        [...target].forEach((char,i)=>{
+          const span=document.createElement('span');
+          span.textContent=char;
+          if(i<typed.length) span.className=typed[i]===char?'ok':'no';
+          else if(i===typed.length) span.className='now';
+          el('coachPrompt').appendChild(span);
+        });
+        el('coachPrompt').setAttribute('aria-label',`Text to type: ${target}`);
+        el('coachNextKey').textContent=displayChar(next);
+        el('coachFinger').textContent=hint.name;
+        el('coachHint').textContent=mistake>=0?'A red letter means a mistake. Press Backspace to correct it.':hint.hint;
+        highlightKey(hint.key,!!next&&next!=='backspace'&&next!==next.toLowerCase());
+        el('coachProgressFill').style.width=`${Math.min(100,(typed.length/target.length)*100)}%`;
+      }
+      function reset() {
+        began=null; done=false; shift=false;
+        el('coachLessonTitle').textContent=lesson().title;
+        el('coachIntro').textContent=lesson().tip;
+        el('coachLessonCount').textContent=`Quest ${index+1} of ${tracks[grade].length}`;
+        el('coachFinished').textContent=`Completed: ${numDone()}/${tracks[grade].length}`;
+        input.disabled=false;input.value='';input.maxLength=lesson().text.length;
+        el('coachAccuracy').textContent='Accuracy: —';
+        el('coachSpeed').textContent='Speed: —';
+        el('coachOutcome').textContent='Type the glowing key to begin.';
+        el('coachNext').disabled=true;
+        el('coachNext').textContent='Next quest →';
+        paint();
+      }
+      function compute() {
+        const typed=input.value,target=lesson().text;
+        if(typed.length&&!began) began=performance.now();
+        if(!typed.length) began=null;
+        let right=0;for(let i=0;i<typed.length;i++) if(typed[i]===target[i]) right++;
+        const accuracy=typed.length?Math.round(100*right/typed.length):null;
+        const minutes=began?Math.max((performance.now()-began)/60000,1/60):null;
+        const wpm=minutes?Math.round(right/5/minutes):null;
+        el('coachAccuracy').textContent=accuracy===null?'Accuracy: —':`Accuracy: ${accuracy}%`;
+        el('coachSpeed').textContent=wpm===null?'Speed: —':`Speed: ${wpm} WPM`;
+        if(typed===target&&!done){
+          done=true; input.disabled=true;
+          const mark=`${grade}:${index}`;
+          const firstTime=!awarded.has(mark);
+          if(firstTime){
+            awarded.add(mark);
+            coins+=10;
+            el('coins').textContent=`${coins} 🪙`;
+          }
+          el('accuracy').textContent=`${accuracy}%`;
+          el('wpm').textContent=`${wpm} WPM`;
+          el('coachFinished').textContent=`Completed: ${numDone()}/${tracks[grade].length}`;
+          el('coachOutcome').textContent=firstTime?'🌟 Great job! Quest complete. You earned 10 demo coins.':'🌟 Great job! You completed this quest again.';
+          if(index<tracks[grade].length-1) el('coachNext').disabled=false;
+          else el('coachNext').textContent='All three quests complete ✓';
+        } else if(!done) {
+          const mistake=firstMistake(typed,target);
+          el('coachOutcome').textContent=mistake>=0?'Almost! Fix the red letter with Backspace.':typed?'Nice work. Keep going!':'Type the glowing key to begin.';
+        }
+        paint();
+      }
+      function tapKey(key) {
+        if(key==='shift'){shift=!shift;paint();input.focus();return;}
+        if(input.disabled)return;
+        if(key==='backspace') input.value=input.value.slice(0,-1);
+        else if(input.value.length<lesson().text.length) {
+          const ch=key==='space'?' ':shift?key.toUpperCase():key;
+          input.value+=ch;
+          shift=false;
+        }
+        input.dispatchEvent(new Event('input',{bubbles:true}));
+        if(!input.disabled)input.focus();
+      }
+      input.addEventListener('input',compute);
+      input.addEventListener('paste',event=>event.preventDefault());
+      input.addEventListener('keydown', event=> {
+        let key=event.key.toLowerCase();
+        if(key===' ')key='space';
+        if(key==='backspace')key='backspace';
+        allButtons.forEach(b=>b.classList.toggle('is-pressed',b.dataset.key===key));
+        clearTimeout(pressedTimeout);
+        pressedTimeout=setTimeout(()=>allButtons.forEach(b=>b.classList.remove('is-pressed')),140);
+      });
+      gradeSelector.addEventListener('change',()=>{grade=gradeSelector.value;index=0;reset();input.focus();});
+      el('coachReset').addEventListener('click',()=>{reset();input.focus();});
+      el('coachNext').addEventListener('click',()=>{
+        if(!done||index>=tracks[grade].length-1)return;
+        index++;reset();input.focus();
+      });
+      // A quick link from the existing dashboard to guided practice.
+      const coachJump=document.createElement('button');
+      coachJump.type='button';coachJump.className='primary';coachJump.id='startCoach';
+      coachJump.textContent='🌟 Guided keyboard coach';
+      coachJump.style.marginLeft='8px';coachJump.style.marginTop='8px';
+      coachJump.addEventListener('click',()=>{el('keyboardCoach').scrollIntoView({behavior:'smooth',block:'start'}); input.focus({preventScroll:true});});
+      el('startLesson').insertAdjacentElement('afterend',coachJump);
+      createKeyboard();reset();
+    })();
+  </script>
+<script>
+/* ================================================================
+   Gator TypeQuest - Step 5 Part 3: Jungle Adventure
+   Self-contained Canvas platformer; DEMO ONLY, NO NETWORK CALLS.
+   ================================================================ */
+(() => {
+  'use strict';
+  const canvas = document.getElementById('jungleCanvas');
+  const ctx = canvas.getContext('2d');
+  const W=window.matchMedia('(max-width:650px)').matches?550:1100,H=490,WORLD=3680,GROUND=405;
+  canvas.width=W; canvas.height=H;
+  const $ = id => document.getElementById(id);
+  const clamp=(v,min,max)=>Math.min(max,Math.max(min,v));
+  const gradeTracks={
+    PK:['g','a','s'], K:['cat','sun','hop'],
+    '1':['go','jump','green'], '2':['ask','fall','jazz'],
+    '3':['the green gator','jump and run','find the key'],
+    '4':['Typing makes me stronger.','I can jump across the river.','Every key brings a new adventure.'],
+    '5':['Accuracy is the key to becoming a confident typist.','I can master the keyboard through steady practice.','A great keyboard adventure begins with one careful keystroke.']
+  };
+  const ground=[[0,650],[738,1375],[1454,2075],[2160,2760],[2848,WORLD]];
+  const platforms=[{x:630,y:346,w:98},{x:1329,y:325,w:150},{x:2044,y:330,w:145},{x:2727,y:337,w:155},
+    {x:325,y:312,w:125},{x:918,y:308,w:145},{x:1860,y:305,w:130},{x:2490,y:310,w:115},{x:3040,y:320,w:126}];
+  const gates=[{x:590,title:'Gate 1: The Vine Bridge',solved:false},{x:1730,title:'Gate 2: The Ancient Ruins',solved:false},{x:2910,title:'Gate 3: The Golden Grove',solved:false}];
+  const coinXs=[220,345,390,460,690,780,930,982,1160,1375,1500,1600,1850,1910,2080,2240,2450,2510,2665,2790,2980,3055,3140,3270,3470];
+  const coinItems=coinXs.map((x,i)=>({x,y:(i%5===1?272: i%5===3?285:346),id:i,got:false}));
+  const thorns=[{x:475,y:390,w:40},{x:1180,y:390,w:42},{x:2300,y:390,w:46},{x:3210,y:390,w:50}];
+  const foes=[{x:1095,origin:1095,range:95,speed:1.1},{x:2370,origin:2370,range:88,speed:1.4}];
+  const p={x:76,y:GROUND-51,w:66,h:51,vx:0,vy:0,grounded:false,face:1,inv:0};
+  const keys={left:false,right:false,jump:false};
+  const state={mode:'ready',camera:0,runTime:0,coins:0,hearts:3,solved:0,spawn:76,earned:new Set(),jumpHeld:false,challengeIndex:-1,typedAt:0,errors:0,attempts:0,won:false,toastUntil:0};
+  let raf=0,lastFrame=0, grade='2';
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const gradeSelector=$('coachGrade');
+  const challengePanel=$('jungleChallenge'),input=$('jungleAnswer');
+  const veil=$('jungleVeil');
+  const ctxText=(text,x,y,size=18,color='#fff',weight='900')=>{ctx.font=`${weight} ${size}px system-ui, sans-serif`;ctx.fillStyle=color;ctx.fillText(text,x,y);};
+  function roundRect(x,y,w,h,r,color){ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill();}
+  function star(x,y,outer=12){ctx.beginPath();for(let i=0;i<10;i++){let r=i%2?outer*.45:outer, a=i*Math.PI/5-Math.PI/2;ctx.lineTo(x+Math.cos(a)*r,y+Math.sin(a)*r);}ctx.closePath();ctx.fill();}
+  function toast(t){$('jungleToast').textContent=t;$('jungleToast').classList.add('visible');state.toastUntil=performance.now()+2200;}
+  function stat(){
+    $('jungleGateStat').textContent=`⌨️ Typing gates: ${state.solved} / 3`;
+    $('jungleCoinStat').textContent=`🪙 Jungle coins: ${state.coins}`;
+    $('jungleHeartStat').textContent='❤️'.repeat(Math.max(0,state.hearts))+'🖤'.repeat(3-state.hearts);
+    $('jungleCheckpointStat').textContent='🚩 Checkpoint: '+(state.spawn>100?'River Crossing':'Start');
+  }
+  function award(id,amount){if(state.earned.has(id))return;state.earned.add(id);state.coins+=amount;
+    // Update original dashboard's shared demo-coin balance.
+    coins+=amount;document.getElementById('coins').textContent=`${coins} 🪙`;stat();
+  }
+  function resetLevel(){
+    Object.assign(p,{x:76,y:GROUND-51,vx:0,vy:0,grounded:false,inv:0,face:1});
+    state.camera=0;state.hearts=3;state.spawn=76;state.runTime=0;state.solved=0;state.won=false;state.jumpHeld=false;
+    gates.forEach(g=>g.solved=false);coinItems.forEach(c=>c.got=false);
+    // One-time coin rewards cannot be farmed by restarting the same session.
+    stat();
+  }
+  function begin(){
+    if(state.won)resetLevel();
+    veil.hidden=true;state.mode='playing';lastFrame=0;
+    $('junglePause').textContent='⏸ Pause';
+    loop();$('jungleAdventure').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function pause(){
+    if(state.mode==='playing'){state.mode='paused';veil.hidden=false;$('jungleWelcomeTitle').textContent='⏸ Adventure Paused';
+      $('jungleWelcomeText').textContent='Stretch your fingers and come back when you are ready.';
+      $('jungleBegin').textContent='▶ Resume Adventure';$('junglePause').textContent='▶ Resume';keys.left=keys.right=keys.jump=false;
+    }else if(state.mode==='paused'){begin();}
+  }
+  function beginChallenge(i){
+    const gate=gates[i];state.mode='challenge';state.challengeIndex=i;state.typedAt=0;state.errors=0;state.attempts=0;
+    keys.left=keys.right=keys.jump=false;
+    grade=gradeTracks[gradeSelector.value]?gradeSelector.value:'2';
+    input.value='';input.maxLength=gradeTracks[grade][i].length;
+    $('jungleChallengeTitle').textContent='⌨️ '+gate.title;
+    $('jungleChallengeHelp').textContent=`${grade==='PK'?'Pre-K':grade==='K'?'Kindergarten':'Grade '+grade} typing mission · Type the text exactly to open the gate.`;
+    $('jungleChallengeFeedback').textContent='Take your time! Correct mistakes using Backspace.';
+    $('jungleAccuracy').textContent='Accuracy: —';$('jungleWpm').textContent='Speed: —';
+    challengePanel.hidden=false;paintPrompt();input.focus({preventScroll:true});
+  }
+  function closeChallenge(){challengePanel.hidden=true;state.mode='playing';state.challengeIndex=-1;lastFrame=0;loop();}
+  function paintPrompt(){
+    const prompt=$('junglePrompt');prompt.replaceChildren();
+    if(state.challengeIndex<0)return;
+    const txt=gradeTracks[grade][state.challengeIndex];const typed=input.value;
+    [...txt].forEach((ch,i)=>{const s=document.createElement('span');s.textContent=ch;s.className=i<typed.length?(typed[i]===ch?'ok':'wrong'):(i===typed.length?'next':'');prompt.appendChild(s);});
+  }
+  function onAnswer(){
+    if(state.mode!=='challenge')return;
+    const t=gradeTracks[grade][state.challengeIndex],v=input.value;
+    if(v.length&&!state.typedAt)state.typedAt=performance.now();
+    const correct=[...v].filter((c,i)=>c===t[i]).length;
+    const accuracy=state.attempts?Math.round(100*(state.attempts-state.errors)/state.attempts):100;
+    const mins=state.typedAt?Math.max((performance.now()-state.typedAt)/60000,1/60):null;
+    $('jungleAccuracy').textContent='Key accuracy: '+(v?accuracy+'%':'—');
+    $('jungleWpm').textContent='Speed: '+(mins?Math.round(correct/5/mins)+' WPM':'—');
+    paintPrompt();
+    if(v===t){
+      const i=state.challengeIndex;gates[i].solved=true;state.solved=gates.filter(g=>g.solved).length;
+      award('gate'+i,20);challengePanel.hidden=true;input.blur();state.mode='playing';state.challengeIndex=-1;
+      toast('Gate opened! +20 demo coins 🪙');stat();lastFrame=0;loop();
+    } else {
+      $('jungleChallengeFeedback').textContent=v.length&&v!==t.slice(0,v.length)?'One or more letters are red. Fix them with Backspace.':'Great! Keep typing carefully.';
+    }
+  }
+  function respawn(){
+    state.hearts--;keys.left=keys.right=keys.jump=false;
+    if(state.hearts<=0){state.hearts=3;toast('Three bumps! Try again from the checkpoint.');}
+    else toast('Oops! Back to a safe spot.');
+    p.x=state.spawn;p.y=GROUND-p.h;p.vx=p.vy=0;p.inv=1.5;p.grounded=false;stat();
+  }
+  function groundAt(x,yPrev,yNext){
+    const feetPrev=yPrev+p.h,feetNext=yNext+p.h;
+    if(p.vy>=0){
+      for(const [a,b] of ground){if(x+p.w>a+7&&x<b-7 && feetPrev<=GROUND+8 && feetNext>=GROUND){return GROUND-p.h;}}
+      for(const a of platforms){if(x+p.w>a.x+6&&x<a.x+a.w-6&&feetPrev<=a.y+7&&feetNext>=a.y){return a.y-p.h;}}
+    }
+    return null;
+  }
+  function intersects(a,b){return a.x<b.x+b.w && a.x+a.w>b.x && a.y<b.y+b.h && a.y+a.h>b.y;}
+  function step(dt){
+    state.runTime+=dt;p.inv=Math.max(0,p.inv-dt);
+    const accel=2150, maxSpeed=280, friction=1900,grav=1750;
+    if(keys.left&&!keys.right){p.vx=Math.max(-maxSpeed,p.vx-accel*dt);p.face=-1;}
+    else if(keys.right&&!keys.left){p.vx=Math.min(maxSpeed,p.vx+accel*dt);p.face=1;}
+    else{p.vx=Math.sign(p.vx)*Math.max(0,Math.abs(p.vx)-friction*dt);}
+    if(keys.jump&&!state.jumpHeld&&p.grounded){p.vy=-660;p.grounded=false;}
+    state.jumpHeld=keys.jump;
+    const prevY=p.y;p.x=clamp(p.x+p.vx*dt,0,WORLD-p.w);p.vy=Math.min(p.vy+grav*dt,1100);p.y+=p.vy*dt;
+    const land=groundAt(p.x,prevY,p.y);
+    if(land!==null){p.y=land;p.vy=0;p.grounded=true;} else p.grounded=false;
+    if(p.y>H+45){respawn();return;}
+    if(!p.inv){
+      for(const thorn of thorns){if(intersects(p,{x:thorn.x,y:thorn.y,w:thorn.w,h:20})){respawn();return;}}
+      for(const f of foes){const x=f.origin+Math.sin(state.runTime*f.speed)*f.range;
+        if(intersects(p,{x,y:GROUND-34,w:42,h:30})){respawn();return;}}
+    }
+    for(const c of coinItems){if(!c.got && intersects(p,{x:c.x-13,y:c.y-13,w:26,h:26})){c.got=true;award('coin'+c.id,5);}}
+    for(let i=0;i<gates.length;i++){
+      const g=gates[i];if(!g.solved){
+        if(p.x+p.w>g.x-10 && p.x<g.x+22 && p.y+p.h>210){p.x=g.x-p.w-11;p.vx=0;beginChallenge(i);return;}
+      }
+    }
+    if(p.x>1450&&state.spawn===76){state.spawn=1500;toast('Checkpoint reached! 🚩');stat();}
+    if(p.x+p.w>WORLD-185 && gates.every(g=>g.solved)){win();return;}
+    const target=clamp(p.x-365,0,WORLD-W);state.camera+=clamp(target-state.camera,-1300*dt,1300*dt);
+  }
+  function win(){
+    state.mode='won';state.won=true;award('jungle-finish',50);keys.left=keys.right=keys.jump=false;
+    $('jungleWelcomeTitle').textContent='🏆 Golden Keyboard Found!';
+    $('jungleWelcomeText').textContent=`You unlocked all three gates, reached the finish, and earned ${state.coins} jungle demo coins this session. You can replay the level!`;
+    $('jungleBegin').textContent='▶ Play Again';veil.hidden=false;stat();render();
+  }
+  function paintSky(){
+    const sky=ctx.createLinearGradient(0,0,0,H);sky.addColorStop(0,'#75d4f6');sky.addColorStop(.58,'#d0f8d1');sky.addColorStop(1,'#b1ebc4');ctx.fillStyle=sky;ctx.fillRect(0,0,W,H);
+    ctx.fillStyle='#ffecae';ctx.beginPath();ctx.arc(850,83,52,0,7);ctx.fill();
+    for(let i=0;i<10;i++){const x=((i*173-state.camera*.15)%(W+250)+W+250)%(W+250)-70,y=55+(i%4)*26;
+      ctx.fillStyle='#ffffffa9';ctx.beginPath();ctx.ellipse(x,y,54,18,0,0,7);ctx.ellipse(x+23,y-12,31,21,0,0,7);ctx.ellipse(x-26,y-9,30,19,0,0,7);ctx.fill();}
+    ctx.save();ctx.translate(-state.camera*.12,0);
+    for(let x=-180;x<WORLD+400;x+=210){ctx.fillStyle=x%3?'#6fbb9a':'#79c9a5';ctx.beginPath();ctx.ellipse(x,385,220,155,0,Math.PI,2*Math.PI);ctx.fill();}
+    ctx.restore();
+    ctx.save();ctx.translate(-state.camera*.3,0);
+    for(let x=-130;x<WORLD+260;x+=155){ctx.fillStyle='#398e73';ctx.beginPath();ctx.ellipse(x,408,142,136,0,Math.PI,2*Math.PI);ctx.fill();}
+    ctx.restore();
+  }
+  function paintTrees(){
+    for(let x=75;x<WORLD;x+=265){const y=GROUND+14,phase=(x%4)*3;
+      roundRect(x-12,y-260,25,268,5,'#6d613d');
+      ctx.fillStyle='#227e64';for(let j=0;j<4;j++){ctx.beginPath();ctx.arc(x-47+j*32,y-240+(j%2)*-18,61-(j%2)*4,0,7);ctx.fill();}
+      ctx.fillStyle='#359d6b';for(let j=0;j<3;j++){ctx.beginPath();ctx.arc(x-25+j*27,y-266+(j%2)*12,40,0,7);ctx.fill();}
+      ctx.strokeStyle='#82d59b';ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(x+18,y-215);ctx.quadraticCurveTo(x+65,y-140,x+44,y-104+Math.sin(state.runTime+phase)*5);ctx.stroke();
+      ctx.fillStyle='#ffdd75';ctx.beginPath();ctx.arc(x-35,y-224,4,0,7);ctx.arc(x+30,y-270,4,0,7);ctx.fill();}
+  }
+  function paintGround(){
+    ctx.fillStyle='#65d7e5';ctx.fillRect(0,GROUND+5,WORLD,H-GROUND);
+    for(let x=20;x<WORLD;x+=110){ctx.fillStyle='#efffd5aa';ctx.beginPath();ctx.ellipse(x,GROUND+44+(x%3)*4,34,4,0,0,7);ctx.fill();}
+    for(const [a,b] of ground){roundRect(a,GROUND,b-a,H-GROUND+60,8,'#684528');roundRect(a,GROUND,b-a,20,8,'#6fba4e');ctx.fillStyle='#327e46';ctx.fillRect(a,GROUND+12,b-a,10);
+      for(let x=a+12;x<b-10;x+=54){roundRect(x,GROUND+32+(x%7)*3,16,8,3,'#a16d38');roundRect(x+23,GROUND+69+(x%13),20,7,3,'#8b5d31');ctx.strokeStyle='#268d53';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(x,GROUND+8);ctx.lineTo(x-7,GROUND);ctx.stroke();}}
+    for(const plat of platforms){roundRect(plat.x,plat.y,plat.w,23,7,'#845633');roundRect(plat.x,plat.y-6,plat.w,12,7,'#7fc65b');
+      ctx.fillStyle='#a5db76';for(let n=12;n<plat.w-12;n+=30)ctx.fillRect(plat.x+n,plat.y-5,13,4);}
+  }
+  function paintScenery(){
+    for(let i=0;i<42;i++){const x=42+i*89+((i%3)*14),y=388+(i%3)*5;ctx.fillStyle=i%2?'#116747':'#238c58';
+      ctx.beginPath();ctx.ellipse(x,y,16,14,0,0,7);ctx.fill();ctx.fillStyle='#eea4ba';ctx.beginPath();ctx.arc(x+3,y-9,3,0,7);ctx.fill();}
+    // A ruin in the middle of the jungle.
+    roundRect(1605,233,208,173,16,'#8f9479');roundRect(1630,250,160,160,8,'#768b7a');roundRect(1678,300,72,106,29,'#3d5d4d');
+    for(let x=1610;x<1810;x+=35){roundRect(x,220,15,23,4,'#a9ae85');}
+    ctxText('⌨',1690,285,31,'#f8e3a2');
+    // Far finish pedestal.
+    roundRect(WORLD-225,342,150,66,10,'#90764e');roundRect(WORLD-205,315,112,31,8,'#bdae70');
+    ctx.save();ctx.shadowColor='#ffe68b';ctx.shadowBlur=26;roundRect(WORLD-181,253,62,68,10,'#ffe1a1');ctx.restore();
+    ctxText('⌨',WORLD-171,298,35,'#73531e');ctxText('★',WORLD-187,241,28,'#ffda50');
+  }
+  function paintGates(){
+    for(let i=0;i<gates.length;i++){const g=gates[i];if(g.solved)continue;
+      roundRect(g.x+4,255,14,150,4,'#6b593c');roundRect(g.x-8,225,38,28,8,'#4d7f64');
+      ctx.strokeStyle='#64c580';ctx.lineWidth=11;ctx.beginPath();ctx.moveTo(g.x+10,245);ctx.bezierCurveTo(g.x-35,280,g.x+63,330,g.x+10,390);ctx.stroke();
+      roundRect(g.x-30,179,82,43,12,'#193f36');ctxText('TYPE',g.x-21,206,22,'#ffef9d');
+    }
+  }
+  function paintCoins(){
+    coinItems.forEach(c=>{if(c.got)return;const bob=Math.sin(state.runTime*4+c.id)*4;
+      ctx.fillStyle='#9a690d';ctx.beginPath();ctx.arc(c.x+2,c.y+3+bob,13,0,7);ctx.fill();
+      const grad=ctx.createRadialGradient(c.x-5,c.y-5+bob,1,c.x,c.y+bob,14);grad.addColorStop(0,'#fff5ac');grad.addColorStop(1,'#e6aa2d');ctx.fillStyle=grad;
+      ctx.beginPath();ctx.arc(c.x,c.y+bob,12,0,7);ctx.fill();ctxText('★',c.x-8,c.y+6+bob,17,'#966f0b');});
+  }
+  function paintFoes(){
+    for(const t of thorns){ctx.fillStyle='#813f3f';ctx.beginPath();for(let x=t.x;x<t.x+t.w;x+=12){ctx.moveTo(x,GROUND);ctx.lineTo(x+7,GROUND-23);ctx.lineTo(x+13,GROUND);}ctx.fill();}
+    for(const f of foes){const x=f.origin+Math.sin(state.runTime*f.speed)*f.range;
+      ctx.fillStyle='#d57a4d';ctx.beginPath();ctx.ellipse(x+23,GROUND-14,24,19,0,0,7);ctx.fill();
+      ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(x+13,GROUND-26,8,0,7);ctx.arc(x+32,GROUND-26,8,0,7);ctx.fill();
+      ctx.fillStyle='#292927';ctx.beginPath();ctx.arc(x+16,GROUND-27,3,0,7);ctx.arc(x+34,GROUND-27,3,0,7);ctx.fill();}
+  }
+  function paintGator(){
+    ctx.save();ctx.translate(p.x+p.w/2,p.y+p.h/2);if(p.face<0)ctx.scale(-1,1);
+    const bounce=p.grounded&&Math.abs(p.vx)>15?Math.sin(state.runTime*19)*2:0;ctx.translate(0,bounce);
+    if(p.inv && Math.floor(p.inv*11)%2===0)ctx.globalAlpha=.55;
+    ctx.fillStyle='#226e40';ctx.beginPath();ctx.moveTo(-27,5);ctx.quadraticCurveTo(-54,-18,-51,22);ctx.quadraticCurveTo(-33,23,-19,17);ctx.closePath();ctx.fill();
+    ctx.fillStyle='#205e37';roundRect(-20,10,18,24,7,'#205e37');roundRect(9,10,18,24,7,'#205e37');
+    ctx.fillStyle='#45b565';ctx.beginPath();ctx.ellipse(-4,0,27,27,-.1,0,7);ctx.fill();
+    ctx.fillStyle='#afe685';ctx.beginPath();ctx.ellipse(4,6,16,19,-.2,0,7);ctx.fill();
+    ctx.fillStyle='#4bbf6b';ctx.beginPath();ctx.ellipse(17,-11,19,17,0,0,7);ctx.fill();
+    ctx.beginPath();ctx.ellipse(33,-1,24,12,0,0,7);ctx.fill();
+    ctx.fillStyle='#a7de7b';ctx.beginPath();ctx.ellipse(32,5,24,5,0,0,7);ctx.fill();
+    ctx.fillStyle='#f7fff3';ctx.beginPath();ctx.ellipse(17,-17,9,10,0,0,7);ctx.fill();
+    ctx.fillStyle='#17352d';ctx.beginPath();ctx.arc(20,-17,4,0,7);ctx.fill();ctx.beginPath();ctx.arc(46,-3,3,0,7);ctx.fill();
+    ctx.fillStyle='#eaf7d9';ctx.beginPath();ctx.moveTo(22,10);ctx.lineTo(27,16);ctx.lineTo(32,10);ctx.fill();
+    ctx.fillStyle='#f1c554';roundRect(-17,-24,38,10,5,'#f1c554');ctx.fillStyle='#f5db78';roundRect(-11,-33,30,13,4,'#f5db78');
+    ctx.restore();
+  }
+  function render(){
+    ctx.clearRect(0,0,W,H);paintSky();ctx.save();ctx.translate(-Math.round(state.camera),0);paintTrees();paintGround();paintScenery();paintCoins();paintFoes();paintGates();
+    roundRect(1490,332,10,74,2,'#ece6c6');ctx.fillStyle='#efb34b';ctx.beginPath();ctx.moveTo(1499,331);ctx.lineTo(1544,348);ctx.lineTo(1499,361);ctx.fill();
+    paintGator();ctx.restore();
+    // HUD remains fixed to the viewport.
+    roundRect(15,15,246,41,14,'#0c473ec9');ctxText('🌿 JUNGLE ADVENTURE',29,43,18,'#fff4c2');
+    roundRect(W-247,15,232,42,14,'#104d40ce');ctxText('⌨  '+state.solved+'/3 GATES',W-231,43,18,'#ffffff');
+    if(state.mode==='paused') {roundRect(W/2-94,18,188,36,14,'#1a564b');ctxText('PAUSED',W/2-48,43,18,'#fff8c7');}
+    // Camera progress bar.
+    roundRect(18,H-21,W-36,9,5,'#003e38a2');roundRect(18,H-21,(W-36)*clamp(p.x/WORLD,0,1),9,5,'#ffe59c');
+  }
+  function loop(stamp){
+    if(state.mode!=='playing'){render();return;}
+    if(!stamp)stamp=performance.now();
+    let dt=lastFrame?Math.min(.034,(stamp-lastFrame)/1000):.016;lastFrame=stamp;
+    // Small time steps make collisions reliable even after tab switches.
+    const steps=Math.max(1,Math.ceil(dt/.014));for(let i=0;i<steps&&state.mode==='playing';i++)step(dt/steps);
+    if(state.toastUntil<stamp)$('jungleToast').classList.remove('visible');
+    render();if(state.mode==='playing')raf=requestAnimationFrame(loop);
+  }
+  function keyTarget(e){return !!e.target.closest('input, textarea, select, [contenteditable]');}
+  function setControl(key,active){
+    if(key==='ArrowLeft'||key==='a'||key==='A')keys.left=active;
+    if(key==='ArrowRight'||key==='d'||key==='D')keys.right=active;
+    if(key==='ArrowUp'||key===' '||key==='Spacebar')keys.jump=active;
+  }
+  document.addEventListener('keydown',e=>{
+    if(state.mode!=='playing'||keyTarget(e))return;
+    if(['ArrowLeft','ArrowRight','ArrowUp',' ','a','d','A','D'].includes(e.key)){e.preventDefault();setControl(e.key,true);}
+  });
+  document.addEventListener('keyup',e=>{setControl(e.key,false);});
+  window.addEventListener('blur',()=>{keys.left=keys.right=keys.jump=false;});
+  for(const [id,key] of [['jungleLeft','left'],['jungleRight','right'],['jungleJump','jump']]){
+    const b=$(id);
+    b.addEventListener('pointerdown',e=>{if(state.mode!=='playing')return;e.preventDefault();keys[key]=true;b.classList.add('held');try{b.setPointerCapture(e.pointerId);}catch(err){}});
+    ['pointerup','pointercancel','lostpointercapture','pointerleave'].forEach(ev=>b.addEventListener(ev,()=>{keys[key]=false;b.classList.remove('held');}));
+  }
+  $('jungleBegin').addEventListener('click',begin);
+  $('junglePause').addEventListener('click',pause);
+  $('jungleRestart').addEventListener('click',()=>{
+    cancelAnimationFrame(raf);challengePanel.hidden=true;resetLevel();state.mode='ready';veil.hidden=false;
+    $('jungleWelcomeTitle').textContent='🐊 Ready for another run?';
+    $('jungleWelcomeText').textContent='Start over from the beginning. Previously earned demo coins will not be awarded twice.';
+    $('jungleBegin').textContent='▶ Start New Run';$('junglePause').textContent='⏸ Pause';render();
+  });
+  $('jungleChallengeCancel').addEventListener('click',()=>{
+    // Move just before gate so it can be retried by approaching again.
+    const gate=gates[state.challengeIndex];if(gate)p.x=gate.x-p.w-65;
+    closeChallenge();
+  });
+  input.addEventListener('paste',e=>e.preventDefault());
+  input.addEventListener('keydown',e=>{
+    const target=gradeTracks[grade][state.challengeIndex];if(!target)return;
+    if(e.key==='Backspace')return;
+    if(e.key.length===1&&!e.ctrlKey&&!e.metaKey&&!e.altKey){state.attempts++;if(e.key!==target[input.selectionStart])state.errors++;}
+  });
+  input.addEventListener('input',onAnswer);
+  // Avoid invisible/duplicate loops when the demo page is not in view.
+  document.addEventListener('visibilitychange',()=>{if(document.hidden&&state.mode==='playing')pause();});
+  stat();render();
+})();
+</script>
 </body>
 </html>
