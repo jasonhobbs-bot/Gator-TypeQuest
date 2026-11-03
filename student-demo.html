@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gator TypeQuest | Student Demo</title>
+  <style>
+    :root {
+      --pine: #103e36;
+      --forest: #176c52;
+      --mint: #dcffe9;
+      --sky: #b5eafc;
+      --ink: #17342e;
+      --cream: #fffdf4;
+      --yellow: #ffd66f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #e9f4ed;
+    }
+    button, textarea { font: inherit; }
+    button { cursor: pointer; }
+    button:focus-visible, textarea:focus-visible {
+      outline: 4px solid #ffb52a; outline-offset: 3px;
+    }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      padding: 14px clamp(16px, 4vw, 50px); color: #fff;
+      background: var(--pine);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: .03em; }
+    .brand-icon { font-size: 34px; }
+    .brand small { display: block; font-size: 11px; letter-spacing: .16em; color: #b5e8d1; }
+    .demo-tag { border: 1px solid #8dd9b9; border-radius: 99px; padding: 7px 11px; font-size: 12px; font-weight: 750; }
+    main { max-width: 1180px; padding: 28px 18px 70px; margin: auto; }
+    .hero {
+      display: grid; grid-template-columns: 1.3fr 1fr; min-height: 325px;
+      overflow: hidden; border-radius: 27px;
+      background: linear-gradient(125deg, #125840 5%, #1d9a79 73%, #58caa0);
+      box-shadow: 0 16px 35px #214b3b25;
+    }
+    .hero-copy { padding: clamp(26px, 4vw, 52px); color: white; z-index: 1; }
+    .eyebrow { font-weight: 800; font-size: 12px; letter-spacing: .17em; color: #c1ffe0; }
+    h1 { font-size: clamp(32px, 4.6vw, 55px); letter-spacing: -.05em; line-height: 1.04; margin: 10px 0 13px; }
+    .hero-copy p { max-width: 490px; font-size: 17px; color: #edfff3; }
+    .primary {
+      border: 0; border-radius: 15px; padding: 15px 22px;
+      background: var(--yellow); color: #303018; font-weight: 850;
+      box-shadow: 0 6px 0 #c4973e;
+    }
+    .primary:hover { filter: brightness(1.04); }
+    .primary:active { transform: translateY(3px); box-shadow: 0 3px 0 #c4973e; }
+    .hero-art {
+      position: relative; display: flex; align-items: center; justify-content: center;
+      isolation: isolate;
+      background: radial-gradient(circle at 60% 30%, #dcff94 0 12%, transparent 12.5%),
+        linear-gradient(160deg, #8bdaf1, #b5efc5 59%, #408d62 59%);
+    }
+    .hero-art::before, .hero-art::after { content: ""; position: absolute; bottom: -25px; border-radius: 50%; }
+    .hero-art::before { width: 120%; height: 125px; background: #1e784f; left: -15%; }
+    .hero-art::after { width: 110%; height: 65px; background: #0c604e; left: 18%; }
+    .gator { font-size: clamp(90px, 15vw, 177px); z-index: 1; transform: rotate(-8deg); filter: drop-shadow(7px 12px 0 #0d594a40); }
+    .coin { position: absolute; z-index: 2; font-size: 36px; }
+    .coin-a { top: 19%; left: 19%; }.coin-b { top: 40%; right: 12%; }
+    .dashboard { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 18px 0 31px; }
+    .stat { padding: 16px 19px; border-radius: 18px; background: #fff; border: 1px solid #d9e9e0; }
+    .stat span { display: block; font-size: 13px; color: #66776d; font-weight: 650; }
+    .stat strong { font-size: 27px; color: var(--forest); }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+    h2 { margin: 0 0 14px; font-size: 25px; letter-spacing: -.03em; }
+    .section-heading p { margin: 0 0 14px; color: #64796d; font-size: 14px; }
+    .worlds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .world { position: relative; background: #fff; border-radius: 19px; overflow: hidden; border: 1px solid #d9e9e0; }
+    .world-art { min-height: 112px; padding: 18px; display: flex; align-items: center; justify-content: center; font-size: 57px; }
+    .world:nth-child(1) .world-art { background: linear-gradient(110deg, #c9f8cc, #8bd5b2); }
+    .world:nth-child(2) .world-art { background: linear-gradient(110deg, #ddf6a5, #80d6a1); }
+    .world:nth-child(3) .world-art { background: linear-gradient(110deg, #b9f2fb, #6ab8ec); }
+    .world:nth-child(4) .world-art { background: linear-gradient(110deg, #ffecba, #f9b86b); }
+    .world:nth-child(5) .world-art { background: linear-gradient(110deg, #fdd49f, #ee8f6b); }
+    .world:nth-child(6) .world-art { background: linear-gradient(110deg, #e7f9ff, #a4d3f8); }
+    .world:nth-child(7) .world-art { background: linear-gradient(110deg, #d4f0ff, #96bdf5); }
+    .world:nth-child(8) .world-art { background: linear-gradient(110deg, #e8d9ff, #aaa5f7); }
+    .world:nth-child(9) .world-art { background: linear-gradient(110deg, #f5dbff, #f6b5a4); }
+    .world-info { padding: 15px 17px 18px; }
+    .world-info small { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; font-weight: 800; color: #557365; }
+    .world-info h3 { margin: 5px 0 4px; font-size: 17px; }
+    .world-info p { margin: 0; color: #657a6f; font-size: 13px; }
+    .world.locked { opacity: .75; }
+    .world.locked .world-art { filter: saturate(.66); }
+    .lock { position: absolute; right: 12px; top: 12px; padding: 4px 9px; border-radius: 99px; background: #ffffffdf; font-size: 11px; font-weight: 800; }
+    .notice { margin-top: 24px; padding: 15px 19px; background: #fff9df; border: 1px solid #e9d69b; border-radius: 14px; font-size: 14px; }
+    dialog.lesson {
+      width: min(94vw, 740px); max-height: 90vh; overflow: auto; padding: 30px;
+      color: var(--ink); background: var(--cream); border: 0; border-radius: 24px;
+      box-shadow: 0 24px 80px #0006;
+    }
+    dialog.lesson::backdrop { background: #08241fd9; }
+    .lesson-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .lesson-top h2 { margin: 0; }
+    .close { background: white; border: 1px solid #cadacf; border-radius: 11px; padding: 7px 12px; }
+    .prompt { padding: 22px; border-radius: 15px; background: #e6f6eb; font-size: clamp(18px, 2.8vw, 27px); line-height: 1.9; letter-spacing: .025em; font-weight: 700; }
+    .prompt .right { color: #147b51; background: #ccf4d7; }
+    .prompt .wrong { color: #a1242a; background: #ffd6d6; }
+    .prompt .current { border-bottom: 3px solid #ef9e25; }
+    textarea { width: 100%; resize: vertical; min-height: 95px; margin-top: 16px; padding: 15px; border: 2px solid #9fbeb0; border-radius: 12px; color: var(--ink); background: white; }
+    .metrics { display: flex; gap: 16px; flex-wrap: wrap; font-weight: 750; margin-top: 16px; }
+    .metrics span { background: #e3f3ea; border-radius: 12px; padding: 9px 13px; }
+    .lesson-hint { color: #546a5d; font-size: 13px; }
+    #result { font-weight: 800; min-height: 1.6em; color: #166546; }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-art { min-height: 190px; }
+      .dashboard { grid-template-columns: repeat(2, 1fr); }
+      .worlds { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .worlds { grid-template-columns: 1fr; }
+      .demo-tag { font-size: 10px; }
+      .brand { font-size: 13px; }
+      dialog.lesson { padding: 17px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="brand-icon" aria-hidden="true">🐊</span><div>GATOR TYPEQUEST<small>GILBERT ELEMENTARY</small></div></div>
+    <div class="demo-tag">DEMO · NO STUDENT DATA</div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">THE GREAT KEYBOARD ADVENTURE</div>
+        <h1 id="hero-title">Ready to type,<br>Gator?</h1>
+        <p>Learn new keys, unlock nine worlds, and grow your typing skills through 36 weeks of adventures.</p>
+        <button class="primary" id="startLesson">⌨️ Start a typing quest</button>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="coin coin-a">⭐</span><span class="gator">🐊</span><span class="coin coin-b">🪙</span></div>
+    </section>
+
+    <section class="dashboard" aria-label="Demo statistics">
+      <div class="stat"><span>Demo coins</span><strong id="coins">0 🪙</strong></div>
+      <div class="stat"><span>Typing accuracy</span><strong id="accuracy">—</strong></div>
+      <div class="stat"><span>Typing speed</span><strong id="wpm">—</strong></div>
+      <div class="stat"><span>Worlds to explore</span><strong>9</strong></div>
+    </section>
+
+    <div class="section-heading">
+      <h2>🗺️ Your adventure map</h2>
+      <p>Nine worlds · Four weeks each · 36-week program</p>
+    </div>
+    <section class="worlds" aria-label="Typing adventure worlds">
+      <article class="world"><div class="world-art" aria-hidden="true">🏕️🐊</div><div class="world-info"><small>Weeks 1–4 · Preview</small><h3>Gator Training Camp</h3><p>Meet your keyboard and learn the basics.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🌴🌿</div><div class="world-info"><small>Weeks 5–8</small><h3>Jungle Adventure</h3><p>Home-row keys and finger control.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🌊💎</div><div class="world-info"><small>Weeks 9–12</small><h3>Treasure Lagoon</h3><p>Word-building and accuracy.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🏜️🏎️</div><div class="world-info"><small>Weeks 13–16</small><h3>Desert Dash</h3><p>Top and bottom keyboard rows.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🌋🔥</div><div class="world-info"><small>Weeks 17–20</small><h3>Volcano Escape</h3><p>Capital letters and punctuation.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">❄️🏰</div><div class="world-info"><small>Weeks 21–24</small><h3>Frozen Fortress</h3><p>Complete sentences and fluency.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">☁️🦅</div><div class="world-info"><small>Weeks 25–28</small><h3>Sky Kingdom</h3><p>Paragraphs and typing stamina.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">🚀🪐</div><div class="world-info"><small>Weeks 29–32</small><h3>Space Quest</h3><p>Real-world typing challenges.</p></div></article>
+      <article class="world locked"><span class="lock">🔒 Locked</span><div class="world-art" aria-hidden="true">👑🏆</div><div class="world-info"><small>Weeks 33–36</small><h3>Gator Championship</h3><p>Celebrate growing keyboard mastery.</p></div></article>
+    </section>
+    <div class="notice"><strong>Development preview:</strong> All scores, coins, and lessons on this page are fictional or temporary. Nothing is sent to Google Sheets or saved after you reload the page.</div>
+  </main>
+
+  <dialog id="lesson" class="lesson" aria-labelledby="lessonTitle">
+    <div class="lesson-top"><h2 id="lessonTitle">⌨️ First typing quest</h2><button class="close" id="closeLesson" type="button">✕ Close</button></div>
+    <p>Type the sentence below exactly. Take your time—accuracy comes first!</p>
+    <div class="prompt" id="prompt" aria-label="Sentence to type"></div>
+    <label for="typingInput"><strong>Your typing:</strong></label>
+    <textarea id="typingInput" rows="3" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-describedby="lessonHint"></textarea>
+    <p id="lessonHint" class="lesson-hint">Use a physical keyboard for touch-typing practice. There is no countdown timer.</p>
+    <div class="metrics"><span id="liveAccuracy">Accuracy: —</span><span id="liveWpm">WPM: —</span></div>
+    <p id="result" role="status" aria-live="polite"></p>
+    <button type="button" class="primary" id="restartLesson">↻ Try again</button>
+  </dialog>
+
+  <script>
+    'use strict';
+    const phrase = 'the green gator jumps over three logs';
+    const dialog = document.getElementById('lesson');
+    const typingInput = document.getElementById('typingInput');
+    const promptElement = document.getElementById('prompt');
+    const result = document.getElementById('result');
+    let startedAt = null;
+    let coins = 0;
+    let rewarded = false;
+
+    function paintPrompt(typed = '') {
+      promptElement.replaceChildren();
+      [...phrase].forEach((character, index) => {
+        const span = document.createElement('span');
+        span.textContent = character;
+        if (index < typed.length) span.className = typed[index] === character ? 'right' : 'wrong';
+        else if (index === typed.length) span.className = 'current';
+        promptElement.appendChild(span);
+      });
+    }
+    function resetLesson() {
+      startedAt = null;
+      rewarded = false;
+      typingInput.value = '';
+      typingInput.disabled = false;
+      typingInput.maxLength = phrase.length;
+      result.textContent = '';
+      document.getElementById('liveAccuracy').textContent = 'Accuracy: —';
+      document.getElementById('liveWpm').textContent = 'WPM: —';
+      paintPrompt();
+      typingInput.focus();
+    }
+    document.getElementById('startLesson').addEventListener('click', () => {
+      dialog.showModal();
+      resetLesson();
+    });
+    document.getElementById('closeLesson').addEventListener('click', () => dialog.close());
+    document.getElementById('restartLesson').addEventListener('click', resetLesson);
+    typingInput.addEventListener('input', () => {
+      const typed = typingInput.value;
+      if (!typed) { startedAt = null; paintPrompt(); return; }
+      if (startedAt === null) startedAt = performance.now();
+      const correct = [...typed].filter((char, i) => char === phrase[i]).length;
+      const accuracy = Math.round((correct / typed.length) * 100);
+      const elapsedMinutes = Math.max((performance.now() - startedAt) / 60000, 1 / 60);
+      const wpm = Math.round((correct / 5) / elapsedMinutes);
+      document.getElementById('liveAccuracy').textContent = `Accuracy: ${accuracy}%`;
+      document.getElementById('liveWpm').textContent = `WPM: ${wpm}`;
+      paintPrompt(typed);
+      if (typed === phrase && !rewarded) {
+        rewarded = true;
+        coins += 25;
+        document.getElementById('coins').textContent = `${coins} 🪙`;
+        document.getElementById('accuracy').textContent = `${accuracy}%`;
+        document.getElementById('wpm').textContent = `${wpm}`;
+        result.textContent = '🌟 Quest complete! You earned 25 demo coins. Great job!';
+        typingInput.disabled = true;
+      }
+    });
+    paintPrompt();
+  </script>
+</body>
+</html>
