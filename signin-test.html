@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Gator TypeQuest | Google Sign-In Test</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, Segoe UI, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 20% 15%, #155d69, transparent 42%), linear-gradient(130deg, #061c37, #063e4a 65%, #075333); color: #f3fff9; display: grid; place-items: center; padding: 24px; }
+    main { width: min(100%, 560px); border: 1px solid #ffffff30; border-radius: 24px; background: #082c3acc; box-shadow: 0 30px 90px #0006; padding: clamp(24px, 5vw, 40px); }
+    .logo { display: inline-flex; align-items: center; justify-content: center; width: 72px; height: 72px; background: #a3e635; color: #163c26; border-radius: 22px; font-size: 42px; }
+    .eyebrow { margin: 24px 0 4px; color: #b7f777; font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 0 0 10px; font-size: clamp(30px, 6vw, 42px); line-height: 1.08; }
+    p { line-height: 1.6; color: #d0e9e4; }
+    .banner { padding: 14px 16px; margin: 22px 0; border-radius: 14px; border: 1px solid #6697a0; background: #123c49; }
+    .banner strong { display: block; margin-bottom: 5px; color: #fff; }
+    .banner p { margin: 0; font-size: 14px; }
+    .banner.ok { background: #133d33; border-color: #83caa2; }
+    .banner.warn { background: #483519; border-color: #ebbf5d; }
+    .banner.error { background: #49282b; border-color: #e88b87; }
+    .signin { display: flex; align-items: center; justify-content: center; min-height: 54px; padding: 10px; background: #f6fff9; border-radius: 14px; }
+    .signin:empty::before { content: 'Google button will appear here after setup'; color: #53666a; font-size: 13px; }
+    .rules { margin: 22px 0 0; padding: 18px; border-radius: 14px; background: #ffffff0a; }
+    .rules h2 { margin: 0 0 9px; font-size: 16px; }
+    .rules ul { margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14px; color: #d2eee4; }
+    .footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    a { color: #b6edff; text-decoration: underline; text-underline-offset: 3px; }
+    .pill { border: 1px solid #87c1a4; color: #d6ffe7; border-radius: 999px; padding: 8px 12px; font-size: 12px; font-weight: 750; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo" aria-hidden="true">🐊</div>
+    <div class="eyebrow">Gilbert Elementary · Setup Preview</div>
+    <h1>Gator TypeQuest</h1>
+    <p>Google Sign-In connection test for our typing adventure. This page does not unlock the game or access any student records.</p>
+    <div class="banner" id="status" role="status" aria-live="polite">
+      <strong id="statusTitle">Checking sign-in setup...</strong>
+      <p id="statusDetail">Student login and score saving remain disabled.</p>
+    </div>
+    <div id="googleButton" class="signin" aria-label="Google sign in test button"></div>
+    <div class="rules">
+      <h2>Safety checks for this test</h2>
+      <ul>
+        <li>Use a district-approved adult test account first.</li>
+        <li>No student roster, grades, or scores are requested.</li>
+        <li>Any returned Google credential is discarded immediately.</li>
+        <li>Backend verification and district approval are still required.</li>
+      </ul>
+    </div>
+    <div class="footer">
+      <a href="student-demo.html">Return to the typing game demo</a>
+      <span class="pill">TEST MODE · NO SCORE SAVING</span>
+    </div>
+  </main>
+  <script>
+    // STEP 8 PART 1: Paste only your OAuth 2.0 WEB CLIENT ID.
+    // Client IDs are public configuration; NEVER paste a client secret.
+    const GOOGLE_WEB_CLIENT_ID = 'PASTE_YOUR_WEB_CLIENT_ID_HERE';
+    const APPROVED_ORIGIN = 'https://jasonhobbs-bot.github.io';
+
+    function statusMessage(mode, heading, detail) {
+      const banner = document.getElementById('status');
+      banner.className = 'banner' + (mode ? ' ' + mode : '');
+      document.getElementById('statusTitle').textContent = heading;
+      document.getElementById('statusDetail').textContent = detail;
+    }
+
+    function handleGoogleResponse(response) {
+      // Browser callbacks do not prove a user's identity.
+      // NO decode, log, localStorage, network POST, or account lookup.
+      const credentialWasReturned = !!(
+        response && typeof response.credential === 'string' &&
+        response.credential.split('.').length === 3
+      );
+      if (credentialWasReturned) {
+        statusMessage('ok', 'Google sign-in button responded',
+          'A credential was returned and immediately discarded. No student has been authenticated or granted access.');
+      } else {
+        statusMessage('error', 'No credential returned',
+          'Please retry using an authorized school Google account.');
+      }
+    }
+
+    function initializeGoogle() {
+      const clientId = GOOGLE_WEB_CLIENT_ID.trim();
+      if (!/^\d+-[A-Za-z0-9_-]+\.apps\.googleusercontent\.com$/.test(clientId)) {
+        statusMessage('warn', 'Setup required: add the Web Client ID',
+          'Edit GOOGLE_WEB_CLIENT_ID in signin-test.html and publish it to GitHub Pages. Do not use a client secret.');
+        return;
+      }
+      if (location.origin !== APPROVED_ORIGIN) {
+        statusMessage('warn', 'Open this page on GitHub Pages',
+          'Authorized origin must be ' + APPROVED_ORIGIN + '. The local file preview cannot run this login test.');
+        return;
+      }
+      if (!window.google || !google.accounts || !google.accounts.id) {
+        statusMessage('error', 'Google Identity Services unavailable',
+          'Check the school network or browser settings and reload.');
+        return;
+      }
+      try {
+        google.accounts.id.initialize({
+          client_id: clientId,
+          callback: handleGoogleResponse,
+          ux_mode: 'popup',
+          auto_select: false,
+          hd: 'walkerschools.org' // Account picker hint only; NOT authorization!
+        });
+        google.accounts.id.renderButton(document.getElementById('googleButton'), {
+          type: 'standard', size: 'large', theme: 'outline',
+          shape: 'pill', text: 'signin_with', width: 300
+        });
+        statusMessage('', 'Ready to test the Google button',
+          'Use an approved adult school account. No lesson data will be returned or saved.');
+      } catch (_error) {
+        statusMessage('error', 'Could not initialize Google Sign-In',
+          'Recheck the OAuth Web Client ID and the authorized JavaScript origin.');
+      }
+    }
+  </script>
+  <script src="https://accounts.google.com/gsi/client" async defer onload="initializeGoogle()" onerror="statusMessage('error','Google sign-in library failed to load','Check your school network or content blockers.')"></script>
+</body>
+</html>
