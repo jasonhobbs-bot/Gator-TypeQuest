@@ -291,6 +291,22 @@
     @media(max-width:900px){.yearbook-picker{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:600px){.yearbook-picker,.yearbook-missions{grid-template-columns:1fr}.yearbook-progress{grid-template-columns:repeat(3,minmax(0,1fr))}.yearbook-progress strong{font-size:19px}.yearbook-head{padding:15px}.yearbook-mission{padding:14px}}
     @media(prefers-reduced-motion:reduce){.yearbook-meter div{transition:none}}
+
+    /* Google account connection test: no student authorization or data writes. */
+    .gtq-login-test {
+      background: #fff;
+      border: 2px solid #a4d9bd;
+      border-radius: 20px;
+      padding: clamp(17px, 2.7vw, 25px);
+      margin: 0 0 22px;
+      box-shadow: 0 8px 22px #154d3d12;
+    }
+    .gtq-login-test h2 { margin: 0 0 8px; color: #145d43; }
+    .gtq-login-test p { max-width: 850px; margin: 8px 0; color: #425e50; }
+    #gtqGoogleButton { margin: 14px 0 12px; min-height: 42px; }
+    #gtqGoogleStatus { border-radius: 11px; padding: 11px 14px; background: #edf8ef; color: #24563c; font-size: 14px; font-weight: 750; }
+    .gtq-login-test .gtq-login-warning { background: #fff3c7; border: 1px solid #e6cb70; padding: 12px 14px; border-radius: 11px; font-weight: 650; color: #624819; }
+    #gtqClearSignInTest { background: #eff5ef; border: 1px solid #b3cdb8; border-radius: 9px; color: #245940; padding: 9px 13px; font-size: 13px; font-weight: 750; }
   </style>
 </head>
 <body>
@@ -299,6 +315,19 @@
     <div class="demo-tag">DEMO · NO STUDENT DATA</div>
   </header>
   <main>
+
+    <!-- Google Identity Services: demonstration only; no student records are accessed. -->
+    <section class="gtq-login-test" aria-labelledby="gtqGoogleTitle">
+      <h2 id="gtqGoogleTitle">🔐 School Google Sign-In Test</h2>
+      <p>Teachers can test the Google sign-in button here. This is <strong>not</strong> an active student account or an enrollment check.</p>
+      <div class="gtq-login-warning">DEMO ONLY — School account eligibility has not been verified by the TypeQuest server. The typing game stays in anonymous practice mode, even after Google sign-in.</div>
+      <div id="gtqGoogleButton" aria-label="Google sign-in button area"></div>
+      <p id="gtqGoogleStatus" role="status" aria-live="polite">Loading the Google sign-in test…</p>
+      <button id="gtqClearSignInTest" type="button" hidden>Clear sign-in test result</button>
+      <p><small>For authorized staff testing only. This page does not transmit Google identity tokens to Apps Script, save them, show student names, or record scores.</small></p>
+    </section>
+
+
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <div class="eyebrow">THE GREAT KEYBOARD ADVENTURE</div>
@@ -1205,5 +1234,68 @@ $('startLesson').insertAdjacentElement('afterend',openButton);
 renderAll();
 })();
 </script>
+
+  <!-- Safe front-end Google Sign-In test. No ID token retained or forwarded. -->
+  <script>
+  (() => {
+    'use strict';
+    const status = document.getElementById('gtqGoogleStatus');
+    const holder = document.getElementById('gtqGoogleButton');
+    const clearButton = document.getElementById('gtqClearSignInTest');
+    const webClientId = '429237092021-jd3bpcvkt4d9ctkfmmigpm1ahq9vj5to.apps.googleusercontent.com';
+
+    window.gtqInitGoogleDemo = function () {
+      if (!window.google || !google.accounts || !google.accounts.id) {
+        status.textContent = 'Google sign-in library is unavailable. Check browser settings or try again.';
+        return;
+      }
+      try {
+        google.accounts.id.initialize({
+          client_id: webClientId,
+          auto_select: false,
+          ux_mode: 'popup',
+          hd: 'walkerschools.org',  // Account chooser hint; NOT an authorization check.
+          callback: function (response) {
+            // An ID token is returned here. Deliberately do not parse, save, log,
+            // send, or use it to authorize a student in this static demonstration.
+            if (!response || typeof response.credential !== 'string' || !response.credential) {
+              status.textContent = 'No Google sign-in response received. Please try again.';
+              return;
+            }
+            status.textContent = 'Google sign-in test completed. Student account access is NOT enabled: the server has not verified this account or checked enrollment.';
+            clearButton.hidden = false;
+          }
+        });
+        google.accounts.id.renderButton(holder, {
+          type: 'standard',
+          theme: 'outline',
+          size: 'large',
+          text: 'signin_with',
+          shape: 'pill',
+          width: 280
+        });
+        status.textContent = 'Sign-in button is ready for authorized staff testing. The game will remain an anonymous demo.';
+      } catch (_error) {
+        status.textContent = 'Unable to initialize Google sign-in. Confirm the GitHub Pages origin is authorized in your Google Cloud OAuth client.';
+      }
+    };
+
+    window.gtqGoogleDemoLoadFailed = function () {
+      status.textContent = 'Google sign-in could not load. The typing game remains available in demo mode.';
+    };
+
+    clearButton.addEventListener('click', () => {
+      // Clears local test indication only; does not sign out of the Google Account.
+      if (window.google && google.accounts && google.accounts.id) {
+        google.accounts.id.disableAutoSelect();
+      }
+      clearButton.hidden = true;
+      status.textContent = 'Sign-in test result cleared. No TypeQuest student session was created.';
+    });
+  })();
+  </script>
+  <script src="https://accounts.google.com/gsi/client" async defer
+    onload="window.gtqInitGoogleDemo && window.gtqInitGoogleDemo()"
+    onerror="window.gtqGoogleDemoLoadFailed && window.gtqGoogleDemoLoadFailed()"></script>
 </body>
 </html>
