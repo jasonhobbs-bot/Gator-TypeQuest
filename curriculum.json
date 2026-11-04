@@ -1,0 +1,1329 @@
+{
+  "schemaVersion": 1,
+  "worlds": [
+    {
+      "name": "Gator Training Camp",
+      "emoji": "🏕️",
+      "focus": "Keyboard discovery"
+    },
+    {
+      "name": "Jungle Adventure",
+      "emoji": "🌴",
+      "focus": "Home row and finger control"
+    },
+    {
+      "name": "Treasure Lagoon",
+      "emoji": "🌊",
+      "focus": "Words and accuracy"
+    },
+    {
+      "name": "Desert Dash",
+      "emoji": "🏜️",
+      "focus": "Full keyboard"
+    },
+    {
+      "name": "Volcano Escape",
+      "emoji": "🌋",
+      "focus": "Shift and punctuation"
+    },
+    {
+      "name": "Frozen Fortress",
+      "emoji": "❄️",
+      "focus": "Sentence fluency"
+    },
+    {
+      "name": "Sky Kingdom",
+      "emoji": "☁️",
+      "focus": "Paragraphs and stamina"
+    },
+    {
+      "name": "Space Quest",
+      "emoji": "🚀",
+      "focus": "Applied keyboard skills"
+    },
+    {
+      "name": "Gator Championship",
+      "emoji": "🏆",
+      "focus": "Mastery and celebration"
+    }
+  ],
+  "weeks": [
+    {
+      "week": 1,
+      "world": 1,
+      "focus": "Meet the keyboard",
+      "objective": "Recognize keys and discover their positions."
+    },
+    {
+      "week": 2,
+      "world": 1,
+      "focus": "Left home row",
+      "objective": "Practice A, S, D, and F with a relaxed hand."
+    },
+    {
+      "week": 3,
+      "world": 1,
+      "focus": "Right home row",
+      "objective": "Practice J, K, L, and the semicolon."
+    },
+    {
+      "week": 4,
+      "world": 1,
+      "focus": "Camp skill review",
+      "objective": "Revisit the home row with accuracy first."
+    },
+    {
+      "week": 5,
+      "world": 2,
+      "focus": "Middle keys",
+      "objective": "Explore G and H and smooth hand movement."
+    },
+    {
+      "week": 6,
+      "world": 2,
+      "focus": "Find the vowels",
+      "objective": "Find vowel keys and build familiar combinations."
+    },
+    {
+      "week": 7,
+      "world": 2,
+      "focus": "Home row pathways",
+      "objective": "Use both hands for short key patterns."
+    },
+    {
+      "week": 8,
+      "world": 2,
+      "focus": "Jungle checkpoint",
+      "objective": "Review newly learned keys before traveling on."
+    },
+    {
+      "week": 9,
+      "world": 3,
+      "focus": "Common words",
+      "objective": "Type familiar high-frequency words."
+    },
+    {
+      "week": 10,
+      "world": 3,
+      "focus": "Word families",
+      "objective": "Recognize patterns and groups of words."
+    },
+    {
+      "week": 11,
+      "world": 3,
+      "focus": "Accuracy adventure",
+      "objective": "Slow down and identify keys correctly."
+    },
+    {
+      "week": 12,
+      "world": 3,
+      "focus": "Lagoon challenge",
+      "objective": "Apply the first trimester skills."
+    },
+    {
+      "week": 13,
+      "world": 4,
+      "focus": "Top row, left",
+      "objective": "Reach Q, W, E, R, and T."
+    },
+    {
+      "week": 14,
+      "world": 4,
+      "focus": "Top row, right",
+      "objective": "Reach Y, U, I, O, and P."
+    },
+    {
+      "week": 15,
+      "world": 4,
+      "focus": "Bottom row, left",
+      "objective": "Reach Z, X, C, V, and B."
+    },
+    {
+      "week": 16,
+      "world": 4,
+      "focus": "Bottom row, right",
+      "objective": "Reach N, M, comma, and period."
+    },
+    {
+      "week": 17,
+      "world": 5,
+      "focus": "Shift key discovery",
+      "objective": "Learn when and how to use Shift."
+    },
+    {
+      "week": 18,
+      "world": 5,
+      "focus": "Names and capitals",
+      "objective": "Practice beginning words with capital letters."
+    },
+    {
+      "week": 19,
+      "world": 5,
+      "focus": "Punctuation practice",
+      "objective": "Explore periods, commas, and questions."
+    },
+    {
+      "week": 20,
+      "world": 5,
+      "focus": "Volcano skill review",
+      "objective": "Combine capital letters and punctuation."
+    },
+    {
+      "week": 21,
+      "world": 6,
+      "focus": "Sentence starting line",
+      "objective": "Type complete short sentences."
+    },
+    {
+      "week": 22,
+      "world": 6,
+      "focus": "Spaces and rhythm",
+      "objective": "Use the spacebar consistently."
+    },
+    {
+      "week": 23,
+      "world": 6,
+      "focus": "Sentence finishing line",
+      "objective": "Check ending punctuation and spacing."
+    },
+    {
+      "week": 24,
+      "world": 6,
+      "focus": "Frozen fortress review",
+      "objective": "Strengthen sentence accuracy and fluency."
+    },
+    {
+      "week": 25,
+      "world": 7,
+      "focus": "Two sentence story",
+      "objective": "Combine ideas across sentences."
+    },
+    {
+      "week": 26,
+      "world": 7,
+      "focus": "Sustained practice",
+      "objective": "Build steady typing stamina without rushing."
+    },
+    {
+      "week": 27,
+      "world": 7,
+      "focus": "Edit and improve",
+      "objective": "Notice and correct typing errors."
+    },
+    {
+      "week": 28,
+      "world": 7,
+      "focus": "Sky kingdom challenge",
+      "objective": "Apply multi-sentence typing skills."
+    },
+    {
+      "week": 29,
+      "world": 8,
+      "focus": "Directions and lists",
+      "objective": "Type clear instructions and simple lists."
+    },
+    {
+      "week": 30,
+      "world": 8,
+      "focus": "Friendly messages",
+      "objective": "Create useful everyday communications."
+    },
+    {
+      "week": 31,
+      "world": 8,
+      "focus": "Research notes",
+      "objective": "Practice taking short digital notes."
+    },
+    {
+      "week": 32,
+      "world": 8,
+      "focus": "Space mission review",
+      "objective": "Use learned skills across practical tasks."
+    },
+    {
+      "week": 33,
+      "world": 9,
+      "focus": "Your growth mission",
+      "objective": "Revisit a familiar passage and notice growth."
+    },
+    {
+      "week": 34,
+      "world": 9,
+      "focus": "Accuracy championship",
+      "objective": "Focus on careful, correct typing."
+    },
+    {
+      "week": 35,
+      "world": 9,
+      "focus": "Final adventure",
+      "objective": "Combine keyboard skills from across the year."
+    },
+    {
+      "week": 36,
+      "world": 9,
+      "focus": "Gator graduation",
+      "objective": "Celebrate progress and plan continued practice."
+    }
+  ],
+  "grades": {
+    "PK": {
+      "name": "Pre-K",
+      "threshold": 80,
+      "speed": false
+    },
+    "K": {
+      "name": "Kindergarten",
+      "threshold": 82,
+      "speed": false
+    },
+    "1": {
+      "name": "Grade 1",
+      "threshold": 85,
+      "speed": false
+    },
+    "2": {
+      "name": "Grade 2",
+      "threshold": 87,
+      "speed": false
+    },
+    "3": {
+      "name": "Grade 3",
+      "threshold": 90,
+      "speed": true
+    },
+    "4": {
+      "name": "Grade 4",
+      "threshold": 90,
+      "speed": true
+    },
+    "5": {
+      "name": "Grade 5",
+      "threshold": 90,
+      "speed": true
+    }
+  },
+  "prompts": {
+    "PK": [
+      [
+        "a",
+        "s"
+      ],
+      [
+        "s",
+        "d"
+      ],
+      [
+        "d",
+        "f"
+      ],
+      [
+        "f",
+        "a"
+      ],
+      [
+        "g",
+        "h"
+      ],
+      [
+        "u",
+        "i"
+      ],
+      [
+        "j",
+        "k"
+      ],
+      [
+        "l",
+        "j"
+      ],
+      [
+        "c",
+        "a"
+      ],
+      [
+        "t",
+        "o"
+      ],
+      [
+        "m",
+        "n"
+      ],
+      [
+        "g",
+        "o"
+      ],
+      [
+        "q",
+        "w"
+      ],
+      [
+        "e",
+        "r"
+      ],
+      [
+        "t",
+        "z"
+      ],
+      [
+        "x",
+        "b"
+      ],
+      [
+        "A",
+        "S"
+      ],
+      [
+        "G",
+        "H"
+      ],
+      [
+        ".",
+        ","
+      ],
+      [
+        "?",
+        "!"
+      ],
+      [
+        "cat",
+        "dog"
+      ],
+      [
+        "sun",
+        "run"
+      ],
+      [
+        "go",
+        "up"
+      ],
+      [
+        "at",
+        "in"
+      ],
+      [
+        "my",
+        "pet"
+      ],
+      [
+        "red",
+        "blue"
+      ],
+      [
+        "big",
+        "small"
+      ],
+      [
+        "hi",
+        "bye"
+      ],
+      [
+        "go go",
+        "up up"
+      ],
+      [
+        "hi cat",
+        "hi dog"
+      ],
+      [
+        "I",
+        "a"
+      ],
+      [
+        "we",
+        "me"
+      ],
+      [
+        "one",
+        "two"
+      ],
+      [
+        "red",
+        "green"
+      ],
+      [
+        "sun",
+        "star"
+      ],
+      [
+        "gator",
+        "great"
+      ]
+    ],
+    "K": [
+      [
+        "a s",
+        "d f"
+      ],
+      [
+        "j k",
+        "l a"
+      ],
+      [
+        "s a d",
+        "f j k"
+      ],
+      [
+        "as",
+        "sad"
+      ],
+      [
+        "g h",
+        "had"
+      ],
+      [
+        "at",
+        "it"
+      ],
+      [
+        "j a m",
+        "has"
+      ],
+      [
+        "sad",
+        "dad"
+      ],
+      [
+        "cat",
+        "sun"
+      ],
+      [
+        "bat",
+        "hat"
+      ],
+      [
+        "red",
+        "run"
+      ],
+      [
+        "dog",
+        "log"
+      ],
+      [
+        "q w e",
+        "r t"
+      ],
+      [
+        "y u i",
+        "o p"
+      ],
+      [
+        "z x c",
+        "v b"
+      ],
+      [
+        "n m",
+        "mom"
+      ],
+      [
+        "I am",
+        "We go"
+      ],
+      [
+        "Sam",
+        "Kim"
+      ],
+      [
+        "cat.",
+        "dog."
+      ],
+      [
+        "I see.",
+        "You go."
+      ],
+      [
+        "the cat",
+        "the sun"
+      ],
+      [
+        "I can run.",
+        "We can hop."
+      ],
+      [
+        "A red hat.",
+        "A big dog."
+      ],
+      [
+        "I see a cat.",
+        "We see a sun."
+      ],
+      [
+        "Go, go!",
+        "Hop, hop!"
+      ],
+      [
+        "Look up.",
+        "Run fast."
+      ],
+      [
+        "I can help.",
+        "We can play."
+      ],
+      [
+        "The sun is up.",
+        "The cat can nap."
+      ],
+      [
+        "Go to the pond.",
+        "Hop to the tree."
+      ],
+      [
+        "Dear Mom,",
+        "Hi Dad,"
+      ],
+      [
+        "My pet cat.",
+        "A blue bird."
+      ],
+      [
+        "The gator can go.",
+        "The game is fun."
+      ],
+      [
+        "I can type.",
+        "I can learn."
+      ],
+      [
+        "I type with care.",
+        "I can try again."
+      ],
+      [
+        "The key is here.",
+        "I found a star."
+      ],
+      [
+        "I am a gator!",
+        "I can type well!"
+      ]
+    ],
+    "1": [
+      [
+        "a s d f",
+        "j k l ;"
+      ],
+      [
+        "sad dad",
+        "fad ads"
+      ],
+      [
+        "ask lad",
+        "all fall"
+      ],
+      [
+        "as sad",
+        "dad asks"
+      ],
+      [
+        "gas",
+        "had"
+      ],
+      [
+        "rain",
+        "sun"
+      ],
+      [
+        "jam",
+        "fall"
+      ],
+      [
+        "jazz",
+        "glass"
+      ],
+      [
+        "the and",
+        "can you"
+      ],
+      [
+        "cat hat bat",
+        "sun fun run"
+      ],
+      [
+        "slow and steady",
+        "take your time"
+      ],
+      [
+        "green gator",
+        "blue lagoon"
+      ],
+      [
+        "we try",
+        "we learn"
+      ],
+      [
+        "top row",
+        "jump up"
+      ],
+      [
+        "zip zap",
+        "big box"
+      ],
+      [
+        "moon map",
+        "nice game"
+      ],
+      [
+        "Shift makes A.",
+        "Shift makes G."
+      ],
+      [
+        "My name is Gator.",
+        "We see a star."
+      ],
+      [
+        "Run, hop, jump.",
+        "Find the key."
+      ],
+      [
+        "Are you ready?",
+        "Yes, I am!"
+      ],
+      [
+        "I can type.",
+        "We can learn."
+      ],
+      [
+        "The gator is green.",
+        "The river is blue."
+      ],
+      [
+        "My fingers find keys.",
+        "I use the spacebar."
+      ],
+      [
+        "The gator hops home.",
+        "I type each word well."
+      ],
+      [
+        "The bird can fly.",
+        "The gator can swim."
+      ],
+      [
+        "I will keep trying.",
+        "My hands are learning."
+      ],
+      [
+        "Look for red keys.",
+        "Fix one small mistake."
+      ],
+      [
+        "Two birds can sing.",
+        "A gator can grin."
+      ],
+      [
+        "Go left, then right.",
+        "Jump over the log."
+      ],
+      [
+        "Hi, my friend!",
+        "See you soon!"
+      ],
+      [
+        "A note about rain.",
+        "A fact about frogs."
+      ],
+      [
+        "The stars are bright.",
+        "The sky is big."
+      ],
+      [
+        "I know my home row.",
+        "I can type with care."
+      ],
+      [
+        "My best skill is focus.",
+        "I want to keep learning."
+      ],
+      [
+        "The final key is gold.",
+        "I found the last gate."
+      ],
+      [
+        "Hooray for my hands!",
+        "I am a typing gator!"
+      ]
+    ],
+    "2": [
+      [
+        "asdf jkl;",
+        "ask fall"
+      ],
+      [
+        "sad dad",
+        "glass flask"
+      ],
+      [
+        "fall ask",
+        "lad has gas"
+      ],
+      [
+        "jazz glass",
+        "ask a pal"
+      ],
+      [
+        "g h f j",
+        "half a glass"
+      ],
+      [
+        "rain hail",
+        "ocean and sun"
+      ],
+      [
+        "sad had",
+        "ask dad"
+      ],
+      [
+        "jump across",
+        "find the trail"
+      ],
+      [
+        "the green gator",
+        "a bright blue pond"
+      ],
+      [
+        "cat hat mat",
+        "light night bright"
+      ],
+      [
+        "slow is smooth",
+        "look at each key"
+      ],
+      [
+        "find the hidden gem",
+        "open the treasure chest"
+      ],
+      [
+        "q w e r t",
+        "we get ready"
+      ],
+      [
+        "y u i o p",
+        "you type up"
+      ],
+      [
+        "z x c v b",
+        "box and six"
+      ],
+      [
+        "n m , .",
+        "a map, a pen."
+      ],
+      [
+        "Shift makes capitals.",
+        "Begin with a big letter."
+      ],
+      [
+        "Gator is ready.",
+        "Jungle games are fun."
+      ],
+      [
+        "Look, a bright gem!",
+        "Where is the treasure?"
+      ],
+      [
+        "The gate opens now.",
+        "Can you find the key?"
+      ],
+      [
+        "The gator can jump.",
+        "A bird flew over the river."
+      ],
+      [
+        "Type one word at a time.",
+        "Spaces help readers understand."
+      ],
+      [
+        "The game ends here.",
+        "We did it together!"
+      ],
+      [
+        "Every try helps us grow.",
+        "I can improve with practice."
+      ],
+      [
+        "First, find the bridge.",
+        "Next, cross the river."
+      ],
+      [
+        "The sky is bright and clear.",
+        "The gator moved slowly."
+      ],
+      [
+        "Find and fix the error.",
+        "Read your words again."
+      ],
+      [
+        "We reached the cloud castle.",
+        "The view is amazing."
+      ],
+      [
+        "Go left, then jump twice.",
+        "Find the star near the tree."
+      ],
+      [
+        "Dear Team, we are ready!",
+        "Thanks for your help today."
+      ],
+      [
+        "Frogs live near the pond.",
+        "The river moves toward the sea."
+      ],
+      [
+        "We completed the space mission.",
+        "The stars sparkled overhead."
+      ],
+      [
+        "My fingers know more keys.",
+        "I can see how I have grown."
+      ],
+      [
+        "Accuracy is my first goal.",
+        "I check every typed word."
+      ],
+      [
+        "The gator found a golden key.",
+        "The whole team cheered loudly."
+      ],
+      [
+        "I will keep practicing typing.",
+        "Every small step matters."
+      ]
+    ],
+    "3": [
+      [
+        "asdf jkl;",
+        "ask a glad lad"
+      ],
+      [
+        "left hand, right hand",
+        "find your home row"
+      ],
+      [
+        "all hands are ready",
+        "slow fingers find keys"
+      ],
+      [
+        "I can type with care.",
+        "The gator learns each day."
+      ],
+      [
+        "g and h help us type",
+        "a glass of cool water"
+      ],
+      [
+        "The rain fell on the jungle.",
+        "The river runs past tall trees."
+      ],
+      [
+        "Keep your hands on the home row.",
+        "Use both hands for the next word."
+      ],
+      [
+        "The green gator crossed the bridge.",
+        "A bright parrot flew overhead."
+      ],
+      [
+        "The treasure is hidden in a cave.",
+        "We found a map near the lagoon."
+      ],
+      [
+        "Bright lights shine underwater.",
+        "The shells were pink, gold, and blue."
+      ],
+      [
+        "Accuracy helps me type better.",
+        "I can fix a mistake and keep going."
+      ],
+      [
+        "A careful explorer found the key.",
+        "Our team reached the island safely."
+      ],
+      [
+        "The top row starts with QWERT.",
+        "Reach upward, then return home."
+      ],
+      [
+        "You can reach the top right keys.",
+        "Practice until the move feels easy."
+      ],
+      [
+        "The bottom row holds ZXCVB.",
+        "Move down and return to the middle."
+      ],
+      [
+        "A map, a note, and a key.",
+        "The gator found a quiet cave."
+      ],
+      [
+        "Shift helps with capital letters.",
+        "Start each sentence with a capital."
+      ],
+      [
+        "My Gator Team is ready today.",
+        "We climbed Gator Mountain at dawn."
+      ],
+      [
+        "Can you find the hidden door?",
+        "Wow, that volcano is bright!"
+      ],
+      [
+        "Look out! The lava is moving.",
+        "We made it safely to the other side."
+      ],
+      [
+        "A snowy path led to the castle.",
+        "The gator stepped into the cold air."
+      ],
+      [
+        "Spaces separate each typed word.",
+        "Pause briefly, then find the next key."
+      ],
+      [
+        "The wind blew across the icy lake.",
+        "The team found a warm place to rest."
+      ],
+      [
+        "Practice helps new skills become easy.",
+        "Each correct key builds confidence."
+      ],
+      [
+        "The gator met a friendly cloud dragon.",
+        "The sky was full of colorful kites."
+      ],
+      [
+        "Our explorer wrote two short notes.",
+        "We looked below and above the clouds."
+      ],
+      [
+        "Read the sentence before you type it.",
+        "Use Backspace to fix a typing error."
+      ],
+      [
+        "The flying castle floated above us.",
+        "We opened a door to the next world."
+      ],
+      [
+        "First, collect the map and lantern.",
+        "Next, follow the marked path to safety."
+      ],
+      [
+        "Dear Gator Team, thank you for helping!",
+        "We hope to explore together again soon."
+      ],
+      [
+        "The moon reflects sunlight from the sun.",
+        "Some stars are much larger than Earth."
+      ],
+      [
+        "The space ship headed toward the stars.",
+        "Our typing helped the crew navigate."
+      ],
+      [
+        "I type more smoothly than before.",
+        "My fingers find keys with less effort."
+      ],
+      [
+        "Accuracy matters more than racing.",
+        "I can slow down and still succeed."
+      ],
+      [
+        "The final treasure was a golden keyboard.",
+        "Every completed mission showed my growth."
+      ],
+      [
+        "I am proud of how much I have learned.",
+        "I will keep building keyboarding skills."
+      ]
+    ],
+    "4": [
+      [
+        "Place your fingers on the home row.",
+        "Good typing starts with comfortable hands."
+      ],
+      [
+        "Use the left hand for A, S, D, and F.",
+        "Return each finger to its home position."
+      ],
+      [
+        "Use the right hand for J, K, L, and semicolon.",
+        "Keep both wrists comfortable as you type."
+      ],
+      [
+        "Accuracy is more useful than rushing.",
+        "Notice each error and correct it carefully."
+      ],
+      [
+        "The G and H keys sit near the center.",
+        "Move your index fingers smoothly and return."
+      ],
+      [
+        "Vowels appear in many common words.",
+        "Find every vowel without searching too long."
+      ],
+      [
+        "A steady rhythm helps you type accurately.",
+        "Practice a short line using both hands."
+      ],
+      [
+        "Our gator crossed a bridge in the rainforest.",
+        "The path ahead disappeared behind thick vines."
+      ],
+      [
+        "A treasure map showed islands near the coast.",
+        "The team packed supplies for the long journey."
+      ],
+      [
+        "The coral reef was full of colorful fish.",
+        "The lagoon became quiet as the sun went down."
+      ],
+      [
+        "When you make an error, correct it calmly.",
+        "Try to keep your eyes on the practice text."
+      ],
+      [
+        "The explorer uncovered a golden compass.",
+        "The final clue appeared inside a small chest."
+      ],
+      [
+        "Reach the Q, W, E, R, and T keys above home row.",
+        "Return your left-hand fingers after each reach."
+      ],
+      [
+        "The right side of the top row includes Y, U, I, O, and P.",
+        "Use careful movements without lifting your hands too high."
+      ],
+      [
+        "The Z, X, C, V, and B keys extend the left side.",
+        "The bottom row takes practice and patient attention."
+      ],
+      [
+        "Try N, M, comma, period, and slash with control.",
+        "Remember to return to the middle row."
+      ],
+      [
+        "Hold Shift with the opposite hand for capital letters.",
+        "A capital letter can begin an important sentence."
+      ],
+      [
+        "Gator Mountain looked peaceful in the morning.",
+        "Captain Gator collected one final clue at the summit."
+      ],
+      [
+        "Do these directions lead to the hidden cave?",
+        "Watch out! The ground is getting warmer."
+      ],
+      [
+        "After the volcano quieted, the team continued.",
+        "The last stone bridge opened onto a snowy trail."
+      ],
+      [
+        "The frozen castle had sparkling windows.",
+        "The explorers followed footprints across the snow."
+      ],
+      [
+        "One space after a word helps everyone read clearly.",
+        "A smooth rhythm keeps the sentence moving."
+      ],
+      [
+        "We found a notebook beside the icy lake.",
+        "Its first page contained an unusual message."
+      ],
+      [
+        "A successful typist checks accuracy before speed.",
+        "Practicing the same passage can improve fluency."
+      ],
+      [
+        "The cloud kingdom floated above the mountains.",
+        "A bright balloon carried our supplies across the valley."
+      ],
+      [
+        "The gator wrote a message to the other explorers.",
+        "Everyone checked the map before moving forward."
+      ],
+      [
+        "Proofread your text for missing letters and spaces.",
+        "Correcting mistakes is part of real keyboarding."
+      ],
+      [
+        "The final cloud gate opened after careful typing.",
+        "Our team celebrated by watching the sunrise."
+      ],
+      [
+        "First, record each direction in the correct order.",
+        "Next, explain how to reach the launch platform."
+      ],
+      [
+        "Dear Exploration Team, our mission is ready to begin.",
+        "Thank you for sharing your notes and careful observations."
+      ],
+      [
+        "The moon travels around Earth approximately once a month.",
+        "An astronaut needs clear instructions during a mission."
+      ],
+      [
+        "A small typing error can change a sentence's meaning.",
+        "Careful reading helps the entire team stay organized."
+      ],
+      [
+        "Compare your current work with your early practice.",
+        "Notice improvements in comfort, focus, and accuracy."
+      ],
+      [
+        "Try this passage with patience and steady hands.",
+        "A correct sentence matters more than a fast one."
+      ],
+      [
+        "The golden keyboard unlocked the championship gate.",
+        "The gator remembered each challenge along the way."
+      ],
+      [
+        "Every practice session helped me build a useful skill.",
+        "I can continue learning even after the adventure ends."
+      ]
+    ],
+    "5": [
+      [
+        "Strong typing habits begin with relaxed, balanced posture.",
+        "Accuracy, not speed, is the foundation of keyboard mastery."
+      ],
+      [
+        "Keep the left-hand fingers on A, S, D, and F.",
+        "Use careful reaches and return to the home row after each key."
+      ],
+      [
+        "The right-hand home keys are J, K, L, and semicolon.",
+        "Consistent finger placement makes typing feel more natural."
+      ],
+      [
+        "Reflect on which keys are easiest and hardest for you.",
+        "A thoughtful practice plan is more useful than rushing."
+      ],
+      [
+        "The center keys, G and H, require deliberate finger movement.",
+        "Each finger should return to its starting position after a reach."
+      ],
+      [
+        "Vowels appear frequently in the words we use every day.",
+        "Build smooth patterns while maintaining accurate keystrokes."
+      ],
+      [
+        "When a passage becomes difficult, focus on the next key.",
+        "Steady practice can help new keyboarding habits become automatic."
+      ],
+      [
+        "Captain Gator entered the jungle to search for a hidden map.",
+        "A team of explorers crossed a rope bridge above the river."
+      ],
+      [
+        "The lagoon sparkled beneath the warm afternoon sunlight.",
+        "A weathered treasure chest rested near the coral reef."
+      ],
+      [
+        "Word patterns make unfamiliar typing challenges easier.",
+        "Review repeated errors to discover which keys need more practice."
+      ],
+      [
+        "A strong typist values accuracy before attempting greater speed.",
+        "Correcting a mistake carefully is an important digital skill."
+      ],
+      [
+        "An ancient stone tablet revealed the next destination.",
+        "The explorers organized their supplies before leaving the island."
+      ],
+      [
+        "Practice the upper-left keys: Q, W, E, R, and T.",
+        "Reach toward the upper row, then return to home position."
+      ],
+      [
+        "Use the right-hand fingers for Y, U, I, O, and P.",
+        "Controlled movement is more reliable than random key hunting."
+      ],
+      [
+        "The bottom-left keys include Z, X, C, V, and B.",
+        "Move each finger deliberately, using the correct key position."
+      ],
+      [
+        "The keys N and M appear near comma and period.",
+        "A balanced typing posture helps during longer practice passages."
+      ],
+      [
+        "For capital letters, press Shift with the opposite hand.",
+        "Practice typing the first letter of a sentence correctly."
+      ],
+      [
+        "The Gator Research Team climbed the volcanic mountain.",
+        "At sunrise, the explorers located the missing compass."
+      ],
+      [
+        "Would you follow the northern trail or cross the valley?",
+        "Stop! The bridge ahead has been damaged by the storm."
+      ],
+      [
+        "Punctuation helps readers understand both meaning and tone.",
+        "Capitals, commas, and periods make digital writing clearer."
+      ],
+      [
+        "The mountain path led toward a magnificent frozen fortress.",
+        "Inside the castle, an ancient clock measured the passing hours."
+      ],
+      [
+        "Leave one space between words and check each sentence ending.",
+        "A consistent pace helps reduce skipped keys and extra spaces."
+      ],
+      [
+        "The explorers discovered instructions written in faded ink.",
+        "They carefully copied the message into a digital field notebook."
+      ],
+      [
+        "During repeated practice, measure improvement against yourself.",
+        "The purpose of fluency is to communicate ideas accurately."
+      ],
+      [
+        "Several islands floated above the distant mountain range.",
+        "A friendly sky guardian offered the explorers a new quest."
+      ],
+      [
+        "Our gator recorded observations about unusual cloud formations.",
+        "The team compared several clues before selecting the next route."
+      ],
+      [
+        "Proofreading helps catch errors that automatic tools may miss.",
+        "After revising the paragraph, read it aloud for clarity."
+      ],
+      [
+        "A rainbow appeared as the team reached the final cloud bridge.",
+        "The journey required attention, patience, and excellent teamwork."
+      ],
+      [
+        "Write the directions in the order that someone will follow them.",
+        "A useful checklist includes clear actions and accurate details."
+      ],
+      [
+        "Dear Gator Exploration Team, your next mission begins today.",
+        "Thank you for the careful research and dependable teamwork."
+      ],
+      [
+        "Earth rotates once approximately every twenty-four hours.",
+        "Reliable research notes help us communicate scientific information."
+      ],
+      [
+        "Before launching, the team reviewed every instruction twice.",
+        "Accurate typing allowed the astronauts to share essential updates."
+      ],
+      [
+        "Compare an early passage with one you can type comfortably now.",
+        "Growth in typing often comes from many small, steady improvements."
+      ],
+      [
+        "Focus on precision and maintain a relaxed pace throughout.",
+        "A thoughtful typist corrects mistakes instead of ignoring them."
+      ],
+      [
+        "The championship challenge required every skill from the year.",
+        "At the final gate, Captain Gator found the legendary keyboard."
+      ],
+      [
+        "Learning to type confidently will help with future projects.",
+        "The best reward is a skill that continues to grow with practice."
+      ]
+    ]
+  }
+}

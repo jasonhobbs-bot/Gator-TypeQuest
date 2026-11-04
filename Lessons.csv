@@ -1,0 +1,505 @@
+﻿lesson_id,curriculum_id,lesson_order,title,content_json,target_accuracy,is_published
+GTQ-PK-W01-M1,GTQ-PK-W01,1,Meet the keyboard: Skill Scout,"{""text"": ""a"", ""grade"": ""PK"", ""week"": 1, ""world"": 1}",80,FALSE
+GTQ-PK-W01-M2,GTQ-PK-W01,2,Meet the keyboard: Adventure Challenge,"{""text"": ""s"", ""grade"": ""PK"", ""week"": 1, ""world"": 1}",80,FALSE
+GTQ-PK-W02-M1,GTQ-PK-W02,1,Left home row: Skill Scout,"{""text"": ""s"", ""grade"": ""PK"", ""week"": 2, ""world"": 1}",80,FALSE
+GTQ-PK-W02-M2,GTQ-PK-W02,2,Left home row: Adventure Challenge,"{""text"": ""d"", ""grade"": ""PK"", ""week"": 2, ""world"": 1}",80,FALSE
+GTQ-PK-W03-M1,GTQ-PK-W03,1,Right home row: Skill Scout,"{""text"": ""d"", ""grade"": ""PK"", ""week"": 3, ""world"": 1}",80,FALSE
+GTQ-PK-W03-M2,GTQ-PK-W03,2,Right home row: Adventure Challenge,"{""text"": ""f"", ""grade"": ""PK"", ""week"": 3, ""world"": 1}",80,FALSE
+GTQ-PK-W04-M1,GTQ-PK-W04,1,Camp skill review: Skill Scout,"{""text"": ""f"", ""grade"": ""PK"", ""week"": 4, ""world"": 1}",80,FALSE
+GTQ-PK-W04-M2,GTQ-PK-W04,2,Camp skill review: Adventure Challenge,"{""text"": ""a"", ""grade"": ""PK"", ""week"": 4, ""world"": 1}",80,FALSE
+GTQ-PK-W05-M1,GTQ-PK-W05,1,Middle keys: Skill Scout,"{""text"": ""g"", ""grade"": ""PK"", ""week"": 5, ""world"": 2}",80,FALSE
+GTQ-PK-W05-M2,GTQ-PK-W05,2,Middle keys: Adventure Challenge,"{""text"": ""h"", ""grade"": ""PK"", ""week"": 5, ""world"": 2}",80,FALSE
+GTQ-PK-W06-M1,GTQ-PK-W06,1,Find the vowels: Skill Scout,"{""text"": ""u"", ""grade"": ""PK"", ""week"": 6, ""world"": 2}",80,FALSE
+GTQ-PK-W06-M2,GTQ-PK-W06,2,Find the vowels: Adventure Challenge,"{""text"": ""i"", ""grade"": ""PK"", ""week"": 6, ""world"": 2}",80,FALSE
+GTQ-PK-W07-M1,GTQ-PK-W07,1,Home row pathways: Skill Scout,"{""text"": ""j"", ""grade"": ""PK"", ""week"": 7, ""world"": 2}",80,FALSE
+GTQ-PK-W07-M2,GTQ-PK-W07,2,Home row pathways: Adventure Challenge,"{""text"": ""k"", ""grade"": ""PK"", ""week"": 7, ""world"": 2}",80,FALSE
+GTQ-PK-W08-M1,GTQ-PK-W08,1,Jungle checkpoint: Skill Scout,"{""text"": ""l"", ""grade"": ""PK"", ""week"": 8, ""world"": 2}",80,FALSE
+GTQ-PK-W08-M2,GTQ-PK-W08,2,Jungle checkpoint: Adventure Challenge,"{""text"": ""j"", ""grade"": ""PK"", ""week"": 8, ""world"": 2}",80,FALSE
+GTQ-PK-W09-M1,GTQ-PK-W09,1,Common words: Skill Scout,"{""text"": ""c"", ""grade"": ""PK"", ""week"": 9, ""world"": 3}",80,FALSE
+GTQ-PK-W09-M2,GTQ-PK-W09,2,Common words: Adventure Challenge,"{""text"": ""a"", ""grade"": ""PK"", ""week"": 9, ""world"": 3}",80,FALSE
+GTQ-PK-W10-M1,GTQ-PK-W10,1,Word families: Skill Scout,"{""text"": ""t"", ""grade"": ""PK"", ""week"": 10, ""world"": 3}",80,FALSE
+GTQ-PK-W10-M2,GTQ-PK-W10,2,Word families: Adventure Challenge,"{""text"": ""o"", ""grade"": ""PK"", ""week"": 10, ""world"": 3}",80,FALSE
+GTQ-PK-W11-M1,GTQ-PK-W11,1,Accuracy adventure: Skill Scout,"{""text"": ""m"", ""grade"": ""PK"", ""week"": 11, ""world"": 3}",80,FALSE
+GTQ-PK-W11-M2,GTQ-PK-W11,2,Accuracy adventure: Adventure Challenge,"{""text"": ""n"", ""grade"": ""PK"", ""week"": 11, ""world"": 3}",80,FALSE
+GTQ-PK-W12-M1,GTQ-PK-W12,1,Lagoon challenge: Skill Scout,"{""text"": ""g"", ""grade"": ""PK"", ""week"": 12, ""world"": 3}",80,FALSE
+GTQ-PK-W12-M2,GTQ-PK-W12,2,Lagoon challenge: Adventure Challenge,"{""text"": ""o"", ""grade"": ""PK"", ""week"": 12, ""world"": 3}",80,FALSE
+GTQ-PK-W13-M1,GTQ-PK-W13,1,"Top row, left: Skill Scout","{""text"": ""q"", ""grade"": ""PK"", ""week"": 13, ""world"": 4}",80,FALSE
+GTQ-PK-W13-M2,GTQ-PK-W13,2,"Top row, left: Adventure Challenge","{""text"": ""w"", ""grade"": ""PK"", ""week"": 13, ""world"": 4}",80,FALSE
+GTQ-PK-W14-M1,GTQ-PK-W14,1,"Top row, right: Skill Scout","{""text"": ""e"", ""grade"": ""PK"", ""week"": 14, ""world"": 4}",80,FALSE
+GTQ-PK-W14-M2,GTQ-PK-W14,2,"Top row, right: Adventure Challenge","{""text"": ""r"", ""grade"": ""PK"", ""week"": 14, ""world"": 4}",80,FALSE
+GTQ-PK-W15-M1,GTQ-PK-W15,1,"Bottom row, left: Skill Scout","{""text"": ""t"", ""grade"": ""PK"", ""week"": 15, ""world"": 4}",80,FALSE
+GTQ-PK-W15-M2,GTQ-PK-W15,2,"Bottom row, left: Adventure Challenge","{""text"": ""z"", ""grade"": ""PK"", ""week"": 15, ""world"": 4}",80,FALSE
+GTQ-PK-W16-M1,GTQ-PK-W16,1,"Bottom row, right: Skill Scout","{""text"": ""x"", ""grade"": ""PK"", ""week"": 16, ""world"": 4}",80,FALSE
+GTQ-PK-W16-M2,GTQ-PK-W16,2,"Bottom row, right: Adventure Challenge","{""text"": ""b"", ""grade"": ""PK"", ""week"": 16, ""world"": 4}",80,FALSE
+GTQ-PK-W17-M1,GTQ-PK-W17,1,Shift key discovery: Skill Scout,"{""text"": ""A"", ""grade"": ""PK"", ""week"": 17, ""world"": 5}",80,FALSE
+GTQ-PK-W17-M2,GTQ-PK-W17,2,Shift key discovery: Adventure Challenge,"{""text"": ""S"", ""grade"": ""PK"", ""week"": 17, ""world"": 5}",80,FALSE
+GTQ-PK-W18-M1,GTQ-PK-W18,1,Names and capitals: Skill Scout,"{""text"": ""G"", ""grade"": ""PK"", ""week"": 18, ""world"": 5}",80,FALSE
+GTQ-PK-W18-M2,GTQ-PK-W18,2,Names and capitals: Adventure Challenge,"{""text"": ""H"", ""grade"": ""PK"", ""week"": 18, ""world"": 5}",80,FALSE
+GTQ-PK-W19-M1,GTQ-PK-W19,1,Punctuation practice: Skill Scout,"{""text"": ""."", ""grade"": ""PK"", ""week"": 19, ""world"": 5}",80,FALSE
+GTQ-PK-W19-M2,GTQ-PK-W19,2,Punctuation practice: Adventure Challenge,"{""text"": "","", ""grade"": ""PK"", ""week"": 19, ""world"": 5}",80,FALSE
+GTQ-PK-W20-M1,GTQ-PK-W20,1,Volcano skill review: Skill Scout,"{""text"": ""?"", ""grade"": ""PK"", ""week"": 20, ""world"": 5}",80,FALSE
+GTQ-PK-W20-M2,GTQ-PK-W20,2,Volcano skill review: Adventure Challenge,"{""text"": ""!"", ""grade"": ""PK"", ""week"": 20, ""world"": 5}",80,FALSE
+GTQ-PK-W21-M1,GTQ-PK-W21,1,Sentence starting line: Skill Scout,"{""text"": ""cat"", ""grade"": ""PK"", ""week"": 21, ""world"": 6}",80,FALSE
+GTQ-PK-W21-M2,GTQ-PK-W21,2,Sentence starting line: Adventure Challenge,"{""text"": ""dog"", ""grade"": ""PK"", ""week"": 21, ""world"": 6}",80,FALSE
+GTQ-PK-W22-M1,GTQ-PK-W22,1,Spaces and rhythm: Skill Scout,"{""text"": ""sun"", ""grade"": ""PK"", ""week"": 22, ""world"": 6}",80,FALSE
+GTQ-PK-W22-M2,GTQ-PK-W22,2,Spaces and rhythm: Adventure Challenge,"{""text"": ""run"", ""grade"": ""PK"", ""week"": 22, ""world"": 6}",80,FALSE
+GTQ-PK-W23-M1,GTQ-PK-W23,1,Sentence finishing line: Skill Scout,"{""text"": ""go"", ""grade"": ""PK"", ""week"": 23, ""world"": 6}",80,FALSE
+GTQ-PK-W23-M2,GTQ-PK-W23,2,Sentence finishing line: Adventure Challenge,"{""text"": ""up"", ""grade"": ""PK"", ""week"": 23, ""world"": 6}",80,FALSE
+GTQ-PK-W24-M1,GTQ-PK-W24,1,Frozen fortress review: Skill Scout,"{""text"": ""at"", ""grade"": ""PK"", ""week"": 24, ""world"": 6}",80,FALSE
+GTQ-PK-W24-M2,GTQ-PK-W24,2,Frozen fortress review: Adventure Challenge,"{""text"": ""in"", ""grade"": ""PK"", ""week"": 24, ""world"": 6}",80,FALSE
+GTQ-PK-W25-M1,GTQ-PK-W25,1,Two sentence story: Skill Scout,"{""text"": ""my"", ""grade"": ""PK"", ""week"": 25, ""world"": 7}",80,FALSE
+GTQ-PK-W25-M2,GTQ-PK-W25,2,Two sentence story: Adventure Challenge,"{""text"": ""pet"", ""grade"": ""PK"", ""week"": 25, ""world"": 7}",80,FALSE
+GTQ-PK-W26-M1,GTQ-PK-W26,1,Sustained practice: Skill Scout,"{""text"": ""red"", ""grade"": ""PK"", ""week"": 26, ""world"": 7}",80,FALSE
+GTQ-PK-W26-M2,GTQ-PK-W26,2,Sustained practice: Adventure Challenge,"{""text"": ""blue"", ""grade"": ""PK"", ""week"": 26, ""world"": 7}",80,FALSE
+GTQ-PK-W27-M1,GTQ-PK-W27,1,Edit and improve: Skill Scout,"{""text"": ""big"", ""grade"": ""PK"", ""week"": 27, ""world"": 7}",80,FALSE
+GTQ-PK-W27-M2,GTQ-PK-W27,2,Edit and improve: Adventure Challenge,"{""text"": ""small"", ""grade"": ""PK"", ""week"": 27, ""world"": 7}",80,FALSE
+GTQ-PK-W28-M1,GTQ-PK-W28,1,Sky kingdom challenge: Skill Scout,"{""text"": ""hi"", ""grade"": ""PK"", ""week"": 28, ""world"": 7}",80,FALSE
+GTQ-PK-W28-M2,GTQ-PK-W28,2,Sky kingdom challenge: Adventure Challenge,"{""text"": ""bye"", ""grade"": ""PK"", ""week"": 28, ""world"": 7}",80,FALSE
+GTQ-PK-W29-M1,GTQ-PK-W29,1,Directions and lists: Skill Scout,"{""text"": ""go go"", ""grade"": ""PK"", ""week"": 29, ""world"": 8}",80,FALSE
+GTQ-PK-W29-M2,GTQ-PK-W29,2,Directions and lists: Adventure Challenge,"{""text"": ""up up"", ""grade"": ""PK"", ""week"": 29, ""world"": 8}",80,FALSE
+GTQ-PK-W30-M1,GTQ-PK-W30,1,Friendly messages: Skill Scout,"{""text"": ""hi cat"", ""grade"": ""PK"", ""week"": 30, ""world"": 8}",80,FALSE
+GTQ-PK-W30-M2,GTQ-PK-W30,2,Friendly messages: Adventure Challenge,"{""text"": ""hi dog"", ""grade"": ""PK"", ""week"": 30, ""world"": 8}",80,FALSE
+GTQ-PK-W31-M1,GTQ-PK-W31,1,Research notes: Skill Scout,"{""text"": ""I"", ""grade"": ""PK"", ""week"": 31, ""world"": 8}",80,FALSE
+GTQ-PK-W31-M2,GTQ-PK-W31,2,Research notes: Adventure Challenge,"{""text"": ""a"", ""grade"": ""PK"", ""week"": 31, ""world"": 8}",80,FALSE
+GTQ-PK-W32-M1,GTQ-PK-W32,1,Space mission review: Skill Scout,"{""text"": ""we"", ""grade"": ""PK"", ""week"": 32, ""world"": 8}",80,FALSE
+GTQ-PK-W32-M2,GTQ-PK-W32,2,Space mission review: Adventure Challenge,"{""text"": ""me"", ""grade"": ""PK"", ""week"": 32, ""world"": 8}",80,FALSE
+GTQ-PK-W33-M1,GTQ-PK-W33,1,Your growth mission: Skill Scout,"{""text"": ""one"", ""grade"": ""PK"", ""week"": 33, ""world"": 9}",80,FALSE
+GTQ-PK-W33-M2,GTQ-PK-W33,2,Your growth mission: Adventure Challenge,"{""text"": ""two"", ""grade"": ""PK"", ""week"": 33, ""world"": 9}",80,FALSE
+GTQ-PK-W34-M1,GTQ-PK-W34,1,Accuracy championship: Skill Scout,"{""text"": ""red"", ""grade"": ""PK"", ""week"": 34, ""world"": 9}",80,FALSE
+GTQ-PK-W34-M2,GTQ-PK-W34,2,Accuracy championship: Adventure Challenge,"{""text"": ""green"", ""grade"": ""PK"", ""week"": 34, ""world"": 9}",80,FALSE
+GTQ-PK-W35-M1,GTQ-PK-W35,1,Final adventure: Skill Scout,"{""text"": ""sun"", ""grade"": ""PK"", ""week"": 35, ""world"": 9}",80,FALSE
+GTQ-PK-W35-M2,GTQ-PK-W35,2,Final adventure: Adventure Challenge,"{""text"": ""star"", ""grade"": ""PK"", ""week"": 35, ""world"": 9}",80,FALSE
+GTQ-PK-W36-M1,GTQ-PK-W36,1,Gator graduation: Skill Scout,"{""text"": ""gator"", ""grade"": ""PK"", ""week"": 36, ""world"": 9}",80,FALSE
+GTQ-PK-W36-M2,GTQ-PK-W36,2,Gator graduation: Adventure Challenge,"{""text"": ""great"", ""grade"": ""PK"", ""week"": 36, ""world"": 9}",80,FALSE
+GTQ-K-W01-M1,GTQ-K-W01,1,Meet the keyboard: Skill Scout,"{""text"": ""a s"", ""grade"": ""K"", ""week"": 1, ""world"": 1}",82,FALSE
+GTQ-K-W01-M2,GTQ-K-W01,2,Meet the keyboard: Adventure Challenge,"{""text"": ""d f"", ""grade"": ""K"", ""week"": 1, ""world"": 1}",82,FALSE
+GTQ-K-W02-M1,GTQ-K-W02,1,Left home row: Skill Scout,"{""text"": ""j k"", ""grade"": ""K"", ""week"": 2, ""world"": 1}",82,FALSE
+GTQ-K-W02-M2,GTQ-K-W02,2,Left home row: Adventure Challenge,"{""text"": ""l a"", ""grade"": ""K"", ""week"": 2, ""world"": 1}",82,FALSE
+GTQ-K-W03-M1,GTQ-K-W03,1,Right home row: Skill Scout,"{""text"": ""s a d"", ""grade"": ""K"", ""week"": 3, ""world"": 1}",82,FALSE
+GTQ-K-W03-M2,GTQ-K-W03,2,Right home row: Adventure Challenge,"{""text"": ""f j k"", ""grade"": ""K"", ""week"": 3, ""world"": 1}",82,FALSE
+GTQ-K-W04-M1,GTQ-K-W04,1,Camp skill review: Skill Scout,"{""text"": ""as"", ""grade"": ""K"", ""week"": 4, ""world"": 1}",82,FALSE
+GTQ-K-W04-M2,GTQ-K-W04,2,Camp skill review: Adventure Challenge,"{""text"": ""sad"", ""grade"": ""K"", ""week"": 4, ""world"": 1}",82,FALSE
+GTQ-K-W05-M1,GTQ-K-W05,1,Middle keys: Skill Scout,"{""text"": ""g h"", ""grade"": ""K"", ""week"": 5, ""world"": 2}",82,FALSE
+GTQ-K-W05-M2,GTQ-K-W05,2,Middle keys: Adventure Challenge,"{""text"": ""had"", ""grade"": ""K"", ""week"": 5, ""world"": 2}",82,FALSE
+GTQ-K-W06-M1,GTQ-K-W06,1,Find the vowels: Skill Scout,"{""text"": ""at"", ""grade"": ""K"", ""week"": 6, ""world"": 2}",82,FALSE
+GTQ-K-W06-M2,GTQ-K-W06,2,Find the vowels: Adventure Challenge,"{""text"": ""it"", ""grade"": ""K"", ""week"": 6, ""world"": 2}",82,FALSE
+GTQ-K-W07-M1,GTQ-K-W07,1,Home row pathways: Skill Scout,"{""text"": ""j a m"", ""grade"": ""K"", ""week"": 7, ""world"": 2}",82,FALSE
+GTQ-K-W07-M2,GTQ-K-W07,2,Home row pathways: Adventure Challenge,"{""text"": ""has"", ""grade"": ""K"", ""week"": 7, ""world"": 2}",82,FALSE
+GTQ-K-W08-M1,GTQ-K-W08,1,Jungle checkpoint: Skill Scout,"{""text"": ""sad"", ""grade"": ""K"", ""week"": 8, ""world"": 2}",82,FALSE
+GTQ-K-W08-M2,GTQ-K-W08,2,Jungle checkpoint: Adventure Challenge,"{""text"": ""dad"", ""grade"": ""K"", ""week"": 8, ""world"": 2}",82,FALSE
+GTQ-K-W09-M1,GTQ-K-W09,1,Common words: Skill Scout,"{""text"": ""cat"", ""grade"": ""K"", ""week"": 9, ""world"": 3}",82,FALSE
+GTQ-K-W09-M2,GTQ-K-W09,2,Common words: Adventure Challenge,"{""text"": ""sun"", ""grade"": ""K"", ""week"": 9, ""world"": 3}",82,FALSE
+GTQ-K-W10-M1,GTQ-K-W10,1,Word families: Skill Scout,"{""text"": ""bat"", ""grade"": ""K"", ""week"": 10, ""world"": 3}",82,FALSE
+GTQ-K-W10-M2,GTQ-K-W10,2,Word families: Adventure Challenge,"{""text"": ""hat"", ""grade"": ""K"", ""week"": 10, ""world"": 3}",82,FALSE
+GTQ-K-W11-M1,GTQ-K-W11,1,Accuracy adventure: Skill Scout,"{""text"": ""red"", ""grade"": ""K"", ""week"": 11, ""world"": 3}",82,FALSE
+GTQ-K-W11-M2,GTQ-K-W11,2,Accuracy adventure: Adventure Challenge,"{""text"": ""run"", ""grade"": ""K"", ""week"": 11, ""world"": 3}",82,FALSE
+GTQ-K-W12-M1,GTQ-K-W12,1,Lagoon challenge: Skill Scout,"{""text"": ""dog"", ""grade"": ""K"", ""week"": 12, ""world"": 3}",82,FALSE
+GTQ-K-W12-M2,GTQ-K-W12,2,Lagoon challenge: Adventure Challenge,"{""text"": ""log"", ""grade"": ""K"", ""week"": 12, ""world"": 3}",82,FALSE
+GTQ-K-W13-M1,GTQ-K-W13,1,"Top row, left: Skill Scout","{""text"": ""q w e"", ""grade"": ""K"", ""week"": 13, ""world"": 4}",82,FALSE
+GTQ-K-W13-M2,GTQ-K-W13,2,"Top row, left: Adventure Challenge","{""text"": ""r t"", ""grade"": ""K"", ""week"": 13, ""world"": 4}",82,FALSE
+GTQ-K-W14-M1,GTQ-K-W14,1,"Top row, right: Skill Scout","{""text"": ""y u i"", ""grade"": ""K"", ""week"": 14, ""world"": 4}",82,FALSE
+GTQ-K-W14-M2,GTQ-K-W14,2,"Top row, right: Adventure Challenge","{""text"": ""o p"", ""grade"": ""K"", ""week"": 14, ""world"": 4}",82,FALSE
+GTQ-K-W15-M1,GTQ-K-W15,1,"Bottom row, left: Skill Scout","{""text"": ""z x c"", ""grade"": ""K"", ""week"": 15, ""world"": 4}",82,FALSE
+GTQ-K-W15-M2,GTQ-K-W15,2,"Bottom row, left: Adventure Challenge","{""text"": ""v b"", ""grade"": ""K"", ""week"": 15, ""world"": 4}",82,FALSE
+GTQ-K-W16-M1,GTQ-K-W16,1,"Bottom row, right: Skill Scout","{""text"": ""n m"", ""grade"": ""K"", ""week"": 16, ""world"": 4}",82,FALSE
+GTQ-K-W16-M2,GTQ-K-W16,2,"Bottom row, right: Adventure Challenge","{""text"": ""mom"", ""grade"": ""K"", ""week"": 16, ""world"": 4}",82,FALSE
+GTQ-K-W17-M1,GTQ-K-W17,1,Shift key discovery: Skill Scout,"{""text"": ""I am"", ""grade"": ""K"", ""week"": 17, ""world"": 5}",82,FALSE
+GTQ-K-W17-M2,GTQ-K-W17,2,Shift key discovery: Adventure Challenge,"{""text"": ""We go"", ""grade"": ""K"", ""week"": 17, ""world"": 5}",82,FALSE
+GTQ-K-W18-M1,GTQ-K-W18,1,Names and capitals: Skill Scout,"{""text"": ""Sam"", ""grade"": ""K"", ""week"": 18, ""world"": 5}",82,FALSE
+GTQ-K-W18-M2,GTQ-K-W18,2,Names and capitals: Adventure Challenge,"{""text"": ""Kim"", ""grade"": ""K"", ""week"": 18, ""world"": 5}",82,FALSE
+GTQ-K-W19-M1,GTQ-K-W19,1,Punctuation practice: Skill Scout,"{""text"": ""cat."", ""grade"": ""K"", ""week"": 19, ""world"": 5}",82,FALSE
+GTQ-K-W19-M2,GTQ-K-W19,2,Punctuation practice: Adventure Challenge,"{""text"": ""dog."", ""grade"": ""K"", ""week"": 19, ""world"": 5}",82,FALSE
+GTQ-K-W20-M1,GTQ-K-W20,1,Volcano skill review: Skill Scout,"{""text"": ""I see."", ""grade"": ""K"", ""week"": 20, ""world"": 5}",82,FALSE
+GTQ-K-W20-M2,GTQ-K-W20,2,Volcano skill review: Adventure Challenge,"{""text"": ""You go."", ""grade"": ""K"", ""week"": 20, ""world"": 5}",82,FALSE
+GTQ-K-W21-M1,GTQ-K-W21,1,Sentence starting line: Skill Scout,"{""text"": ""the cat"", ""grade"": ""K"", ""week"": 21, ""world"": 6}",82,FALSE
+GTQ-K-W21-M2,GTQ-K-W21,2,Sentence starting line: Adventure Challenge,"{""text"": ""the sun"", ""grade"": ""K"", ""week"": 21, ""world"": 6}",82,FALSE
+GTQ-K-W22-M1,GTQ-K-W22,1,Spaces and rhythm: Skill Scout,"{""text"": ""I can run."", ""grade"": ""K"", ""week"": 22, ""world"": 6}",82,FALSE
+GTQ-K-W22-M2,GTQ-K-W22,2,Spaces and rhythm: Adventure Challenge,"{""text"": ""We can hop."", ""grade"": ""K"", ""week"": 22, ""world"": 6}",82,FALSE
+GTQ-K-W23-M1,GTQ-K-W23,1,Sentence finishing line: Skill Scout,"{""text"": ""A red hat."", ""grade"": ""K"", ""week"": 23, ""world"": 6}",82,FALSE
+GTQ-K-W23-M2,GTQ-K-W23,2,Sentence finishing line: Adventure Challenge,"{""text"": ""A big dog."", ""grade"": ""K"", ""week"": 23, ""world"": 6}",82,FALSE
+GTQ-K-W24-M1,GTQ-K-W24,1,Frozen fortress review: Skill Scout,"{""text"": ""I see a cat."", ""grade"": ""K"", ""week"": 24, ""world"": 6}",82,FALSE
+GTQ-K-W24-M2,GTQ-K-W24,2,Frozen fortress review: Adventure Challenge,"{""text"": ""We see a sun."", ""grade"": ""K"", ""week"": 24, ""world"": 6}",82,FALSE
+GTQ-K-W25-M1,GTQ-K-W25,1,Two sentence story: Skill Scout,"{""text"": ""Go, go!"", ""grade"": ""K"", ""week"": 25, ""world"": 7}",82,FALSE
+GTQ-K-W25-M2,GTQ-K-W25,2,Two sentence story: Adventure Challenge,"{""text"": ""Hop, hop!"", ""grade"": ""K"", ""week"": 25, ""world"": 7}",82,FALSE
+GTQ-K-W26-M1,GTQ-K-W26,1,Sustained practice: Skill Scout,"{""text"": ""Look up."", ""grade"": ""K"", ""week"": 26, ""world"": 7}",82,FALSE
+GTQ-K-W26-M2,GTQ-K-W26,2,Sustained practice: Adventure Challenge,"{""text"": ""Run fast."", ""grade"": ""K"", ""week"": 26, ""world"": 7}",82,FALSE
+GTQ-K-W27-M1,GTQ-K-W27,1,Edit and improve: Skill Scout,"{""text"": ""I can help."", ""grade"": ""K"", ""week"": 27, ""world"": 7}",82,FALSE
+GTQ-K-W27-M2,GTQ-K-W27,2,Edit and improve: Adventure Challenge,"{""text"": ""We can play."", ""grade"": ""K"", ""week"": 27, ""world"": 7}",82,FALSE
+GTQ-K-W28-M1,GTQ-K-W28,1,Sky kingdom challenge: Skill Scout,"{""text"": ""The sun is up."", ""grade"": ""K"", ""week"": 28, ""world"": 7}",82,FALSE
+GTQ-K-W28-M2,GTQ-K-W28,2,Sky kingdom challenge: Adventure Challenge,"{""text"": ""The cat can nap."", ""grade"": ""K"", ""week"": 28, ""world"": 7}",82,FALSE
+GTQ-K-W29-M1,GTQ-K-W29,1,Directions and lists: Skill Scout,"{""text"": ""Go to the pond."", ""grade"": ""K"", ""week"": 29, ""world"": 8}",82,FALSE
+GTQ-K-W29-M2,GTQ-K-W29,2,Directions and lists: Adventure Challenge,"{""text"": ""Hop to the tree."", ""grade"": ""K"", ""week"": 29, ""world"": 8}",82,FALSE
+GTQ-K-W30-M1,GTQ-K-W30,1,Friendly messages: Skill Scout,"{""text"": ""Dear Mom,"", ""grade"": ""K"", ""week"": 30, ""world"": 8}",82,FALSE
+GTQ-K-W30-M2,GTQ-K-W30,2,Friendly messages: Adventure Challenge,"{""text"": ""Hi Dad,"", ""grade"": ""K"", ""week"": 30, ""world"": 8}",82,FALSE
+GTQ-K-W31-M1,GTQ-K-W31,1,Research notes: Skill Scout,"{""text"": ""My pet cat."", ""grade"": ""K"", ""week"": 31, ""world"": 8}",82,FALSE
+GTQ-K-W31-M2,GTQ-K-W31,2,Research notes: Adventure Challenge,"{""text"": ""A blue bird."", ""grade"": ""K"", ""week"": 31, ""world"": 8}",82,FALSE
+GTQ-K-W32-M1,GTQ-K-W32,1,Space mission review: Skill Scout,"{""text"": ""The gator can go."", ""grade"": ""K"", ""week"": 32, ""world"": 8}",82,FALSE
+GTQ-K-W32-M2,GTQ-K-W32,2,Space mission review: Adventure Challenge,"{""text"": ""The game is fun."", ""grade"": ""K"", ""week"": 32, ""world"": 8}",82,FALSE
+GTQ-K-W33-M1,GTQ-K-W33,1,Your growth mission: Skill Scout,"{""text"": ""I can type."", ""grade"": ""K"", ""week"": 33, ""world"": 9}",82,FALSE
+GTQ-K-W33-M2,GTQ-K-W33,2,Your growth mission: Adventure Challenge,"{""text"": ""I can learn."", ""grade"": ""K"", ""week"": 33, ""world"": 9}",82,FALSE
+GTQ-K-W34-M1,GTQ-K-W34,1,Accuracy championship: Skill Scout,"{""text"": ""I type with care."", ""grade"": ""K"", ""week"": 34, ""world"": 9}",82,FALSE
+GTQ-K-W34-M2,GTQ-K-W34,2,Accuracy championship: Adventure Challenge,"{""text"": ""I can try again."", ""grade"": ""K"", ""week"": 34, ""world"": 9}",82,FALSE
+GTQ-K-W35-M1,GTQ-K-W35,1,Final adventure: Skill Scout,"{""text"": ""The key is here."", ""grade"": ""K"", ""week"": 35, ""world"": 9}",82,FALSE
+GTQ-K-W35-M2,GTQ-K-W35,2,Final adventure: Adventure Challenge,"{""text"": ""I found a star."", ""grade"": ""K"", ""week"": 35, ""world"": 9}",82,FALSE
+GTQ-K-W36-M1,GTQ-K-W36,1,Gator graduation: Skill Scout,"{""text"": ""I am a gator!"", ""grade"": ""K"", ""week"": 36, ""world"": 9}",82,FALSE
+GTQ-K-W36-M2,GTQ-K-W36,2,Gator graduation: Adventure Challenge,"{""text"": ""I can type well!"", ""grade"": ""K"", ""week"": 36, ""world"": 9}",82,FALSE
+GTQ-1-W01-M1,GTQ-1-W01,1,Meet the keyboard: Skill Scout,"{""text"": ""a s d f"", ""grade"": ""1"", ""week"": 1, ""world"": 1}",85,FALSE
+GTQ-1-W01-M2,GTQ-1-W01,2,Meet the keyboard: Adventure Challenge,"{""text"": ""j k l ;"", ""grade"": ""1"", ""week"": 1, ""world"": 1}",85,FALSE
+GTQ-1-W02-M1,GTQ-1-W02,1,Left home row: Skill Scout,"{""text"": ""sad dad"", ""grade"": ""1"", ""week"": 2, ""world"": 1}",85,FALSE
+GTQ-1-W02-M2,GTQ-1-W02,2,Left home row: Adventure Challenge,"{""text"": ""fad ads"", ""grade"": ""1"", ""week"": 2, ""world"": 1}",85,FALSE
+GTQ-1-W03-M1,GTQ-1-W03,1,Right home row: Skill Scout,"{""text"": ""ask lad"", ""grade"": ""1"", ""week"": 3, ""world"": 1}",85,FALSE
+GTQ-1-W03-M2,GTQ-1-W03,2,Right home row: Adventure Challenge,"{""text"": ""all fall"", ""grade"": ""1"", ""week"": 3, ""world"": 1}",85,FALSE
+GTQ-1-W04-M1,GTQ-1-W04,1,Camp skill review: Skill Scout,"{""text"": ""as sad"", ""grade"": ""1"", ""week"": 4, ""world"": 1}",85,FALSE
+GTQ-1-W04-M2,GTQ-1-W04,2,Camp skill review: Adventure Challenge,"{""text"": ""dad asks"", ""grade"": ""1"", ""week"": 4, ""world"": 1}",85,FALSE
+GTQ-1-W05-M1,GTQ-1-W05,1,Middle keys: Skill Scout,"{""text"": ""gas"", ""grade"": ""1"", ""week"": 5, ""world"": 2}",85,FALSE
+GTQ-1-W05-M2,GTQ-1-W05,2,Middle keys: Adventure Challenge,"{""text"": ""had"", ""grade"": ""1"", ""week"": 5, ""world"": 2}",85,FALSE
+GTQ-1-W06-M1,GTQ-1-W06,1,Find the vowels: Skill Scout,"{""text"": ""rain"", ""grade"": ""1"", ""week"": 6, ""world"": 2}",85,FALSE
+GTQ-1-W06-M2,GTQ-1-W06,2,Find the vowels: Adventure Challenge,"{""text"": ""sun"", ""grade"": ""1"", ""week"": 6, ""world"": 2}",85,FALSE
+GTQ-1-W07-M1,GTQ-1-W07,1,Home row pathways: Skill Scout,"{""text"": ""jam"", ""grade"": ""1"", ""week"": 7, ""world"": 2}",85,FALSE
+GTQ-1-W07-M2,GTQ-1-W07,2,Home row pathways: Adventure Challenge,"{""text"": ""fall"", ""grade"": ""1"", ""week"": 7, ""world"": 2}",85,FALSE
+GTQ-1-W08-M1,GTQ-1-W08,1,Jungle checkpoint: Skill Scout,"{""text"": ""jazz"", ""grade"": ""1"", ""week"": 8, ""world"": 2}",85,FALSE
+GTQ-1-W08-M2,GTQ-1-W08,2,Jungle checkpoint: Adventure Challenge,"{""text"": ""glass"", ""grade"": ""1"", ""week"": 8, ""world"": 2}",85,FALSE
+GTQ-1-W09-M1,GTQ-1-W09,1,Common words: Skill Scout,"{""text"": ""the and"", ""grade"": ""1"", ""week"": 9, ""world"": 3}",85,FALSE
+GTQ-1-W09-M2,GTQ-1-W09,2,Common words: Adventure Challenge,"{""text"": ""can you"", ""grade"": ""1"", ""week"": 9, ""world"": 3}",85,FALSE
+GTQ-1-W10-M1,GTQ-1-W10,1,Word families: Skill Scout,"{""text"": ""cat hat bat"", ""grade"": ""1"", ""week"": 10, ""world"": 3}",85,FALSE
+GTQ-1-W10-M2,GTQ-1-W10,2,Word families: Adventure Challenge,"{""text"": ""sun fun run"", ""grade"": ""1"", ""week"": 10, ""world"": 3}",85,FALSE
+GTQ-1-W11-M1,GTQ-1-W11,1,Accuracy adventure: Skill Scout,"{""text"": ""slow and steady"", ""grade"": ""1"", ""week"": 11, ""world"": 3}",85,FALSE
+GTQ-1-W11-M2,GTQ-1-W11,2,Accuracy adventure: Adventure Challenge,"{""text"": ""take your time"", ""grade"": ""1"", ""week"": 11, ""world"": 3}",85,FALSE
+GTQ-1-W12-M1,GTQ-1-W12,1,Lagoon challenge: Skill Scout,"{""text"": ""green gator"", ""grade"": ""1"", ""week"": 12, ""world"": 3}",85,FALSE
+GTQ-1-W12-M2,GTQ-1-W12,2,Lagoon challenge: Adventure Challenge,"{""text"": ""blue lagoon"", ""grade"": ""1"", ""week"": 12, ""world"": 3}",85,FALSE
+GTQ-1-W13-M1,GTQ-1-W13,1,"Top row, left: Skill Scout","{""text"": ""we try"", ""grade"": ""1"", ""week"": 13, ""world"": 4}",85,FALSE
+GTQ-1-W13-M2,GTQ-1-W13,2,"Top row, left: Adventure Challenge","{""text"": ""we learn"", ""grade"": ""1"", ""week"": 13, ""world"": 4}",85,FALSE
+GTQ-1-W14-M1,GTQ-1-W14,1,"Top row, right: Skill Scout","{""text"": ""top row"", ""grade"": ""1"", ""week"": 14, ""world"": 4}",85,FALSE
+GTQ-1-W14-M2,GTQ-1-W14,2,"Top row, right: Adventure Challenge","{""text"": ""jump up"", ""grade"": ""1"", ""week"": 14, ""world"": 4}",85,FALSE
+GTQ-1-W15-M1,GTQ-1-W15,1,"Bottom row, left: Skill Scout","{""text"": ""zip zap"", ""grade"": ""1"", ""week"": 15, ""world"": 4}",85,FALSE
+GTQ-1-W15-M2,GTQ-1-W15,2,"Bottom row, left: Adventure Challenge","{""text"": ""big box"", ""grade"": ""1"", ""week"": 15, ""world"": 4}",85,FALSE
+GTQ-1-W16-M1,GTQ-1-W16,1,"Bottom row, right: Skill Scout","{""text"": ""moon map"", ""grade"": ""1"", ""week"": 16, ""world"": 4}",85,FALSE
+GTQ-1-W16-M2,GTQ-1-W16,2,"Bottom row, right: Adventure Challenge","{""text"": ""nice game"", ""grade"": ""1"", ""week"": 16, ""world"": 4}",85,FALSE
+GTQ-1-W17-M1,GTQ-1-W17,1,Shift key discovery: Skill Scout,"{""text"": ""Shift makes A."", ""grade"": ""1"", ""week"": 17, ""world"": 5}",85,FALSE
+GTQ-1-W17-M2,GTQ-1-W17,2,Shift key discovery: Adventure Challenge,"{""text"": ""Shift makes G."", ""grade"": ""1"", ""week"": 17, ""world"": 5}",85,FALSE
+GTQ-1-W18-M1,GTQ-1-W18,1,Names and capitals: Skill Scout,"{""text"": ""My name is Gator."", ""grade"": ""1"", ""week"": 18, ""world"": 5}",85,FALSE
+GTQ-1-W18-M2,GTQ-1-W18,2,Names and capitals: Adventure Challenge,"{""text"": ""We see a star."", ""grade"": ""1"", ""week"": 18, ""world"": 5}",85,FALSE
+GTQ-1-W19-M1,GTQ-1-W19,1,Punctuation practice: Skill Scout,"{""text"": ""Run, hop, jump."", ""grade"": ""1"", ""week"": 19, ""world"": 5}",85,FALSE
+GTQ-1-W19-M2,GTQ-1-W19,2,Punctuation practice: Adventure Challenge,"{""text"": ""Find the key."", ""grade"": ""1"", ""week"": 19, ""world"": 5}",85,FALSE
+GTQ-1-W20-M1,GTQ-1-W20,1,Volcano skill review: Skill Scout,"{""text"": ""Are you ready?"", ""grade"": ""1"", ""week"": 20, ""world"": 5}",85,FALSE
+GTQ-1-W20-M2,GTQ-1-W20,2,Volcano skill review: Adventure Challenge,"{""text"": ""Yes, I am!"", ""grade"": ""1"", ""week"": 20, ""world"": 5}",85,FALSE
+GTQ-1-W21-M1,GTQ-1-W21,1,Sentence starting line: Skill Scout,"{""text"": ""I can type."", ""grade"": ""1"", ""week"": 21, ""world"": 6}",85,FALSE
+GTQ-1-W21-M2,GTQ-1-W21,2,Sentence starting line: Adventure Challenge,"{""text"": ""We can learn."", ""grade"": ""1"", ""week"": 21, ""world"": 6}",85,FALSE
+GTQ-1-W22-M1,GTQ-1-W22,1,Spaces and rhythm: Skill Scout,"{""text"": ""The gator is green."", ""grade"": ""1"", ""week"": 22, ""world"": 6}",85,FALSE
+GTQ-1-W22-M2,GTQ-1-W22,2,Spaces and rhythm: Adventure Challenge,"{""text"": ""The river is blue."", ""grade"": ""1"", ""week"": 22, ""world"": 6}",85,FALSE
+GTQ-1-W23-M1,GTQ-1-W23,1,Sentence finishing line: Skill Scout,"{""text"": ""My fingers find keys."", ""grade"": ""1"", ""week"": 23, ""world"": 6}",85,FALSE
+GTQ-1-W23-M2,GTQ-1-W23,2,Sentence finishing line: Adventure Challenge,"{""text"": ""I use the spacebar."", ""grade"": ""1"", ""week"": 23, ""world"": 6}",85,FALSE
+GTQ-1-W24-M1,GTQ-1-W24,1,Frozen fortress review: Skill Scout,"{""text"": ""The gator hops home."", ""grade"": ""1"", ""week"": 24, ""world"": 6}",85,FALSE
+GTQ-1-W24-M2,GTQ-1-W24,2,Frozen fortress review: Adventure Challenge,"{""text"": ""I type each word well."", ""grade"": ""1"", ""week"": 24, ""world"": 6}",85,FALSE
+GTQ-1-W25-M1,GTQ-1-W25,1,Two sentence story: Skill Scout,"{""text"": ""The bird can fly."", ""grade"": ""1"", ""week"": 25, ""world"": 7}",85,FALSE
+GTQ-1-W25-M2,GTQ-1-W25,2,Two sentence story: Adventure Challenge,"{""text"": ""The gator can swim."", ""grade"": ""1"", ""week"": 25, ""world"": 7}",85,FALSE
+GTQ-1-W26-M1,GTQ-1-W26,1,Sustained practice: Skill Scout,"{""text"": ""I will keep trying."", ""grade"": ""1"", ""week"": 26, ""world"": 7}",85,FALSE
+GTQ-1-W26-M2,GTQ-1-W26,2,Sustained practice: Adventure Challenge,"{""text"": ""My hands are learning."", ""grade"": ""1"", ""week"": 26, ""world"": 7}",85,FALSE
+GTQ-1-W27-M1,GTQ-1-W27,1,Edit and improve: Skill Scout,"{""text"": ""Look for red keys."", ""grade"": ""1"", ""week"": 27, ""world"": 7}",85,FALSE
+GTQ-1-W27-M2,GTQ-1-W27,2,Edit and improve: Adventure Challenge,"{""text"": ""Fix one small mistake."", ""grade"": ""1"", ""week"": 27, ""world"": 7}",85,FALSE
+GTQ-1-W28-M1,GTQ-1-W28,1,Sky kingdom challenge: Skill Scout,"{""text"": ""Two birds can sing."", ""grade"": ""1"", ""week"": 28, ""world"": 7}",85,FALSE
+GTQ-1-W28-M2,GTQ-1-W28,2,Sky kingdom challenge: Adventure Challenge,"{""text"": ""A gator can grin."", ""grade"": ""1"", ""week"": 28, ""world"": 7}",85,FALSE
+GTQ-1-W29-M1,GTQ-1-W29,1,Directions and lists: Skill Scout,"{""text"": ""Go left, then right."", ""grade"": ""1"", ""week"": 29, ""world"": 8}",85,FALSE
+GTQ-1-W29-M2,GTQ-1-W29,2,Directions and lists: Adventure Challenge,"{""text"": ""Jump over the log."", ""grade"": ""1"", ""week"": 29, ""world"": 8}",85,FALSE
+GTQ-1-W30-M1,GTQ-1-W30,1,Friendly messages: Skill Scout,"{""text"": ""Hi, my friend!"", ""grade"": ""1"", ""week"": 30, ""world"": 8}",85,FALSE
+GTQ-1-W30-M2,GTQ-1-W30,2,Friendly messages: Adventure Challenge,"{""text"": ""See you soon!"", ""grade"": ""1"", ""week"": 30, ""world"": 8}",85,FALSE
+GTQ-1-W31-M1,GTQ-1-W31,1,Research notes: Skill Scout,"{""text"": ""A note about rain."", ""grade"": ""1"", ""week"": 31, ""world"": 8}",85,FALSE
+GTQ-1-W31-M2,GTQ-1-W31,2,Research notes: Adventure Challenge,"{""text"": ""A fact about frogs."", ""grade"": ""1"", ""week"": 31, ""world"": 8}",85,FALSE
+GTQ-1-W32-M1,GTQ-1-W32,1,Space mission review: Skill Scout,"{""text"": ""The stars are bright."", ""grade"": ""1"", ""week"": 32, ""world"": 8}",85,FALSE
+GTQ-1-W32-M2,GTQ-1-W32,2,Space mission review: Adventure Challenge,"{""text"": ""The sky is big."", ""grade"": ""1"", ""week"": 32, ""world"": 8}",85,FALSE
+GTQ-1-W33-M1,GTQ-1-W33,1,Your growth mission: Skill Scout,"{""text"": ""I know my home row."", ""grade"": ""1"", ""week"": 33, ""world"": 9}",85,FALSE
+GTQ-1-W33-M2,GTQ-1-W33,2,Your growth mission: Adventure Challenge,"{""text"": ""I can type with care."", ""grade"": ""1"", ""week"": 33, ""world"": 9}",85,FALSE
+GTQ-1-W34-M1,GTQ-1-W34,1,Accuracy championship: Skill Scout,"{""text"": ""My best skill is focus."", ""grade"": ""1"", ""week"": 34, ""world"": 9}",85,FALSE
+GTQ-1-W34-M2,GTQ-1-W34,2,Accuracy championship: Adventure Challenge,"{""text"": ""I want to keep learning."", ""grade"": ""1"", ""week"": 34, ""world"": 9}",85,FALSE
+GTQ-1-W35-M1,GTQ-1-W35,1,Final adventure: Skill Scout,"{""text"": ""The final key is gold."", ""grade"": ""1"", ""week"": 35, ""world"": 9}",85,FALSE
+GTQ-1-W35-M2,GTQ-1-W35,2,Final adventure: Adventure Challenge,"{""text"": ""I found the last gate."", ""grade"": ""1"", ""week"": 35, ""world"": 9}",85,FALSE
+GTQ-1-W36-M1,GTQ-1-W36,1,Gator graduation: Skill Scout,"{""text"": ""Hooray for my hands!"", ""grade"": ""1"", ""week"": 36, ""world"": 9}",85,FALSE
+GTQ-1-W36-M2,GTQ-1-W36,2,Gator graduation: Adventure Challenge,"{""text"": ""I am a typing gator!"", ""grade"": ""1"", ""week"": 36, ""world"": 9}",85,FALSE
+GTQ-2-W01-M1,GTQ-2-W01,1,Meet the keyboard: Skill Scout,"{""text"": ""asdf jkl;"", ""grade"": ""2"", ""week"": 1, ""world"": 1}",87,FALSE
+GTQ-2-W01-M2,GTQ-2-W01,2,Meet the keyboard: Adventure Challenge,"{""text"": ""ask fall"", ""grade"": ""2"", ""week"": 1, ""world"": 1}",87,FALSE
+GTQ-2-W02-M1,GTQ-2-W02,1,Left home row: Skill Scout,"{""text"": ""sad dad"", ""grade"": ""2"", ""week"": 2, ""world"": 1}",87,FALSE
+GTQ-2-W02-M2,GTQ-2-W02,2,Left home row: Adventure Challenge,"{""text"": ""glass flask"", ""grade"": ""2"", ""week"": 2, ""world"": 1}",87,FALSE
+GTQ-2-W03-M1,GTQ-2-W03,1,Right home row: Skill Scout,"{""text"": ""fall ask"", ""grade"": ""2"", ""week"": 3, ""world"": 1}",87,FALSE
+GTQ-2-W03-M2,GTQ-2-W03,2,Right home row: Adventure Challenge,"{""text"": ""lad has gas"", ""grade"": ""2"", ""week"": 3, ""world"": 1}",87,FALSE
+GTQ-2-W04-M1,GTQ-2-W04,1,Camp skill review: Skill Scout,"{""text"": ""jazz glass"", ""grade"": ""2"", ""week"": 4, ""world"": 1}",87,FALSE
+GTQ-2-W04-M2,GTQ-2-W04,2,Camp skill review: Adventure Challenge,"{""text"": ""ask a pal"", ""grade"": ""2"", ""week"": 4, ""world"": 1}",87,FALSE
+GTQ-2-W05-M1,GTQ-2-W05,1,Middle keys: Skill Scout,"{""text"": ""g h f j"", ""grade"": ""2"", ""week"": 5, ""world"": 2}",87,FALSE
+GTQ-2-W05-M2,GTQ-2-W05,2,Middle keys: Adventure Challenge,"{""text"": ""half a glass"", ""grade"": ""2"", ""week"": 5, ""world"": 2}",87,FALSE
+GTQ-2-W06-M1,GTQ-2-W06,1,Find the vowels: Skill Scout,"{""text"": ""rain hail"", ""grade"": ""2"", ""week"": 6, ""world"": 2}",87,FALSE
+GTQ-2-W06-M2,GTQ-2-W06,2,Find the vowels: Adventure Challenge,"{""text"": ""ocean and sun"", ""grade"": ""2"", ""week"": 6, ""world"": 2}",87,FALSE
+GTQ-2-W07-M1,GTQ-2-W07,1,Home row pathways: Skill Scout,"{""text"": ""sad had"", ""grade"": ""2"", ""week"": 7, ""world"": 2}",87,FALSE
+GTQ-2-W07-M2,GTQ-2-W07,2,Home row pathways: Adventure Challenge,"{""text"": ""ask dad"", ""grade"": ""2"", ""week"": 7, ""world"": 2}",87,FALSE
+GTQ-2-W08-M1,GTQ-2-W08,1,Jungle checkpoint: Skill Scout,"{""text"": ""jump across"", ""grade"": ""2"", ""week"": 8, ""world"": 2}",87,FALSE
+GTQ-2-W08-M2,GTQ-2-W08,2,Jungle checkpoint: Adventure Challenge,"{""text"": ""find the trail"", ""grade"": ""2"", ""week"": 8, ""world"": 2}",87,FALSE
+GTQ-2-W09-M1,GTQ-2-W09,1,Common words: Skill Scout,"{""text"": ""the green gator"", ""grade"": ""2"", ""week"": 9, ""world"": 3}",87,FALSE
+GTQ-2-W09-M2,GTQ-2-W09,2,Common words: Adventure Challenge,"{""text"": ""a bright blue pond"", ""grade"": ""2"", ""week"": 9, ""world"": 3}",87,FALSE
+GTQ-2-W10-M1,GTQ-2-W10,1,Word families: Skill Scout,"{""text"": ""cat hat mat"", ""grade"": ""2"", ""week"": 10, ""world"": 3}",87,FALSE
+GTQ-2-W10-M2,GTQ-2-W10,2,Word families: Adventure Challenge,"{""text"": ""light night bright"", ""grade"": ""2"", ""week"": 10, ""world"": 3}",87,FALSE
+GTQ-2-W11-M1,GTQ-2-W11,1,Accuracy adventure: Skill Scout,"{""text"": ""slow is smooth"", ""grade"": ""2"", ""week"": 11, ""world"": 3}",87,FALSE
+GTQ-2-W11-M2,GTQ-2-W11,2,Accuracy adventure: Adventure Challenge,"{""text"": ""look at each key"", ""grade"": ""2"", ""week"": 11, ""world"": 3}",87,FALSE
+GTQ-2-W12-M1,GTQ-2-W12,1,Lagoon challenge: Skill Scout,"{""text"": ""find the hidden gem"", ""grade"": ""2"", ""week"": 12, ""world"": 3}",87,FALSE
+GTQ-2-W12-M2,GTQ-2-W12,2,Lagoon challenge: Adventure Challenge,"{""text"": ""open the treasure chest"", ""grade"": ""2"", ""week"": 12, ""world"": 3}",87,FALSE
+GTQ-2-W13-M1,GTQ-2-W13,1,"Top row, left: Skill Scout","{""text"": ""q w e r t"", ""grade"": ""2"", ""week"": 13, ""world"": 4}",87,FALSE
+GTQ-2-W13-M2,GTQ-2-W13,2,"Top row, left: Adventure Challenge","{""text"": ""we get ready"", ""grade"": ""2"", ""week"": 13, ""world"": 4}",87,FALSE
+GTQ-2-W14-M1,GTQ-2-W14,1,"Top row, right: Skill Scout","{""text"": ""y u i o p"", ""grade"": ""2"", ""week"": 14, ""world"": 4}",87,FALSE
+GTQ-2-W14-M2,GTQ-2-W14,2,"Top row, right: Adventure Challenge","{""text"": ""you type up"", ""grade"": ""2"", ""week"": 14, ""world"": 4}",87,FALSE
+GTQ-2-W15-M1,GTQ-2-W15,1,"Bottom row, left: Skill Scout","{""text"": ""z x c v b"", ""grade"": ""2"", ""week"": 15, ""world"": 4}",87,FALSE
+GTQ-2-W15-M2,GTQ-2-W15,2,"Bottom row, left: Adventure Challenge","{""text"": ""box and six"", ""grade"": ""2"", ""week"": 15, ""world"": 4}",87,FALSE
+GTQ-2-W16-M1,GTQ-2-W16,1,"Bottom row, right: Skill Scout","{""text"": ""n m , ."", ""grade"": ""2"", ""week"": 16, ""world"": 4}",87,FALSE
+GTQ-2-W16-M2,GTQ-2-W16,2,"Bottom row, right: Adventure Challenge","{""text"": ""a map, a pen."", ""grade"": ""2"", ""week"": 16, ""world"": 4}",87,FALSE
+GTQ-2-W17-M1,GTQ-2-W17,1,Shift key discovery: Skill Scout,"{""text"": ""Shift makes capitals."", ""grade"": ""2"", ""week"": 17, ""world"": 5}",87,FALSE
+GTQ-2-W17-M2,GTQ-2-W17,2,Shift key discovery: Adventure Challenge,"{""text"": ""Begin with a big letter."", ""grade"": ""2"", ""week"": 17, ""world"": 5}",87,FALSE
+GTQ-2-W18-M1,GTQ-2-W18,1,Names and capitals: Skill Scout,"{""text"": ""Gator is ready."", ""grade"": ""2"", ""week"": 18, ""world"": 5}",87,FALSE
+GTQ-2-W18-M2,GTQ-2-W18,2,Names and capitals: Adventure Challenge,"{""text"": ""Jungle games are fun."", ""grade"": ""2"", ""week"": 18, ""world"": 5}",87,FALSE
+GTQ-2-W19-M1,GTQ-2-W19,1,Punctuation practice: Skill Scout,"{""text"": ""Look, a bright gem!"", ""grade"": ""2"", ""week"": 19, ""world"": 5}",87,FALSE
+GTQ-2-W19-M2,GTQ-2-W19,2,Punctuation practice: Adventure Challenge,"{""text"": ""Where is the treasure?"", ""grade"": ""2"", ""week"": 19, ""world"": 5}",87,FALSE
+GTQ-2-W20-M1,GTQ-2-W20,1,Volcano skill review: Skill Scout,"{""text"": ""The gate opens now."", ""grade"": ""2"", ""week"": 20, ""world"": 5}",87,FALSE
+GTQ-2-W20-M2,GTQ-2-W20,2,Volcano skill review: Adventure Challenge,"{""text"": ""Can you find the key?"", ""grade"": ""2"", ""week"": 20, ""world"": 5}",87,FALSE
+GTQ-2-W21-M1,GTQ-2-W21,1,Sentence starting line: Skill Scout,"{""text"": ""The gator can jump."", ""grade"": ""2"", ""week"": 21, ""world"": 6}",87,FALSE
+GTQ-2-W21-M2,GTQ-2-W21,2,Sentence starting line: Adventure Challenge,"{""text"": ""A bird flew over the river."", ""grade"": ""2"", ""week"": 21, ""world"": 6}",87,FALSE
+GTQ-2-W22-M1,GTQ-2-W22,1,Spaces and rhythm: Skill Scout,"{""text"": ""Type one word at a time."", ""grade"": ""2"", ""week"": 22, ""world"": 6}",87,FALSE
+GTQ-2-W22-M2,GTQ-2-W22,2,Spaces and rhythm: Adventure Challenge,"{""text"": ""Spaces help readers understand."", ""grade"": ""2"", ""week"": 22, ""world"": 6}",87,FALSE
+GTQ-2-W23-M1,GTQ-2-W23,1,Sentence finishing line: Skill Scout,"{""text"": ""The game ends here."", ""grade"": ""2"", ""week"": 23, ""world"": 6}",87,FALSE
+GTQ-2-W23-M2,GTQ-2-W23,2,Sentence finishing line: Adventure Challenge,"{""text"": ""We did it together!"", ""grade"": ""2"", ""week"": 23, ""world"": 6}",87,FALSE
+GTQ-2-W24-M1,GTQ-2-W24,1,Frozen fortress review: Skill Scout,"{""text"": ""Every try helps us grow."", ""grade"": ""2"", ""week"": 24, ""world"": 6}",87,FALSE
+GTQ-2-W24-M2,GTQ-2-W24,2,Frozen fortress review: Adventure Challenge,"{""text"": ""I can improve with practice."", ""grade"": ""2"", ""week"": 24, ""world"": 6}",87,FALSE
+GTQ-2-W25-M1,GTQ-2-W25,1,Two sentence story: Skill Scout,"{""text"": ""First, find the bridge."", ""grade"": ""2"", ""week"": 25, ""world"": 7}",87,FALSE
+GTQ-2-W25-M2,GTQ-2-W25,2,Two sentence story: Adventure Challenge,"{""text"": ""Next, cross the river."", ""grade"": ""2"", ""week"": 25, ""world"": 7}",87,FALSE
+GTQ-2-W26-M1,GTQ-2-W26,1,Sustained practice: Skill Scout,"{""text"": ""The sky is bright and clear."", ""grade"": ""2"", ""week"": 26, ""world"": 7}",87,FALSE
+GTQ-2-W26-M2,GTQ-2-W26,2,Sustained practice: Adventure Challenge,"{""text"": ""The gator moved slowly."", ""grade"": ""2"", ""week"": 26, ""world"": 7}",87,FALSE
+GTQ-2-W27-M1,GTQ-2-W27,1,Edit and improve: Skill Scout,"{""text"": ""Find and fix the error."", ""grade"": ""2"", ""week"": 27, ""world"": 7}",87,FALSE
+GTQ-2-W27-M2,GTQ-2-W27,2,Edit and improve: Adventure Challenge,"{""text"": ""Read your words again."", ""grade"": ""2"", ""week"": 27, ""world"": 7}",87,FALSE
+GTQ-2-W28-M1,GTQ-2-W28,1,Sky kingdom challenge: Skill Scout,"{""text"": ""We reached the cloud castle."", ""grade"": ""2"", ""week"": 28, ""world"": 7}",87,FALSE
+GTQ-2-W28-M2,GTQ-2-W28,2,Sky kingdom challenge: Adventure Challenge,"{""text"": ""The view is amazing."", ""grade"": ""2"", ""week"": 28, ""world"": 7}",87,FALSE
+GTQ-2-W29-M1,GTQ-2-W29,1,Directions and lists: Skill Scout,"{""text"": ""Go left, then jump twice."", ""grade"": ""2"", ""week"": 29, ""world"": 8}",87,FALSE
+GTQ-2-W29-M2,GTQ-2-W29,2,Directions and lists: Adventure Challenge,"{""text"": ""Find the star near the tree."", ""grade"": ""2"", ""week"": 29, ""world"": 8}",87,FALSE
+GTQ-2-W30-M1,GTQ-2-W30,1,Friendly messages: Skill Scout,"{""text"": ""Dear Team, we are ready!"", ""grade"": ""2"", ""week"": 30, ""world"": 8}",87,FALSE
+GTQ-2-W30-M2,GTQ-2-W30,2,Friendly messages: Adventure Challenge,"{""text"": ""Thanks for your help today."", ""grade"": ""2"", ""week"": 30, ""world"": 8}",87,FALSE
+GTQ-2-W31-M1,GTQ-2-W31,1,Research notes: Skill Scout,"{""text"": ""Frogs live near the pond."", ""grade"": ""2"", ""week"": 31, ""world"": 8}",87,FALSE
+GTQ-2-W31-M2,GTQ-2-W31,2,Research notes: Adventure Challenge,"{""text"": ""The river moves toward the sea."", ""grade"": ""2"", ""week"": 31, ""world"": 8}",87,FALSE
+GTQ-2-W32-M1,GTQ-2-W32,1,Space mission review: Skill Scout,"{""text"": ""We completed the space mission."", ""grade"": ""2"", ""week"": 32, ""world"": 8}",87,FALSE
+GTQ-2-W32-M2,GTQ-2-W32,2,Space mission review: Adventure Challenge,"{""text"": ""The stars sparkled overhead."", ""grade"": ""2"", ""week"": 32, ""world"": 8}",87,FALSE
+GTQ-2-W33-M1,GTQ-2-W33,1,Your growth mission: Skill Scout,"{""text"": ""My fingers know more keys."", ""grade"": ""2"", ""week"": 33, ""world"": 9}",87,FALSE
+GTQ-2-W33-M2,GTQ-2-W33,2,Your growth mission: Adventure Challenge,"{""text"": ""I can see how I have grown."", ""grade"": ""2"", ""week"": 33, ""world"": 9}",87,FALSE
+GTQ-2-W34-M1,GTQ-2-W34,1,Accuracy championship: Skill Scout,"{""text"": ""Accuracy is my first goal."", ""grade"": ""2"", ""week"": 34, ""world"": 9}",87,FALSE
+GTQ-2-W34-M2,GTQ-2-W34,2,Accuracy championship: Adventure Challenge,"{""text"": ""I check every typed word."", ""grade"": ""2"", ""week"": 34, ""world"": 9}",87,FALSE
+GTQ-2-W35-M1,GTQ-2-W35,1,Final adventure: Skill Scout,"{""text"": ""The gator found a golden key."", ""grade"": ""2"", ""week"": 35, ""world"": 9}",87,FALSE
+GTQ-2-W35-M2,GTQ-2-W35,2,Final adventure: Adventure Challenge,"{""text"": ""The whole team cheered loudly."", ""grade"": ""2"", ""week"": 35, ""world"": 9}",87,FALSE
+GTQ-2-W36-M1,GTQ-2-W36,1,Gator graduation: Skill Scout,"{""text"": ""I will keep practicing typing."", ""grade"": ""2"", ""week"": 36, ""world"": 9}",87,FALSE
+GTQ-2-W36-M2,GTQ-2-W36,2,Gator graduation: Adventure Challenge,"{""text"": ""Every small step matters."", ""grade"": ""2"", ""week"": 36, ""world"": 9}",87,FALSE
+GTQ-3-W01-M1,GTQ-3-W01,1,Meet the keyboard: Skill Scout,"{""text"": ""asdf jkl;"", ""grade"": ""3"", ""week"": 1, ""world"": 1}",90,FALSE
+GTQ-3-W01-M2,GTQ-3-W01,2,Meet the keyboard: Adventure Challenge,"{""text"": ""ask a glad lad"", ""grade"": ""3"", ""week"": 1, ""world"": 1}",90,FALSE
+GTQ-3-W02-M1,GTQ-3-W02,1,Left home row: Skill Scout,"{""text"": ""left hand, right hand"", ""grade"": ""3"", ""week"": 2, ""world"": 1}",90,FALSE
+GTQ-3-W02-M2,GTQ-3-W02,2,Left home row: Adventure Challenge,"{""text"": ""find your home row"", ""grade"": ""3"", ""week"": 2, ""world"": 1}",90,FALSE
+GTQ-3-W03-M1,GTQ-3-W03,1,Right home row: Skill Scout,"{""text"": ""all hands are ready"", ""grade"": ""3"", ""week"": 3, ""world"": 1}",90,FALSE
+GTQ-3-W03-M2,GTQ-3-W03,2,Right home row: Adventure Challenge,"{""text"": ""slow fingers find keys"", ""grade"": ""3"", ""week"": 3, ""world"": 1}",90,FALSE
+GTQ-3-W04-M1,GTQ-3-W04,1,Camp skill review: Skill Scout,"{""text"": ""I can type with care."", ""grade"": ""3"", ""week"": 4, ""world"": 1}",90,FALSE
+GTQ-3-W04-M2,GTQ-3-W04,2,Camp skill review: Adventure Challenge,"{""text"": ""The gator learns each day."", ""grade"": ""3"", ""week"": 4, ""world"": 1}",90,FALSE
+GTQ-3-W05-M1,GTQ-3-W05,1,Middle keys: Skill Scout,"{""text"": ""g and h help us type"", ""grade"": ""3"", ""week"": 5, ""world"": 2}",90,FALSE
+GTQ-3-W05-M2,GTQ-3-W05,2,Middle keys: Adventure Challenge,"{""text"": ""a glass of cool water"", ""grade"": ""3"", ""week"": 5, ""world"": 2}",90,FALSE
+GTQ-3-W06-M1,GTQ-3-W06,1,Find the vowels: Skill Scout,"{""text"": ""The rain fell on the jungle."", ""grade"": ""3"", ""week"": 6, ""world"": 2}",90,FALSE
+GTQ-3-W06-M2,GTQ-3-W06,2,Find the vowels: Adventure Challenge,"{""text"": ""The river runs past tall trees."", ""grade"": ""3"", ""week"": 6, ""world"": 2}",90,FALSE
+GTQ-3-W07-M1,GTQ-3-W07,1,Home row pathways: Skill Scout,"{""text"": ""Keep your hands on the home row."", ""grade"": ""3"", ""week"": 7, ""world"": 2}",90,FALSE
+GTQ-3-W07-M2,GTQ-3-W07,2,Home row pathways: Adventure Challenge,"{""text"": ""Use both hands for the next word."", ""grade"": ""3"", ""week"": 7, ""world"": 2}",90,FALSE
+GTQ-3-W08-M1,GTQ-3-W08,1,Jungle checkpoint: Skill Scout,"{""text"": ""The green gator crossed the bridge."", ""grade"": ""3"", ""week"": 8, ""world"": 2}",90,FALSE
+GTQ-3-W08-M2,GTQ-3-W08,2,Jungle checkpoint: Adventure Challenge,"{""text"": ""A bright parrot flew overhead."", ""grade"": ""3"", ""week"": 8, ""world"": 2}",90,FALSE
+GTQ-3-W09-M1,GTQ-3-W09,1,Common words: Skill Scout,"{""text"": ""The treasure is hidden in a cave."", ""grade"": ""3"", ""week"": 9, ""world"": 3}",90,FALSE
+GTQ-3-W09-M2,GTQ-3-W09,2,Common words: Adventure Challenge,"{""text"": ""We found a map near the lagoon."", ""grade"": ""3"", ""week"": 9, ""world"": 3}",90,FALSE
+GTQ-3-W10-M1,GTQ-3-W10,1,Word families: Skill Scout,"{""text"": ""Bright lights shine underwater."", ""grade"": ""3"", ""week"": 10, ""world"": 3}",90,FALSE
+GTQ-3-W10-M2,GTQ-3-W10,2,Word families: Adventure Challenge,"{""text"": ""The shells were pink, gold, and blue."", ""grade"": ""3"", ""week"": 10, ""world"": 3}",90,FALSE
+GTQ-3-W11-M1,GTQ-3-W11,1,Accuracy adventure: Skill Scout,"{""text"": ""Accuracy helps me type better."", ""grade"": ""3"", ""week"": 11, ""world"": 3}",90,FALSE
+GTQ-3-W11-M2,GTQ-3-W11,2,Accuracy adventure: Adventure Challenge,"{""text"": ""I can fix a mistake and keep going."", ""grade"": ""3"", ""week"": 11, ""world"": 3}",90,FALSE
+GTQ-3-W12-M1,GTQ-3-W12,1,Lagoon challenge: Skill Scout,"{""text"": ""A careful explorer found the key."", ""grade"": ""3"", ""week"": 12, ""world"": 3}",90,FALSE
+GTQ-3-W12-M2,GTQ-3-W12,2,Lagoon challenge: Adventure Challenge,"{""text"": ""Our team reached the island safely."", ""grade"": ""3"", ""week"": 12, ""world"": 3}",90,FALSE
+GTQ-3-W13-M1,GTQ-3-W13,1,"Top row, left: Skill Scout","{""text"": ""The top row starts with QWERT."", ""grade"": ""3"", ""week"": 13, ""world"": 4}",90,FALSE
+GTQ-3-W13-M2,GTQ-3-W13,2,"Top row, left: Adventure Challenge","{""text"": ""Reach upward, then return home."", ""grade"": ""3"", ""week"": 13, ""world"": 4}",90,FALSE
+GTQ-3-W14-M1,GTQ-3-W14,1,"Top row, right: Skill Scout","{""text"": ""You can reach the top right keys."", ""grade"": ""3"", ""week"": 14, ""world"": 4}",90,FALSE
+GTQ-3-W14-M2,GTQ-3-W14,2,"Top row, right: Adventure Challenge","{""text"": ""Practice until the move feels easy."", ""grade"": ""3"", ""week"": 14, ""world"": 4}",90,FALSE
+GTQ-3-W15-M1,GTQ-3-W15,1,"Bottom row, left: Skill Scout","{""text"": ""The bottom row holds ZXCVB."", ""grade"": ""3"", ""week"": 15, ""world"": 4}",90,FALSE
+GTQ-3-W15-M2,GTQ-3-W15,2,"Bottom row, left: Adventure Challenge","{""text"": ""Move down and return to the middle."", ""grade"": ""3"", ""week"": 15, ""world"": 4}",90,FALSE
+GTQ-3-W16-M1,GTQ-3-W16,1,"Bottom row, right: Skill Scout","{""text"": ""A map, a note, and a key."", ""grade"": ""3"", ""week"": 16, ""world"": 4}",90,FALSE
+GTQ-3-W16-M2,GTQ-3-W16,2,"Bottom row, right: Adventure Challenge","{""text"": ""The gator found a quiet cave."", ""grade"": ""3"", ""week"": 16, ""world"": 4}",90,FALSE
+GTQ-3-W17-M1,GTQ-3-W17,1,Shift key discovery: Skill Scout,"{""text"": ""Shift helps with capital letters."", ""grade"": ""3"", ""week"": 17, ""world"": 5}",90,FALSE
+GTQ-3-W17-M2,GTQ-3-W17,2,Shift key discovery: Adventure Challenge,"{""text"": ""Start each sentence with a capital."", ""grade"": ""3"", ""week"": 17, ""world"": 5}",90,FALSE
+GTQ-3-W18-M1,GTQ-3-W18,1,Names and capitals: Skill Scout,"{""text"": ""My Gator Team is ready today."", ""grade"": ""3"", ""week"": 18, ""world"": 5}",90,FALSE
+GTQ-3-W18-M2,GTQ-3-W18,2,Names and capitals: Adventure Challenge,"{""text"": ""We climbed Gator Mountain at dawn."", ""grade"": ""3"", ""week"": 18, ""world"": 5}",90,FALSE
+GTQ-3-W19-M1,GTQ-3-W19,1,Punctuation practice: Skill Scout,"{""text"": ""Can you find the hidden door?"", ""grade"": ""3"", ""week"": 19, ""world"": 5}",90,FALSE
+GTQ-3-W19-M2,GTQ-3-W19,2,Punctuation practice: Adventure Challenge,"{""text"": ""Wow, that volcano is bright!"", ""grade"": ""3"", ""week"": 19, ""world"": 5}",90,FALSE
+GTQ-3-W20-M1,GTQ-3-W20,1,Volcano skill review: Skill Scout,"{""text"": ""Look out! The lava is moving."", ""grade"": ""3"", ""week"": 20, ""world"": 5}",90,FALSE
+GTQ-3-W20-M2,GTQ-3-W20,2,Volcano skill review: Adventure Challenge,"{""text"": ""We made it safely to the other side."", ""grade"": ""3"", ""week"": 20, ""world"": 5}",90,FALSE
+GTQ-3-W21-M1,GTQ-3-W21,1,Sentence starting line: Skill Scout,"{""text"": ""A snowy path led to the castle."", ""grade"": ""3"", ""week"": 21, ""world"": 6}",90,FALSE
+GTQ-3-W21-M2,GTQ-3-W21,2,Sentence starting line: Adventure Challenge,"{""text"": ""The gator stepped into the cold air."", ""grade"": ""3"", ""week"": 21, ""world"": 6}",90,FALSE
+GTQ-3-W22-M1,GTQ-3-W22,1,Spaces and rhythm: Skill Scout,"{""text"": ""Spaces separate each typed word."", ""grade"": ""3"", ""week"": 22, ""world"": 6}",90,FALSE
+GTQ-3-W22-M2,GTQ-3-W22,2,Spaces and rhythm: Adventure Challenge,"{""text"": ""Pause briefly, then find the next key."", ""grade"": ""3"", ""week"": 22, ""world"": 6}",90,FALSE
+GTQ-3-W23-M1,GTQ-3-W23,1,Sentence finishing line: Skill Scout,"{""text"": ""The wind blew across the icy lake."", ""grade"": ""3"", ""week"": 23, ""world"": 6}",90,FALSE
+GTQ-3-W23-M2,GTQ-3-W23,2,Sentence finishing line: Adventure Challenge,"{""text"": ""The team found a warm place to rest."", ""grade"": ""3"", ""week"": 23, ""world"": 6}",90,FALSE
+GTQ-3-W24-M1,GTQ-3-W24,1,Frozen fortress review: Skill Scout,"{""text"": ""Practice helps new skills become easy."", ""grade"": ""3"", ""week"": 24, ""world"": 6}",90,FALSE
+GTQ-3-W24-M2,GTQ-3-W24,2,Frozen fortress review: Adventure Challenge,"{""text"": ""Each correct key builds confidence."", ""grade"": ""3"", ""week"": 24, ""world"": 6}",90,FALSE
+GTQ-3-W25-M1,GTQ-3-W25,1,Two sentence story: Skill Scout,"{""text"": ""The gator met a friendly cloud dragon."", ""grade"": ""3"", ""week"": 25, ""world"": 7}",90,FALSE
+GTQ-3-W25-M2,GTQ-3-W25,2,Two sentence story: Adventure Challenge,"{""text"": ""The sky was full of colorful kites."", ""grade"": ""3"", ""week"": 25, ""world"": 7}",90,FALSE
+GTQ-3-W26-M1,GTQ-3-W26,1,Sustained practice: Skill Scout,"{""text"": ""Our explorer wrote two short notes."", ""grade"": ""3"", ""week"": 26, ""world"": 7}",90,FALSE
+GTQ-3-W26-M2,GTQ-3-W26,2,Sustained practice: Adventure Challenge,"{""text"": ""We looked below and above the clouds."", ""grade"": ""3"", ""week"": 26, ""world"": 7}",90,FALSE
+GTQ-3-W27-M1,GTQ-3-W27,1,Edit and improve: Skill Scout,"{""text"": ""Read the sentence before you type it."", ""grade"": ""3"", ""week"": 27, ""world"": 7}",90,FALSE
+GTQ-3-W27-M2,GTQ-3-W27,2,Edit and improve: Adventure Challenge,"{""text"": ""Use Backspace to fix a typing error."", ""grade"": ""3"", ""week"": 27, ""world"": 7}",90,FALSE
+GTQ-3-W28-M1,GTQ-3-W28,1,Sky kingdom challenge: Skill Scout,"{""text"": ""The flying castle floated above us."", ""grade"": ""3"", ""week"": 28, ""world"": 7}",90,FALSE
+GTQ-3-W28-M2,GTQ-3-W28,2,Sky kingdom challenge: Adventure Challenge,"{""text"": ""We opened a door to the next world."", ""grade"": ""3"", ""week"": 28, ""world"": 7}",90,FALSE
+GTQ-3-W29-M1,GTQ-3-W29,1,Directions and lists: Skill Scout,"{""text"": ""First, collect the map and lantern."", ""grade"": ""3"", ""week"": 29, ""world"": 8}",90,FALSE
+GTQ-3-W29-M2,GTQ-3-W29,2,Directions and lists: Adventure Challenge,"{""text"": ""Next, follow the marked path to safety."", ""grade"": ""3"", ""week"": 29, ""world"": 8}",90,FALSE
+GTQ-3-W30-M1,GTQ-3-W30,1,Friendly messages: Skill Scout,"{""text"": ""Dear Gator Team, thank you for helping!"", ""grade"": ""3"", ""week"": 30, ""world"": 8}",90,FALSE
+GTQ-3-W30-M2,GTQ-3-W30,2,Friendly messages: Adventure Challenge,"{""text"": ""We hope to explore together again soon."", ""grade"": ""3"", ""week"": 30, ""world"": 8}",90,FALSE
+GTQ-3-W31-M1,GTQ-3-W31,1,Research notes: Skill Scout,"{""text"": ""The moon reflects sunlight from the sun."", ""grade"": ""3"", ""week"": 31, ""world"": 8}",90,FALSE
+GTQ-3-W31-M2,GTQ-3-W31,2,Research notes: Adventure Challenge,"{""text"": ""Some stars are much larger than Earth."", ""grade"": ""3"", ""week"": 31, ""world"": 8}",90,FALSE
+GTQ-3-W32-M1,GTQ-3-W32,1,Space mission review: Skill Scout,"{""text"": ""The space ship headed toward the stars."", ""grade"": ""3"", ""week"": 32, ""world"": 8}",90,FALSE
+GTQ-3-W32-M2,GTQ-3-W32,2,Space mission review: Adventure Challenge,"{""text"": ""Our typing helped the crew navigate."", ""grade"": ""3"", ""week"": 32, ""world"": 8}",90,FALSE
+GTQ-3-W33-M1,GTQ-3-W33,1,Your growth mission: Skill Scout,"{""text"": ""I type more smoothly than before."", ""grade"": ""3"", ""week"": 33, ""world"": 9}",90,FALSE
+GTQ-3-W33-M2,GTQ-3-W33,2,Your growth mission: Adventure Challenge,"{""text"": ""My fingers find keys with less effort."", ""grade"": ""3"", ""week"": 33, ""world"": 9}",90,FALSE
+GTQ-3-W34-M1,GTQ-3-W34,1,Accuracy championship: Skill Scout,"{""text"": ""Accuracy matters more than racing."", ""grade"": ""3"", ""week"": 34, ""world"": 9}",90,FALSE
+GTQ-3-W34-M2,GTQ-3-W34,2,Accuracy championship: Adventure Challenge,"{""text"": ""I can slow down and still succeed."", ""grade"": ""3"", ""week"": 34, ""world"": 9}",90,FALSE
+GTQ-3-W35-M1,GTQ-3-W35,1,Final adventure: Skill Scout,"{""text"": ""The final treasure was a golden keyboard."", ""grade"": ""3"", ""week"": 35, ""world"": 9}",90,FALSE
+GTQ-3-W35-M2,GTQ-3-W35,2,Final adventure: Adventure Challenge,"{""text"": ""Every completed mission showed my growth."", ""grade"": ""3"", ""week"": 35, ""world"": 9}",90,FALSE
+GTQ-3-W36-M1,GTQ-3-W36,1,Gator graduation: Skill Scout,"{""text"": ""I am proud of how much I have learned."", ""grade"": ""3"", ""week"": 36, ""world"": 9}",90,FALSE
+GTQ-3-W36-M2,GTQ-3-W36,2,Gator graduation: Adventure Challenge,"{""text"": ""I will keep building keyboarding skills."", ""grade"": ""3"", ""week"": 36, ""world"": 9}",90,FALSE
+GTQ-4-W01-M1,GTQ-4-W01,1,Meet the keyboard: Skill Scout,"{""text"": ""Place your fingers on the home row."", ""grade"": ""4"", ""week"": 1, ""world"": 1}",90,FALSE
+GTQ-4-W01-M2,GTQ-4-W01,2,Meet the keyboard: Adventure Challenge,"{""text"": ""Good typing starts with comfortable hands."", ""grade"": ""4"", ""week"": 1, ""world"": 1}",90,FALSE
+GTQ-4-W02-M1,GTQ-4-W02,1,Left home row: Skill Scout,"{""text"": ""Use the left hand for A, S, D, and F."", ""grade"": ""4"", ""week"": 2, ""world"": 1}",90,FALSE
+GTQ-4-W02-M2,GTQ-4-W02,2,Left home row: Adventure Challenge,"{""text"": ""Return each finger to its home position."", ""grade"": ""4"", ""week"": 2, ""world"": 1}",90,FALSE
+GTQ-4-W03-M1,GTQ-4-W03,1,Right home row: Skill Scout,"{""text"": ""Use the right hand for J, K, L, and semicolon."", ""grade"": ""4"", ""week"": 3, ""world"": 1}",90,FALSE
+GTQ-4-W03-M2,GTQ-4-W03,2,Right home row: Adventure Challenge,"{""text"": ""Keep both wrists comfortable as you type."", ""grade"": ""4"", ""week"": 3, ""world"": 1}",90,FALSE
+GTQ-4-W04-M1,GTQ-4-W04,1,Camp skill review: Skill Scout,"{""text"": ""Accuracy is more useful than rushing."", ""grade"": ""4"", ""week"": 4, ""world"": 1}",90,FALSE
+GTQ-4-W04-M2,GTQ-4-W04,2,Camp skill review: Adventure Challenge,"{""text"": ""Notice each error and correct it carefully."", ""grade"": ""4"", ""week"": 4, ""world"": 1}",90,FALSE
+GTQ-4-W05-M1,GTQ-4-W05,1,Middle keys: Skill Scout,"{""text"": ""The G and H keys sit near the center."", ""grade"": ""4"", ""week"": 5, ""world"": 2}",90,FALSE
+GTQ-4-W05-M2,GTQ-4-W05,2,Middle keys: Adventure Challenge,"{""text"": ""Move your index fingers smoothly and return."", ""grade"": ""4"", ""week"": 5, ""world"": 2}",90,FALSE
+GTQ-4-W06-M1,GTQ-4-W06,1,Find the vowels: Skill Scout,"{""text"": ""Vowels appear in many common words."", ""grade"": ""4"", ""week"": 6, ""world"": 2}",90,FALSE
+GTQ-4-W06-M2,GTQ-4-W06,2,Find the vowels: Adventure Challenge,"{""text"": ""Find every vowel without searching too long."", ""grade"": ""4"", ""week"": 6, ""world"": 2}",90,FALSE
+GTQ-4-W07-M1,GTQ-4-W07,1,Home row pathways: Skill Scout,"{""text"": ""A steady rhythm helps you type accurately."", ""grade"": ""4"", ""week"": 7, ""world"": 2}",90,FALSE
+GTQ-4-W07-M2,GTQ-4-W07,2,Home row pathways: Adventure Challenge,"{""text"": ""Practice a short line using both hands."", ""grade"": ""4"", ""week"": 7, ""world"": 2}",90,FALSE
+GTQ-4-W08-M1,GTQ-4-W08,1,Jungle checkpoint: Skill Scout,"{""text"": ""Our gator crossed a bridge in the rainforest."", ""grade"": ""4"", ""week"": 8, ""world"": 2}",90,FALSE
+GTQ-4-W08-M2,GTQ-4-W08,2,Jungle checkpoint: Adventure Challenge,"{""text"": ""The path ahead disappeared behind thick vines."", ""grade"": ""4"", ""week"": 8, ""world"": 2}",90,FALSE
+GTQ-4-W09-M1,GTQ-4-W09,1,Common words: Skill Scout,"{""text"": ""A treasure map showed islands near the coast."", ""grade"": ""4"", ""week"": 9, ""world"": 3}",90,FALSE
+GTQ-4-W09-M2,GTQ-4-W09,2,Common words: Adventure Challenge,"{""text"": ""The team packed supplies for the long journey."", ""grade"": ""4"", ""week"": 9, ""world"": 3}",90,FALSE
+GTQ-4-W10-M1,GTQ-4-W10,1,Word families: Skill Scout,"{""text"": ""The coral reef was full of colorful fish."", ""grade"": ""4"", ""week"": 10, ""world"": 3}",90,FALSE
+GTQ-4-W10-M2,GTQ-4-W10,2,Word families: Adventure Challenge,"{""text"": ""The lagoon became quiet as the sun went down."", ""grade"": ""4"", ""week"": 10, ""world"": 3}",90,FALSE
+GTQ-4-W11-M1,GTQ-4-W11,1,Accuracy adventure: Skill Scout,"{""text"": ""When you make an error, correct it calmly."", ""grade"": ""4"", ""week"": 11, ""world"": 3}",90,FALSE
+GTQ-4-W11-M2,GTQ-4-W11,2,Accuracy adventure: Adventure Challenge,"{""text"": ""Try to keep your eyes on the practice text."", ""grade"": ""4"", ""week"": 11, ""world"": 3}",90,FALSE
+GTQ-4-W12-M1,GTQ-4-W12,1,Lagoon challenge: Skill Scout,"{""text"": ""The explorer uncovered a golden compass."", ""grade"": ""4"", ""week"": 12, ""world"": 3}",90,FALSE
+GTQ-4-W12-M2,GTQ-4-W12,2,Lagoon challenge: Adventure Challenge,"{""text"": ""The final clue appeared inside a small chest."", ""grade"": ""4"", ""week"": 12, ""world"": 3}",90,FALSE
+GTQ-4-W13-M1,GTQ-4-W13,1,"Top row, left: Skill Scout","{""text"": ""Reach the Q, W, E, R, and T keys above home row."", ""grade"": ""4"", ""week"": 13, ""world"": 4}",90,FALSE
+GTQ-4-W13-M2,GTQ-4-W13,2,"Top row, left: Adventure Challenge","{""text"": ""Return your left-hand fingers after each reach."", ""grade"": ""4"", ""week"": 13, ""world"": 4}",90,FALSE
+GTQ-4-W14-M1,GTQ-4-W14,1,"Top row, right: Skill Scout","{""text"": ""The right side of the top row includes Y, U, I, O, and P."", ""grade"": ""4"", ""week"": 14, ""world"": 4}",90,FALSE
+GTQ-4-W14-M2,GTQ-4-W14,2,"Top row, right: Adventure Challenge","{""text"": ""Use careful movements without lifting your hands too high."", ""grade"": ""4"", ""week"": 14, ""world"": 4}",90,FALSE
+GTQ-4-W15-M1,GTQ-4-W15,1,"Bottom row, left: Skill Scout","{""text"": ""The Z, X, C, V, and B keys extend the left side."", ""grade"": ""4"", ""week"": 15, ""world"": 4}",90,FALSE
+GTQ-4-W15-M2,GTQ-4-W15,2,"Bottom row, left: Adventure Challenge","{""text"": ""The bottom row takes practice and patient attention."", ""grade"": ""4"", ""week"": 15, ""world"": 4}",90,FALSE
+GTQ-4-W16-M1,GTQ-4-W16,1,"Bottom row, right: Skill Scout","{""text"": ""Try N, M, comma, period, and slash with control."", ""grade"": ""4"", ""week"": 16, ""world"": 4}",90,FALSE
+GTQ-4-W16-M2,GTQ-4-W16,2,"Bottom row, right: Adventure Challenge","{""text"": ""Remember to return to the middle row."", ""grade"": ""4"", ""week"": 16, ""world"": 4}",90,FALSE
+GTQ-4-W17-M1,GTQ-4-W17,1,Shift key discovery: Skill Scout,"{""text"": ""Hold Shift with the opposite hand for capital letters."", ""grade"": ""4"", ""week"": 17, ""world"": 5}",90,FALSE
+GTQ-4-W17-M2,GTQ-4-W17,2,Shift key discovery: Adventure Challenge,"{""text"": ""A capital letter can begin an important sentence."", ""grade"": ""4"", ""week"": 17, ""world"": 5}",90,FALSE
+GTQ-4-W18-M1,GTQ-4-W18,1,Names and capitals: Skill Scout,"{""text"": ""Gator Mountain looked peaceful in the morning."", ""grade"": ""4"", ""week"": 18, ""world"": 5}",90,FALSE
+GTQ-4-W18-M2,GTQ-4-W18,2,Names and capitals: Adventure Challenge,"{""text"": ""Captain Gator collected one final clue at the summit."", ""grade"": ""4"", ""week"": 18, ""world"": 5}",90,FALSE
+GTQ-4-W19-M1,GTQ-4-W19,1,Punctuation practice: Skill Scout,"{""text"": ""Do these directions lead to the hidden cave?"", ""grade"": ""4"", ""week"": 19, ""world"": 5}",90,FALSE
+GTQ-4-W19-M2,GTQ-4-W19,2,Punctuation practice: Adventure Challenge,"{""text"": ""Watch out! The ground is getting warmer."", ""grade"": ""4"", ""week"": 19, ""world"": 5}",90,FALSE
+GTQ-4-W20-M1,GTQ-4-W20,1,Volcano skill review: Skill Scout,"{""text"": ""After the volcano quieted, the team continued."", ""grade"": ""4"", ""week"": 20, ""world"": 5}",90,FALSE
+GTQ-4-W20-M2,GTQ-4-W20,2,Volcano skill review: Adventure Challenge,"{""text"": ""The last stone bridge opened onto a snowy trail."", ""grade"": ""4"", ""week"": 20, ""world"": 5}",90,FALSE
+GTQ-4-W21-M1,GTQ-4-W21,1,Sentence starting line: Skill Scout,"{""text"": ""The frozen castle had sparkling windows."", ""grade"": ""4"", ""week"": 21, ""world"": 6}",90,FALSE
+GTQ-4-W21-M2,GTQ-4-W21,2,Sentence starting line: Adventure Challenge,"{""text"": ""The explorers followed footprints across the snow."", ""grade"": ""4"", ""week"": 21, ""world"": 6}",90,FALSE
+GTQ-4-W22-M1,GTQ-4-W22,1,Spaces and rhythm: Skill Scout,"{""text"": ""One space after a word helps everyone read clearly."", ""grade"": ""4"", ""week"": 22, ""world"": 6}",90,FALSE
+GTQ-4-W22-M2,GTQ-4-W22,2,Spaces and rhythm: Adventure Challenge,"{""text"": ""A smooth rhythm keeps the sentence moving."", ""grade"": ""4"", ""week"": 22, ""world"": 6}",90,FALSE
+GTQ-4-W23-M1,GTQ-4-W23,1,Sentence finishing line: Skill Scout,"{""text"": ""We found a notebook beside the icy lake."", ""grade"": ""4"", ""week"": 23, ""world"": 6}",90,FALSE
+GTQ-4-W23-M2,GTQ-4-W23,2,Sentence finishing line: Adventure Challenge,"{""text"": ""Its first page contained an unusual message."", ""grade"": ""4"", ""week"": 23, ""world"": 6}",90,FALSE
+GTQ-4-W24-M1,GTQ-4-W24,1,Frozen fortress review: Skill Scout,"{""text"": ""A successful typist checks accuracy before speed."", ""grade"": ""4"", ""week"": 24, ""world"": 6}",90,FALSE
+GTQ-4-W24-M2,GTQ-4-W24,2,Frozen fortress review: Adventure Challenge,"{""text"": ""Practicing the same passage can improve fluency."", ""grade"": ""4"", ""week"": 24, ""world"": 6}",90,FALSE
+GTQ-4-W25-M1,GTQ-4-W25,1,Two sentence story: Skill Scout,"{""text"": ""The cloud kingdom floated above the mountains."", ""grade"": ""4"", ""week"": 25, ""world"": 7}",90,FALSE
+GTQ-4-W25-M2,GTQ-4-W25,2,Two sentence story: Adventure Challenge,"{""text"": ""A bright balloon carried our supplies across the valley."", ""grade"": ""4"", ""week"": 25, ""world"": 7}",90,FALSE
+GTQ-4-W26-M1,GTQ-4-W26,1,Sustained practice: Skill Scout,"{""text"": ""The gator wrote a message to the other explorers."", ""grade"": ""4"", ""week"": 26, ""world"": 7}",90,FALSE
+GTQ-4-W26-M2,GTQ-4-W26,2,Sustained practice: Adventure Challenge,"{""text"": ""Everyone checked the map before moving forward."", ""grade"": ""4"", ""week"": 26, ""world"": 7}",90,FALSE
+GTQ-4-W27-M1,GTQ-4-W27,1,Edit and improve: Skill Scout,"{""text"": ""Proofread your text for missing letters and spaces."", ""grade"": ""4"", ""week"": 27, ""world"": 7}",90,FALSE
+GTQ-4-W27-M2,GTQ-4-W27,2,Edit and improve: Adventure Challenge,"{""text"": ""Correcting mistakes is part of real keyboarding."", ""grade"": ""4"", ""week"": 27, ""world"": 7}",90,FALSE
+GTQ-4-W28-M1,GTQ-4-W28,1,Sky kingdom challenge: Skill Scout,"{""text"": ""The final cloud gate opened after careful typing."", ""grade"": ""4"", ""week"": 28, ""world"": 7}",90,FALSE
+GTQ-4-W28-M2,GTQ-4-W28,2,Sky kingdom challenge: Adventure Challenge,"{""text"": ""Our team celebrated by watching the sunrise."", ""grade"": ""4"", ""week"": 28, ""world"": 7}",90,FALSE
+GTQ-4-W29-M1,GTQ-4-W29,1,Directions and lists: Skill Scout,"{""text"": ""First, record each direction in the correct order."", ""grade"": ""4"", ""week"": 29, ""world"": 8}",90,FALSE
+GTQ-4-W29-M2,GTQ-4-W29,2,Directions and lists: Adventure Challenge,"{""text"": ""Next, explain how to reach the launch platform."", ""grade"": ""4"", ""week"": 29, ""world"": 8}",90,FALSE
+GTQ-4-W30-M1,GTQ-4-W30,1,Friendly messages: Skill Scout,"{""text"": ""Dear Exploration Team, our mission is ready to begin."", ""grade"": ""4"", ""week"": 30, ""world"": 8}",90,FALSE
+GTQ-4-W30-M2,GTQ-4-W30,2,Friendly messages: Adventure Challenge,"{""text"": ""Thank you for sharing your notes and careful observations."", ""grade"": ""4"", ""week"": 30, ""world"": 8}",90,FALSE
+GTQ-4-W31-M1,GTQ-4-W31,1,Research notes: Skill Scout,"{""text"": ""The moon travels around Earth approximately once a month."", ""grade"": ""4"", ""week"": 31, ""world"": 8}",90,FALSE
+GTQ-4-W31-M2,GTQ-4-W31,2,Research notes: Adventure Challenge,"{""text"": ""An astronaut needs clear instructions during a mission."", ""grade"": ""4"", ""week"": 31, ""world"": 8}",90,FALSE
+GTQ-4-W32-M1,GTQ-4-W32,1,Space mission review: Skill Scout,"{""text"": ""A small typing error can change a sentence's meaning."", ""grade"": ""4"", ""week"": 32, ""world"": 8}",90,FALSE
+GTQ-4-W32-M2,GTQ-4-W32,2,Space mission review: Adventure Challenge,"{""text"": ""Careful reading helps the entire team stay organized."", ""grade"": ""4"", ""week"": 32, ""world"": 8}",90,FALSE
+GTQ-4-W33-M1,GTQ-4-W33,1,Your growth mission: Skill Scout,"{""text"": ""Compare your current work with your early practice."", ""grade"": ""4"", ""week"": 33, ""world"": 9}",90,FALSE
+GTQ-4-W33-M2,GTQ-4-W33,2,Your growth mission: Adventure Challenge,"{""text"": ""Notice improvements in comfort, focus, and accuracy."", ""grade"": ""4"", ""week"": 33, ""world"": 9}",90,FALSE
+GTQ-4-W34-M1,GTQ-4-W34,1,Accuracy championship: Skill Scout,"{""text"": ""Try this passage with patience and steady hands."", ""grade"": ""4"", ""week"": 34, ""world"": 9}",90,FALSE
+GTQ-4-W34-M2,GTQ-4-W34,2,Accuracy championship: Adventure Challenge,"{""text"": ""A correct sentence matters more than a fast one."", ""grade"": ""4"", ""week"": 34, ""world"": 9}",90,FALSE
+GTQ-4-W35-M1,GTQ-4-W35,1,Final adventure: Skill Scout,"{""text"": ""The golden keyboard unlocked the championship gate."", ""grade"": ""4"", ""week"": 35, ""world"": 9}",90,FALSE
+GTQ-4-W35-M2,GTQ-4-W35,2,Final adventure: Adventure Challenge,"{""text"": ""The gator remembered each challenge along the way."", ""grade"": ""4"", ""week"": 35, ""world"": 9}",90,FALSE
+GTQ-4-W36-M1,GTQ-4-W36,1,Gator graduation: Skill Scout,"{""text"": ""Every practice session helped me build a useful skill."", ""grade"": ""4"", ""week"": 36, ""world"": 9}",90,FALSE
+GTQ-4-W36-M2,GTQ-4-W36,2,Gator graduation: Adventure Challenge,"{""text"": ""I can continue learning even after the adventure ends."", ""grade"": ""4"", ""week"": 36, ""world"": 9}",90,FALSE
+GTQ-5-W01-M1,GTQ-5-W01,1,Meet the keyboard: Skill Scout,"{""text"": ""Strong typing habits begin with relaxed, balanced posture."", ""grade"": ""5"", ""week"": 1, ""world"": 1}",90,FALSE
+GTQ-5-W01-M2,GTQ-5-W01,2,Meet the keyboard: Adventure Challenge,"{""text"": ""Accuracy, not speed, is the foundation of keyboard mastery."", ""grade"": ""5"", ""week"": 1, ""world"": 1}",90,FALSE
+GTQ-5-W02-M1,GTQ-5-W02,1,Left home row: Skill Scout,"{""text"": ""Keep the left-hand fingers on A, S, D, and F."", ""grade"": ""5"", ""week"": 2, ""world"": 1}",90,FALSE
+GTQ-5-W02-M2,GTQ-5-W02,2,Left home row: Adventure Challenge,"{""text"": ""Use careful reaches and return to the home row after each key."", ""grade"": ""5"", ""week"": 2, ""world"": 1}",90,FALSE
+GTQ-5-W03-M1,GTQ-5-W03,1,Right home row: Skill Scout,"{""text"": ""The right-hand home keys are J, K, L, and semicolon."", ""grade"": ""5"", ""week"": 3, ""world"": 1}",90,FALSE
+GTQ-5-W03-M2,GTQ-5-W03,2,Right home row: Adventure Challenge,"{""text"": ""Consistent finger placement makes typing feel more natural."", ""grade"": ""5"", ""week"": 3, ""world"": 1}",90,FALSE
+GTQ-5-W04-M1,GTQ-5-W04,1,Camp skill review: Skill Scout,"{""text"": ""Reflect on which keys are easiest and hardest for you."", ""grade"": ""5"", ""week"": 4, ""world"": 1}",90,FALSE
+GTQ-5-W04-M2,GTQ-5-W04,2,Camp skill review: Adventure Challenge,"{""text"": ""A thoughtful practice plan is more useful than rushing."", ""grade"": ""5"", ""week"": 4, ""world"": 1}",90,FALSE
+GTQ-5-W05-M1,GTQ-5-W05,1,Middle keys: Skill Scout,"{""text"": ""The center keys, G and H, require deliberate finger movement."", ""grade"": ""5"", ""week"": 5, ""world"": 2}",90,FALSE
+GTQ-5-W05-M2,GTQ-5-W05,2,Middle keys: Adventure Challenge,"{""text"": ""Each finger should return to its starting position after a reach."", ""grade"": ""5"", ""week"": 5, ""world"": 2}",90,FALSE
+GTQ-5-W06-M1,GTQ-5-W06,1,Find the vowels: Skill Scout,"{""text"": ""Vowels appear frequently in the words we use every day."", ""grade"": ""5"", ""week"": 6, ""world"": 2}",90,FALSE
+GTQ-5-W06-M2,GTQ-5-W06,2,Find the vowels: Adventure Challenge,"{""text"": ""Build smooth patterns while maintaining accurate keystrokes."", ""grade"": ""5"", ""week"": 6, ""world"": 2}",90,FALSE
+GTQ-5-W07-M1,GTQ-5-W07,1,Home row pathways: Skill Scout,"{""text"": ""When a passage becomes difficult, focus on the next key."", ""grade"": ""5"", ""week"": 7, ""world"": 2}",90,FALSE
+GTQ-5-W07-M2,GTQ-5-W07,2,Home row pathways: Adventure Challenge,"{""text"": ""Steady practice can help new keyboarding habits become automatic."", ""grade"": ""5"", ""week"": 7, ""world"": 2}",90,FALSE
+GTQ-5-W08-M1,GTQ-5-W08,1,Jungle checkpoint: Skill Scout,"{""text"": ""Captain Gator entered the jungle to search for a hidden map."", ""grade"": ""5"", ""week"": 8, ""world"": 2}",90,FALSE
+GTQ-5-W08-M2,GTQ-5-W08,2,Jungle checkpoint: Adventure Challenge,"{""text"": ""A team of explorers crossed a rope bridge above the river."", ""grade"": ""5"", ""week"": 8, ""world"": 2}",90,FALSE
+GTQ-5-W09-M1,GTQ-5-W09,1,Common words: Skill Scout,"{""text"": ""The lagoon sparkled beneath the warm afternoon sunlight."", ""grade"": ""5"", ""week"": 9, ""world"": 3}",90,FALSE
+GTQ-5-W09-M2,GTQ-5-W09,2,Common words: Adventure Challenge,"{""text"": ""A weathered treasure chest rested near the coral reef."", ""grade"": ""5"", ""week"": 9, ""world"": 3}",90,FALSE
+GTQ-5-W10-M1,GTQ-5-W10,1,Word families: Skill Scout,"{""text"": ""Word patterns make unfamiliar typing challenges easier."", ""grade"": ""5"", ""week"": 10, ""world"": 3}",90,FALSE
+GTQ-5-W10-M2,GTQ-5-W10,2,Word families: Adventure Challenge,"{""text"": ""Review repeated errors to discover which keys need more practice."", ""grade"": ""5"", ""week"": 10, ""world"": 3}",90,FALSE
+GTQ-5-W11-M1,GTQ-5-W11,1,Accuracy adventure: Skill Scout,"{""text"": ""A strong typist values accuracy before attempting greater speed."", ""grade"": ""5"", ""week"": 11, ""world"": 3}",90,FALSE
+GTQ-5-W11-M2,GTQ-5-W11,2,Accuracy adventure: Adventure Challenge,"{""text"": ""Correcting a mistake carefully is an important digital skill."", ""grade"": ""5"", ""week"": 11, ""world"": 3}",90,FALSE
+GTQ-5-W12-M1,GTQ-5-W12,1,Lagoon challenge: Skill Scout,"{""text"": ""An ancient stone tablet revealed the next destination."", ""grade"": ""5"", ""week"": 12, ""world"": 3}",90,FALSE
+GTQ-5-W12-M2,GTQ-5-W12,2,Lagoon challenge: Adventure Challenge,"{""text"": ""The explorers organized their supplies before leaving the island."", ""grade"": ""5"", ""week"": 12, ""world"": 3}",90,FALSE
+GTQ-5-W13-M1,GTQ-5-W13,1,"Top row, left: Skill Scout","{""text"": ""Practice the upper-left keys: Q, W, E, R, and T."", ""grade"": ""5"", ""week"": 13, ""world"": 4}",90,FALSE
+GTQ-5-W13-M2,GTQ-5-W13,2,"Top row, left: Adventure Challenge","{""text"": ""Reach toward the upper row, then return to home position."", ""grade"": ""5"", ""week"": 13, ""world"": 4}",90,FALSE
+GTQ-5-W14-M1,GTQ-5-W14,1,"Top row, right: Skill Scout","{""text"": ""Use the right-hand fingers for Y, U, I, O, and P."", ""grade"": ""5"", ""week"": 14, ""world"": 4}",90,FALSE
+GTQ-5-W14-M2,GTQ-5-W14,2,"Top row, right: Adventure Challenge","{""text"": ""Controlled movement is more reliable than random key hunting."", ""grade"": ""5"", ""week"": 14, ""world"": 4}",90,FALSE
+GTQ-5-W15-M1,GTQ-5-W15,1,"Bottom row, left: Skill Scout","{""text"": ""The bottom-left keys include Z, X, C, V, and B."", ""grade"": ""5"", ""week"": 15, ""world"": 4}",90,FALSE
+GTQ-5-W15-M2,GTQ-5-W15,2,"Bottom row, left: Adventure Challenge","{""text"": ""Move each finger deliberately, using the correct key position."", ""grade"": ""5"", ""week"": 15, ""world"": 4}",90,FALSE
+GTQ-5-W16-M1,GTQ-5-W16,1,"Bottom row, right: Skill Scout","{""text"": ""The keys N and M appear near comma and period."", ""grade"": ""5"", ""week"": 16, ""world"": 4}",90,FALSE
+GTQ-5-W16-M2,GTQ-5-W16,2,"Bottom row, right: Adventure Challenge","{""text"": ""A balanced typing posture helps during longer practice passages."", ""grade"": ""5"", ""week"": 16, ""world"": 4}",90,FALSE
+GTQ-5-W17-M1,GTQ-5-W17,1,Shift key discovery: Skill Scout,"{""text"": ""For capital letters, press Shift with the opposite hand."", ""grade"": ""5"", ""week"": 17, ""world"": 5}",90,FALSE
+GTQ-5-W17-M2,GTQ-5-W17,2,Shift key discovery: Adventure Challenge,"{""text"": ""Practice typing the first letter of a sentence correctly."", ""grade"": ""5"", ""week"": 17, ""world"": 5}",90,FALSE
+GTQ-5-W18-M1,GTQ-5-W18,1,Names and capitals: Skill Scout,"{""text"": ""The Gator Research Team climbed the volcanic mountain."", ""grade"": ""5"", ""week"": 18, ""world"": 5}",90,FALSE
+GTQ-5-W18-M2,GTQ-5-W18,2,Names and capitals: Adventure Challenge,"{""text"": ""At sunrise, the explorers located the missing compass."", ""grade"": ""5"", ""week"": 18, ""world"": 5}",90,FALSE
+GTQ-5-W19-M1,GTQ-5-W19,1,Punctuation practice: Skill Scout,"{""text"": ""Would you follow the northern trail or cross the valley?"", ""grade"": ""5"", ""week"": 19, ""world"": 5}",90,FALSE
+GTQ-5-W19-M2,GTQ-5-W19,2,Punctuation practice: Adventure Challenge,"{""text"": ""Stop! The bridge ahead has been damaged by the storm."", ""grade"": ""5"", ""week"": 19, ""world"": 5}",90,FALSE
+GTQ-5-W20-M1,GTQ-5-W20,1,Volcano skill review: Skill Scout,"{""text"": ""Punctuation helps readers understand both meaning and tone."", ""grade"": ""5"", ""week"": 20, ""world"": 5}",90,FALSE
+GTQ-5-W20-M2,GTQ-5-W20,2,Volcano skill review: Adventure Challenge,"{""text"": ""Capitals, commas, and periods make digital writing clearer."", ""grade"": ""5"", ""week"": 20, ""world"": 5}",90,FALSE
+GTQ-5-W21-M1,GTQ-5-W21,1,Sentence starting line: Skill Scout,"{""text"": ""The mountain path led toward a magnificent frozen fortress."", ""grade"": ""5"", ""week"": 21, ""world"": 6}",90,FALSE
+GTQ-5-W21-M2,GTQ-5-W21,2,Sentence starting line: Adventure Challenge,"{""text"": ""Inside the castle, an ancient clock measured the passing hours."", ""grade"": ""5"", ""week"": 21, ""world"": 6}",90,FALSE
+GTQ-5-W22-M1,GTQ-5-W22,1,Spaces and rhythm: Skill Scout,"{""text"": ""Leave one space between words and check each sentence ending."", ""grade"": ""5"", ""week"": 22, ""world"": 6}",90,FALSE
+GTQ-5-W22-M2,GTQ-5-W22,2,Spaces and rhythm: Adventure Challenge,"{""text"": ""A consistent pace helps reduce skipped keys and extra spaces."", ""grade"": ""5"", ""week"": 22, ""world"": 6}",90,FALSE
+GTQ-5-W23-M1,GTQ-5-W23,1,Sentence finishing line: Skill Scout,"{""text"": ""The explorers discovered instructions written in faded ink."", ""grade"": ""5"", ""week"": 23, ""world"": 6}",90,FALSE
+GTQ-5-W23-M2,GTQ-5-W23,2,Sentence finishing line: Adventure Challenge,"{""text"": ""They carefully copied the message into a digital field notebook."", ""grade"": ""5"", ""week"": 23, ""world"": 6}",90,FALSE
+GTQ-5-W24-M1,GTQ-5-W24,1,Frozen fortress review: Skill Scout,"{""text"": ""During repeated practice, measure improvement against yourself."", ""grade"": ""5"", ""week"": 24, ""world"": 6}",90,FALSE
+GTQ-5-W24-M2,GTQ-5-W24,2,Frozen fortress review: Adventure Challenge,"{""text"": ""The purpose of fluency is to communicate ideas accurately."", ""grade"": ""5"", ""week"": 24, ""world"": 6}",90,FALSE
+GTQ-5-W25-M1,GTQ-5-W25,1,Two sentence story: Skill Scout,"{""text"": ""Several islands floated above the distant mountain range."", ""grade"": ""5"", ""week"": 25, ""world"": 7}",90,FALSE
+GTQ-5-W25-M2,GTQ-5-W25,2,Two sentence story: Adventure Challenge,"{""text"": ""A friendly sky guardian offered the explorers a new quest."", ""grade"": ""5"", ""week"": 25, ""world"": 7}",90,FALSE
+GTQ-5-W26-M1,GTQ-5-W26,1,Sustained practice: Skill Scout,"{""text"": ""Our gator recorded observations about unusual cloud formations."", ""grade"": ""5"", ""week"": 26, ""world"": 7}",90,FALSE
+GTQ-5-W26-M2,GTQ-5-W26,2,Sustained practice: Adventure Challenge,"{""text"": ""The team compared several clues before selecting the next route."", ""grade"": ""5"", ""week"": 26, ""world"": 7}",90,FALSE
+GTQ-5-W27-M1,GTQ-5-W27,1,Edit and improve: Skill Scout,"{""text"": ""Proofreading helps catch errors that automatic tools may miss."", ""grade"": ""5"", ""week"": 27, ""world"": 7}",90,FALSE
+GTQ-5-W27-M2,GTQ-5-W27,2,Edit and improve: Adventure Challenge,"{""text"": ""After revising the paragraph, read it aloud for clarity."", ""grade"": ""5"", ""week"": 27, ""world"": 7}",90,FALSE
+GTQ-5-W28-M1,GTQ-5-W28,1,Sky kingdom challenge: Skill Scout,"{""text"": ""A rainbow appeared as the team reached the final cloud bridge."", ""grade"": ""5"", ""week"": 28, ""world"": 7}",90,FALSE
+GTQ-5-W28-M2,GTQ-5-W28,2,Sky kingdom challenge: Adventure Challenge,"{""text"": ""The journey required attention, patience, and excellent teamwork."", ""grade"": ""5"", ""week"": 28, ""world"": 7}",90,FALSE
+GTQ-5-W29-M1,GTQ-5-W29,1,Directions and lists: Skill Scout,"{""text"": ""Write the directions in the order that someone will follow them."", ""grade"": ""5"", ""week"": 29, ""world"": 8}",90,FALSE
+GTQ-5-W29-M2,GTQ-5-W29,2,Directions and lists: Adventure Challenge,"{""text"": ""A useful checklist includes clear actions and accurate details."", ""grade"": ""5"", ""week"": 29, ""world"": 8}",90,FALSE
+GTQ-5-W30-M1,GTQ-5-W30,1,Friendly messages: Skill Scout,"{""text"": ""Dear Gator Exploration Team, your next mission begins today."", ""grade"": ""5"", ""week"": 30, ""world"": 8}",90,FALSE
+GTQ-5-W30-M2,GTQ-5-W30,2,Friendly messages: Adventure Challenge,"{""text"": ""Thank you for the careful research and dependable teamwork."", ""grade"": ""5"", ""week"": 30, ""world"": 8}",90,FALSE
+GTQ-5-W31-M1,GTQ-5-W31,1,Research notes: Skill Scout,"{""text"": ""Earth rotates once approximately every twenty-four hours."", ""grade"": ""5"", ""week"": 31, ""world"": 8}",90,FALSE
+GTQ-5-W31-M2,GTQ-5-W31,2,Research notes: Adventure Challenge,"{""text"": ""Reliable research notes help us communicate scientific information."", ""grade"": ""5"", ""week"": 31, ""world"": 8}",90,FALSE
+GTQ-5-W32-M1,GTQ-5-W32,1,Space mission review: Skill Scout,"{""text"": ""Before launching, the team reviewed every instruction twice."", ""grade"": ""5"", ""week"": 32, ""world"": 8}",90,FALSE
+GTQ-5-W32-M2,GTQ-5-W32,2,Space mission review: Adventure Challenge,"{""text"": ""Accurate typing allowed the astronauts to share essential updates."", ""grade"": ""5"", ""week"": 32, ""world"": 8}",90,FALSE
+GTQ-5-W33-M1,GTQ-5-W33,1,Your growth mission: Skill Scout,"{""text"": ""Compare an early passage with one you can type comfortably now."", ""grade"": ""5"", ""week"": 33, ""world"": 9}",90,FALSE
+GTQ-5-W33-M2,GTQ-5-W33,2,Your growth mission: Adventure Challenge,"{""text"": ""Growth in typing often comes from many small, steady improvements."", ""grade"": ""5"", ""week"": 33, ""world"": 9}",90,FALSE
+GTQ-5-W34-M1,GTQ-5-W34,1,Accuracy championship: Skill Scout,"{""text"": ""Focus on precision and maintain a relaxed pace throughout."", ""grade"": ""5"", ""week"": 34, ""world"": 9}",90,FALSE
+GTQ-5-W34-M2,GTQ-5-W34,2,Accuracy championship: Adventure Challenge,"{""text"": ""A thoughtful typist corrects mistakes instead of ignoring them."", ""grade"": ""5"", ""week"": 34, ""world"": 9}",90,FALSE
+GTQ-5-W35-M1,GTQ-5-W35,1,Final adventure: Skill Scout,"{""text"": ""The championship challenge required every skill from the year."", ""grade"": ""5"", ""week"": 35, ""world"": 9}",90,FALSE
+GTQ-5-W35-M2,GTQ-5-W35,2,Final adventure: Adventure Challenge,"{""text"": ""At the final gate, Captain Gator found the legendary keyboard."", ""grade"": ""5"", ""week"": 35, ""world"": 9}",90,FALSE
+GTQ-5-W36-M1,GTQ-5-W36,1,Gator graduation: Skill Scout,"{""text"": ""Learning to type confidently will help with future projects."", ""grade"": ""5"", ""week"": 36, ""world"": 9}",90,FALSE
+GTQ-5-W36-M2,GTQ-5-W36,2,Gator graduation: Adventure Challenge,"{""text"": ""The best reward is a skill that continues to grow with practice."", ""grade"": ""5"", ""week"": 36, ""world"": 9}",90,FALSE

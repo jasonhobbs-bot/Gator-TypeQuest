@@ -1,0 +1,253 @@
+﻿curriculum_id,week_number,world_number,world_name,grade_level,skill_focus,objective,status
+GTQ-PK-W01,1,1,Gator Training Camp,PK,Meet the keyboard,Recognize keys and discover their positions.,DRAFT
+GTQ-PK-W02,2,1,Gator Training Camp,PK,Left home row,"Practice A, S, D, and F with a relaxed hand.",DRAFT
+GTQ-PK-W03,3,1,Gator Training Camp,PK,Right home row,"Practice J, K, L, and the semicolon.",DRAFT
+GTQ-PK-W04,4,1,Gator Training Camp,PK,Camp skill review,Revisit the home row with accuracy first.,DRAFT
+GTQ-PK-W05,5,2,Jungle Adventure,PK,Middle keys,Explore G and H and smooth hand movement.,DRAFT
+GTQ-PK-W06,6,2,Jungle Adventure,PK,Find the vowels,Find vowel keys and build familiar combinations.,DRAFT
+GTQ-PK-W07,7,2,Jungle Adventure,PK,Home row pathways,Use both hands for short key patterns.,DRAFT
+GTQ-PK-W08,8,2,Jungle Adventure,PK,Jungle checkpoint,Review newly learned keys before traveling on.,DRAFT
+GTQ-PK-W09,9,3,Treasure Lagoon,PK,Common words,Type familiar high-frequency words.,DRAFT
+GTQ-PK-W10,10,3,Treasure Lagoon,PK,Word families,Recognize patterns and groups of words.,DRAFT
+GTQ-PK-W11,11,3,Treasure Lagoon,PK,Accuracy adventure,Slow down and identify keys correctly.,DRAFT
+GTQ-PK-W12,12,3,Treasure Lagoon,PK,Lagoon challenge,Apply the first trimester skills.,DRAFT
+GTQ-PK-W13,13,4,Desert Dash,PK,"Top row, left","Reach Q, W, E, R, and T.",DRAFT
+GTQ-PK-W14,14,4,Desert Dash,PK,"Top row, right","Reach Y, U, I, O, and P.",DRAFT
+GTQ-PK-W15,15,4,Desert Dash,PK,"Bottom row, left","Reach Z, X, C, V, and B.",DRAFT
+GTQ-PK-W16,16,4,Desert Dash,PK,"Bottom row, right","Reach N, M, comma, and period.",DRAFT
+GTQ-PK-W17,17,5,Volcano Escape,PK,Shift key discovery,Learn when and how to use Shift.,DRAFT
+GTQ-PK-W18,18,5,Volcano Escape,PK,Names and capitals,Practice beginning words with capital letters.,DRAFT
+GTQ-PK-W19,19,5,Volcano Escape,PK,Punctuation practice,"Explore periods, commas, and questions.",DRAFT
+GTQ-PK-W20,20,5,Volcano Escape,PK,Volcano skill review,Combine capital letters and punctuation.,DRAFT
+GTQ-PK-W21,21,6,Frozen Fortress,PK,Sentence starting line,Type complete short sentences.,DRAFT
+GTQ-PK-W22,22,6,Frozen Fortress,PK,Spaces and rhythm,Use the spacebar consistently.,DRAFT
+GTQ-PK-W23,23,6,Frozen Fortress,PK,Sentence finishing line,Check ending punctuation and spacing.,DRAFT
+GTQ-PK-W24,24,6,Frozen Fortress,PK,Frozen fortress review,Strengthen sentence accuracy and fluency.,DRAFT
+GTQ-PK-W25,25,7,Sky Kingdom,PK,Two sentence story,Combine ideas across sentences.,DRAFT
+GTQ-PK-W26,26,7,Sky Kingdom,PK,Sustained practice,Build steady typing stamina without rushing.,DRAFT
+GTQ-PK-W27,27,7,Sky Kingdom,PK,Edit and improve,Notice and correct typing errors.,DRAFT
+GTQ-PK-W28,28,7,Sky Kingdom,PK,Sky kingdom challenge,Apply multi-sentence typing skills.,DRAFT
+GTQ-PK-W29,29,8,Space Quest,PK,Directions and lists,Type clear instructions and simple lists.,DRAFT
+GTQ-PK-W30,30,8,Space Quest,PK,Friendly messages,Create useful everyday communications.,DRAFT
+GTQ-PK-W31,31,8,Space Quest,PK,Research notes,Practice taking short digital notes.,DRAFT
+GTQ-PK-W32,32,8,Space Quest,PK,Space mission review,Use learned skills across practical tasks.,DRAFT
+GTQ-PK-W33,33,9,Gator Championship,PK,Your growth mission,Revisit a familiar passage and notice growth.,DRAFT
+GTQ-PK-W34,34,9,Gator Championship,PK,Accuracy championship,"Focus on careful, correct typing.",DRAFT
+GTQ-PK-W35,35,9,Gator Championship,PK,Final adventure,Combine keyboard skills from across the year.,DRAFT
+GTQ-PK-W36,36,9,Gator Championship,PK,Gator graduation,Celebrate progress and plan continued practice.,DRAFT
+GTQ-K-W01,1,1,Gator Training Camp,K,Meet the keyboard,Recognize keys and discover their positions.,DRAFT
+GTQ-K-W02,2,1,Gator Training Camp,K,Left home row,"Practice A, S, D, and F with a relaxed hand.",DRAFT
+GTQ-K-W03,3,1,Gator Training Camp,K,Right home row,"Practice J, K, L, and the semicolon.",DRAFT
+GTQ-K-W04,4,1,Gator Training Camp,K,Camp skill review,Revisit the home row with accuracy first.,DRAFT
+GTQ-K-W05,5,2,Jungle Adventure,K,Middle keys,Explore G and H and smooth hand movement.,DRAFT
+GTQ-K-W06,6,2,Jungle Adventure,K,Find the vowels,Find vowel keys and build familiar combinations.,DRAFT
+GTQ-K-W07,7,2,Jungle Adventure,K,Home row pathways,Use both hands for short key patterns.,DRAFT
+GTQ-K-W08,8,2,Jungle Adventure,K,Jungle checkpoint,Review newly learned keys before traveling on.,DRAFT
+GTQ-K-W09,9,3,Treasure Lagoon,K,Common words,Type familiar high-frequency words.,DRAFT
+GTQ-K-W10,10,3,Treasure Lagoon,K,Word families,Recognize patterns and groups of words.,DRAFT
+GTQ-K-W11,11,3,Treasure Lagoon,K,Accuracy adventure,Slow down and identify keys correctly.,DRAFT
+GTQ-K-W12,12,3,Treasure Lagoon,K,Lagoon challenge,Apply the first trimester skills.,DRAFT
+GTQ-K-W13,13,4,Desert Dash,K,"Top row, left","Reach Q, W, E, R, and T.",DRAFT
+GTQ-K-W14,14,4,Desert Dash,K,"Top row, right","Reach Y, U, I, O, and P.",DRAFT
+GTQ-K-W15,15,4,Desert Dash,K,"Bottom row, left","Reach Z, X, C, V, and B.",DRAFT
+GTQ-K-W16,16,4,Desert Dash,K,"Bottom row, right","Reach N, M, comma, and period.",DRAFT
+GTQ-K-W17,17,5,Volcano Escape,K,Shift key discovery,Learn when and how to use Shift.,DRAFT
+GTQ-K-W18,18,5,Volcano Escape,K,Names and capitals,Practice beginning words with capital letters.,DRAFT
+GTQ-K-W19,19,5,Volcano Escape,K,Punctuation practice,"Explore periods, commas, and questions.",DRAFT
+GTQ-K-W20,20,5,Volcano Escape,K,Volcano skill review,Combine capital letters and punctuation.,DRAFT
+GTQ-K-W21,21,6,Frozen Fortress,K,Sentence starting line,Type complete short sentences.,DRAFT
+GTQ-K-W22,22,6,Frozen Fortress,K,Spaces and rhythm,Use the spacebar consistently.,DRAFT
+GTQ-K-W23,23,6,Frozen Fortress,K,Sentence finishing line,Check ending punctuation and spacing.,DRAFT
+GTQ-K-W24,24,6,Frozen Fortress,K,Frozen fortress review,Strengthen sentence accuracy and fluency.,DRAFT
+GTQ-K-W25,25,7,Sky Kingdom,K,Two sentence story,Combine ideas across sentences.,DRAFT
+GTQ-K-W26,26,7,Sky Kingdom,K,Sustained practice,Build steady typing stamina without rushing.,DRAFT
+GTQ-K-W27,27,7,Sky Kingdom,K,Edit and improve,Notice and correct typing errors.,DRAFT
+GTQ-K-W28,28,7,Sky Kingdom,K,Sky kingdom challenge,Apply multi-sentence typing skills.,DRAFT
+GTQ-K-W29,29,8,Space Quest,K,Directions and lists,Type clear instructions and simple lists.,DRAFT
+GTQ-K-W30,30,8,Space Quest,K,Friendly messages,Create useful everyday communications.,DRAFT
+GTQ-K-W31,31,8,Space Quest,K,Research notes,Practice taking short digital notes.,DRAFT
+GTQ-K-W32,32,8,Space Quest,K,Space mission review,Use learned skills across practical tasks.,DRAFT
+GTQ-K-W33,33,9,Gator Championship,K,Your growth mission,Revisit a familiar passage and notice growth.,DRAFT
+GTQ-K-W34,34,9,Gator Championship,K,Accuracy championship,"Focus on careful, correct typing.",DRAFT
+GTQ-K-W35,35,9,Gator Championship,K,Final adventure,Combine keyboard skills from across the year.,DRAFT
+GTQ-K-W36,36,9,Gator Championship,K,Gator graduation,Celebrate progress and plan continued practice.,DRAFT
+GTQ-1-W01,1,1,Gator Training Camp,1,Meet the keyboard,Recognize keys and discover their positions.,DRAFT
+GTQ-1-W02,2,1,Gator Training Camp,1,Left home row,"Practice A, S, D, and F with a relaxed hand.",DRAFT
+GTQ-1-W03,3,1,Gator Training Camp,1,Right home row,"Practice J, K, L, and the semicolon.",DRAFT
+GTQ-1-W04,4,1,Gator Training Camp,1,Camp skill review,Revisit the home row with accuracy first.,DRAFT
+GTQ-1-W05,5,2,Jungle Adventure,1,Middle keys,Explore G and H and smooth hand movement.,DRAFT
+GTQ-1-W06,6,2,Jungle Adventure,1,Find the vowels,Find vowel keys and build familiar combinations.,DRAFT
+GTQ-1-W07,7,2,Jungle Adventure,1,Home row pathways,Use both hands for short key patterns.,DRAFT
+GTQ-1-W08,8,2,Jungle Adventure,1,Jungle checkpoint,Review newly learned keys before traveling on.,DRAFT
+GTQ-1-W09,9,3,Treasure Lagoon,1,Common words,Type familiar high-frequency words.,DRAFT
+GTQ-1-W10,10,3,Treasure Lagoon,1,Word families,Recognize patterns and groups of words.,DRAFT
+GTQ-1-W11,11,3,Treasure Lagoon,1,Accuracy adventure,Slow down and identify keys correctly.,DRAFT
+GTQ-1-W12,12,3,Treasure Lagoon,1,Lagoon challenge,Apply the first trimester skills.,DRAFT
+GTQ-1-W13,13,4,Desert Dash,1,"Top row, left","Reach Q, W, E, R, and T.",DRAFT
+GTQ-1-W14,14,4,Desert Dash,1,"Top row, right","Reach Y, U, I, O, and P.",DRAFT
+GTQ-1-W15,15,4,Desert Dash,1,"Bottom row, left","Reach Z, X, C, V, and B.",DRAFT
+GTQ-1-W16,16,4,Desert Dash,1,"Bottom row, right","Reach N, M, comma, and period.",DRAFT
+GTQ-1-W17,17,5,Volcano Escape,1,Shift key discovery,Learn when and how to use Shift.,DRAFT
+GTQ-1-W18,18,5,Volcano Escape,1,Names and capitals,Practice beginning words with capital letters.,DRAFT
+GTQ-1-W19,19,5,Volcano Escape,1,Punctuation practice,"Explore periods, commas, and questions.",DRAFT
+GTQ-1-W20,20,5,Volcano Escape,1,Volcano skill review,Combine capital letters and punctuation.,DRAFT
+GTQ-1-W21,21,6,Frozen Fortress,1,Sentence starting line,Type complete short sentences.,DRAFT
+GTQ-1-W22,22,6,Frozen Fortress,1,Spaces and rhythm,Use the spacebar consistently.,DRAFT
+GTQ-1-W23,23,6,Frozen Fortress,1,Sentence finishing line,Check ending punctuation and spacing.,DRAFT
+GTQ-1-W24,24,6,Frozen Fortress,1,Frozen fortress review,Strengthen sentence accuracy and fluency.,DRAFT
+GTQ-1-W25,25,7,Sky Kingdom,1,Two sentence story,Combine ideas across sentences.,DRAFT
+GTQ-1-W26,26,7,Sky Kingdom,1,Sustained practice,Build steady typing stamina without rushing.,DRAFT
+GTQ-1-W27,27,7,Sky Kingdom,1,Edit and improve,Notice and correct typing errors.,DRAFT
+GTQ-1-W28,28,7,Sky Kingdom,1,Sky kingdom challenge,Apply multi-sentence typing skills.,DRAFT
+GTQ-1-W29,29,8,Space Quest,1,Directions and lists,Type clear instructions and simple lists.,DRAFT
+GTQ-1-W30,30,8,Space Quest,1,Friendly messages,Create useful everyday communications.,DRAFT
+GTQ-1-W31,31,8,Space Quest,1,Research notes,Practice taking short digital notes.,DRAFT
+GTQ-1-W32,32,8,Space Quest,1,Space mission review,Use learned skills across practical tasks.,DRAFT
+GTQ-1-W33,33,9,Gator Championship,1,Your growth mission,Revisit a familiar passage and notice growth.,DRAFT
+GTQ-1-W34,34,9,Gator Championship,1,Accuracy championship,"Focus on careful, correct typing.",DRAFT
+GTQ-1-W35,35,9,Gator Championship,1,Final adventure,Combine keyboard skills from across the year.,DRAFT
+GTQ-1-W36,36,9,Gator Championship,1,Gator graduation,Celebrate progress and plan continued practice.,DRAFT
+GTQ-2-W01,1,1,Gator Training Camp,2,Meet the keyboard,Recognize keys and discover their positions.,DRAFT
+GTQ-2-W02,2,1,Gator Training Camp,2,Left home row,"Practice A, S, D, and F with a relaxed hand.",DRAFT
+GTQ-2-W03,3,1,Gator Training Camp,2,Right home row,"Practice J, K, L, and the semicolon.",DRAFT
+GTQ-2-W04,4,1,Gator Training Camp,2,Camp skill review,Revisit the home row with accuracy first.,DRAFT
+GTQ-2-W05,5,2,Jungle Adventure,2,Middle keys,Explore G and H and smooth hand movement.,DRAFT
+GTQ-2-W06,6,2,Jungle Adventure,2,Find the vowels,Find vowel keys and build familiar combinations.,DRAFT
+GTQ-2-W07,7,2,Jungle Adventure,2,Home row pathways,Use both hands for short key patterns.,DRAFT
+GTQ-2-W08,8,2,Jungle Adventure,2,Jungle checkpoint,Review newly learned keys before traveling on.,DRAFT
+GTQ-2-W09,9,3,Treasure Lagoon,2,Common words,Type familiar high-frequency words.,DRAFT
+GTQ-2-W10,10,3,Treasure Lagoon,2,Word families,Recognize patterns and groups of words.,DRAFT
+GTQ-2-W11,11,3,Treasure Lagoon,2,Accuracy adventure,Slow down and identify keys correctly.,DRAFT
+GTQ-2-W12,12,3,Treasure Lagoon,2,Lagoon challenge,Apply the first trimester skills.,DRAFT
+GTQ-2-W13,13,4,Desert Dash,2,"Top row, left","Reach Q, W, E, R, and T.",DRAFT
+GTQ-2-W14,14,4,Desert Dash,2,"Top row, right","Reach Y, U, I, O, and P.",DRAFT
+GTQ-2-W15,15,4,Desert Dash,2,"Bottom row, left","Reach Z, X, C, V, and B.",DRAFT
+GTQ-2-W16,16,4,Desert Dash,2,"Bottom row, right","Reach N, M, comma, and period.",DRAFT
+GTQ-2-W17,17,5,Volcano Escape,2,Shift key discovery,Learn when and how to use Shift.,DRAFT
+GTQ-2-W18,18,5,Volcano Escape,2,Names and capitals,Practice beginning words with capital letters.,DRAFT
+GTQ-2-W19,19,5,Volcano Escape,2,Punctuation practice,"Explore periods, commas, and questions.",DRAFT
+GTQ-2-W20,20,5,Volcano Escape,2,Volcano skill review,Combine capital letters and punctuation.,DRAFT
+GTQ-2-W21,21,6,Frozen Fortress,2,Sentence starting line,Type complete short sentences.,DRAFT
+GTQ-2-W22,22,6,Frozen Fortress,2,Spaces and rhythm,Use the spacebar consistently.,DRAFT
+GTQ-2-W23,23,6,Frozen Fortress,2,Sentence finishing line,Check ending punctuation and spacing.,DRAFT
+GTQ-2-W24,24,6,Frozen Fortress,2,Frozen fortress review,Strengthen sentence accuracy and fluency.,DRAFT
+GTQ-2-W25,25,7,Sky Kingdom,2,Two sentence story,Combine ideas across sentences.,DRAFT
+GTQ-2-W26,26,7,Sky Kingdom,2,Sustained practice,Build steady typing stamina without rushing.,DRAFT
+GTQ-2-W27,27,7,Sky Kingdom,2,Edit and improve,Notice and correct typing errors.,DRAFT
+GTQ-2-W28,28,7,Sky Kingdom,2,Sky kingdom challenge,Apply multi-sentence typing skills.,DRAFT
+GTQ-2-W29,29,8,Space Quest,2,Directions and lists,Type clear instructions and simple lists.,DRAFT
+GTQ-2-W30,30,8,Space Quest,2,Friendly messages,Create useful everyday communications.,DRAFT
+GTQ-2-W31,31,8,Space Quest,2,Research notes,Practice taking short digital notes.,DRAFT
+GTQ-2-W32,32,8,Space Quest,2,Space mission review,Use learned skills across practical tasks.,DRAFT
+GTQ-2-W33,33,9,Gator Championship,2,Your growth mission,Revisit a familiar passage and notice growth.,DRAFT
+GTQ-2-W34,34,9,Gator Championship,2,Accuracy championship,"Focus on careful, correct typing.",DRAFT
+GTQ-2-W35,35,9,Gator Championship,2,Final adventure,Combine keyboard skills from across the year.,DRAFT
+GTQ-2-W36,36,9,Gator Championship,2,Gator graduation,Celebrate progress and plan continued practice.,DRAFT
+GTQ-3-W01,1,1,Gator Training Camp,3,Meet the keyboard,Recognize keys and discover their positions.,DRAFT
+GTQ-3-W02,2,1,Gator Training Camp,3,Left home row,"Practice A, S, D, and F with a relaxed hand.",DRAFT
+GTQ-3-W03,3,1,Gator Training Camp,3,Right home row,"Practice J, K, L, and the semicolon.",DRAFT
+GTQ-3-W04,4,1,Gator Training Camp,3,Camp skill review,Revisit the home row with accuracy first.,DRAFT
+GTQ-3-W05,5,2,Jungle Adventure,3,Middle keys,Explore G and H and smooth hand movement.,DRAFT
+GTQ-3-W06,6,2,Jungle Adventure,3,Find the vowels,Find vowel keys and build familiar combinations.,DRAFT
+GTQ-3-W07,7,2,Jungle Adventure,3,Home row pathways,Use both hands for short key patterns.,DRAFT
+GTQ-3-W08,8,2,Jungle Adventure,3,Jungle checkpoint,Review newly learned keys before traveling on.,DRAFT
+GTQ-3-W09,9,3,Treasure Lagoon,3,Common words,Type familiar high-frequency words.,DRAFT
+GTQ-3-W10,10,3,Treasure Lagoon,3,Word families,Recognize patterns and groups of words.,DRAFT
+GTQ-3-W11,11,3,Treasure Lagoon,3,Accuracy adventure,Slow down and identify keys correctly.,DRAFT
+GTQ-3-W12,12,3,Treasure Lagoon,3,Lagoon challenge,Apply the first trimester skills.,DRAFT
+GTQ-3-W13,13,4,Desert Dash,3,"Top row, left","Reach Q, W, E, R, and T.",DRAFT
+GTQ-3-W14,14,4,Desert Dash,3,"Top row, right","Reach Y, U, I, O, and P.",DRAFT
+GTQ-3-W15,15,4,Desert Dash,3,"Bottom row, left","Reach Z, X, C, V, and B.",DRAFT
+GTQ-3-W16,16,4,Desert Dash,3,"Bottom row, right","Reach N, M, comma, and period.",DRAFT
+GTQ-3-W17,17,5,Volcano Escape,3,Shift key discovery,Learn when and how to use Shift.,DRAFT
+GTQ-3-W18,18,5,Volcano Escape,3,Names and capitals,Practice beginning words with capital letters.,DRAFT
+GTQ-3-W19,19,5,Volcano Escape,3,Punctuation practice,"Explore periods, commas, and questions.",DRAFT
+GTQ-3-W20,20,5,Volcano Escape,3,Volcano skill review,Combine capital letters and punctuation.,DRAFT
+GTQ-3-W21,21,6,Frozen Fortress,3,Sentence starting line,Type complete short sentences.,DRAFT
+GTQ-3-W22,22,6,Frozen Fortress,3,Spaces and rhythm,Use the spacebar consistently.,DRAFT
+GTQ-3-W23,23,6,Frozen Fortress,3,Sentence finishing line,Check ending punctuation and spacing.,DRAFT
+GTQ-3-W24,24,6,Frozen Fortress,3,Frozen fortress review,Strengthen sentence accuracy and fluency.,DRAFT
+GTQ-3-W25,25,7,Sky Kingdom,3,Two sentence story,Combine ideas across sentences.,DRAFT
+GTQ-3-W26,26,7,Sky Kingdom,3,Sustained practice,Build steady typing stamina without rushing.,DRAFT
+GTQ-3-W27,27,7,Sky Kingdom,3,Edit and improve,Notice and correct typing errors.,DRAFT
+GTQ-3-W28,28,7,Sky Kingdom,3,Sky kingdom challenge,Apply multi-sentence typing skills.,DRAFT
+GTQ-3-W29,29,8,Space Quest,3,Directions and lists,Type clear instructions and simple lists.,DRAFT
+GTQ-3-W30,30,8,Space Quest,3,Friendly messages,Create useful everyday communications.,DRAFT
+GTQ-3-W31,31,8,Space Quest,3,Research notes,Practice taking short digital notes.,DRAFT
+GTQ-3-W32,32,8,Space Quest,3,Space mission review,Use learned skills across practical tasks.,DRAFT
+GTQ-3-W33,33,9,Gator Championship,3,Your growth mission,Revisit a familiar passage and notice growth.,DRAFT
+GTQ-3-W34,34,9,Gator Championship,3,Accuracy championship,"Focus on careful, correct typing.",DRAFT
+GTQ-3-W35,35,9,Gator Championship,3,Final adventure,Combine keyboard skills from across the year.,DRAFT
+GTQ-3-W36,36,9,Gator Championship,3,Gator graduation,Celebrate progress and plan continued practice.,DRAFT
+GTQ-4-W01,1,1,Gator Training Camp,4,Meet the keyboard,Recognize keys and discover their positions.,DRAFT
+GTQ-4-W02,2,1,Gator Training Camp,4,Left home row,"Practice A, S, D, and F with a relaxed hand.",DRAFT
+GTQ-4-W03,3,1,Gator Training Camp,4,Right home row,"Practice J, K, L, and the semicolon.",DRAFT
+GTQ-4-W04,4,1,Gator Training Camp,4,Camp skill review,Revisit the home row with accuracy first.,DRAFT
+GTQ-4-W05,5,2,Jungle Adventure,4,Middle keys,Explore G and H and smooth hand movement.,DRAFT
+GTQ-4-W06,6,2,Jungle Adventure,4,Find the vowels,Find vowel keys and build familiar combinations.,DRAFT
+GTQ-4-W07,7,2,Jungle Adventure,4,Home row pathways,Use both hands for short key patterns.,DRAFT
+GTQ-4-W08,8,2,Jungle Adventure,4,Jungle checkpoint,Review newly learned keys before traveling on.,DRAFT
+GTQ-4-W09,9,3,Treasure Lagoon,4,Common words,Type familiar high-frequency words.,DRAFT
+GTQ-4-W10,10,3,Treasure Lagoon,4,Word families,Recognize patterns and groups of words.,DRAFT
+GTQ-4-W11,11,3,Treasure Lagoon,4,Accuracy adventure,Slow down and identify keys correctly.,DRAFT
+GTQ-4-W12,12,3,Treasure Lagoon,4,Lagoon challenge,Apply the first trimester skills.,DRAFT
+GTQ-4-W13,13,4,Desert Dash,4,"Top row, left","Reach Q, W, E, R, and T.",DRAFT
+GTQ-4-W14,14,4,Desert Dash,4,"Top row, right","Reach Y, U, I, O, and P.",DRAFT
+GTQ-4-W15,15,4,Desert Dash,4,"Bottom row, left","Reach Z, X, C, V, and B.",DRAFT
+GTQ-4-W16,16,4,Desert Dash,4,"Bottom row, right","Reach N, M, comma, and period.",DRAFT
+GTQ-4-W17,17,5,Volcano Escape,4,Shift key discovery,Learn when and how to use Shift.,DRAFT
+GTQ-4-W18,18,5,Volcano Escape,4,Names and capitals,Practice beginning words with capital letters.,DRAFT
+GTQ-4-W19,19,5,Volcano Escape,4,Punctuation practice,"Explore periods, commas, and questions.",DRAFT
+GTQ-4-W20,20,5,Volcano Escape,4,Volcano skill review,Combine capital letters and punctuation.,DRAFT
+GTQ-4-W21,21,6,Frozen Fortress,4,Sentence starting line,Type complete short sentences.,DRAFT
+GTQ-4-W22,22,6,Frozen Fortress,4,Spaces and rhythm,Use the spacebar consistently.,DRAFT
+GTQ-4-W23,23,6,Frozen Fortress,4,Sentence finishing line,Check ending punctuation and spacing.,DRAFT
+GTQ-4-W24,24,6,Frozen Fortress,4,Frozen fortress review,Strengthen sentence accuracy and fluency.,DRAFT
+GTQ-4-W25,25,7,Sky Kingdom,4,Two sentence story,Combine ideas across sentences.,DRAFT
+GTQ-4-W26,26,7,Sky Kingdom,4,Sustained practice,Build steady typing stamina without rushing.,DRAFT
+GTQ-4-W27,27,7,Sky Kingdom,4,Edit and improve,Notice and correct typing errors.,DRAFT
+GTQ-4-W28,28,7,Sky Kingdom,4,Sky kingdom challenge,Apply multi-sentence typing skills.,DRAFT
+GTQ-4-W29,29,8,Space Quest,4,Directions and lists,Type clear instructions and simple lists.,DRAFT
+GTQ-4-W30,30,8,Space Quest,4,Friendly messages,Create useful everyday communications.,DRAFT
+GTQ-4-W31,31,8,Space Quest,4,Research notes,Practice taking short digital notes.,DRAFT
+GTQ-4-W32,32,8,Space Quest,4,Space mission review,Use learned skills across practical tasks.,DRAFT
+GTQ-4-W33,33,9,Gator Championship,4,Your growth mission,Revisit a familiar passage and notice growth.,DRAFT
+GTQ-4-W34,34,9,Gator Championship,4,Accuracy championship,"Focus on careful, correct typing.",DRAFT
+GTQ-4-W35,35,9,Gator Championship,4,Final adventure,Combine keyboard skills from across the year.,DRAFT
+GTQ-4-W36,36,9,Gator Championship,4,Gator graduation,Celebrate progress and plan continued practice.,DRAFT
+GTQ-5-W01,1,1,Gator Training Camp,5,Meet the keyboard,Recognize keys and discover their positions.,DRAFT
+GTQ-5-W02,2,1,Gator Training Camp,5,Left home row,"Practice A, S, D, and F with a relaxed hand.",DRAFT
+GTQ-5-W03,3,1,Gator Training Camp,5,Right home row,"Practice J, K, L, and the semicolon.",DRAFT
+GTQ-5-W04,4,1,Gator Training Camp,5,Camp skill review,Revisit the home row with accuracy first.,DRAFT
+GTQ-5-W05,5,2,Jungle Adventure,5,Middle keys,Explore G and H and smooth hand movement.,DRAFT
+GTQ-5-W06,6,2,Jungle Adventure,5,Find the vowels,Find vowel keys and build familiar combinations.,DRAFT
+GTQ-5-W07,7,2,Jungle Adventure,5,Home row pathways,Use both hands for short key patterns.,DRAFT
+GTQ-5-W08,8,2,Jungle Adventure,5,Jungle checkpoint,Review newly learned keys before traveling on.,DRAFT
+GTQ-5-W09,9,3,Treasure Lagoon,5,Common words,Type familiar high-frequency words.,DRAFT
+GTQ-5-W10,10,3,Treasure Lagoon,5,Word families,Recognize patterns and groups of words.,DRAFT
+GTQ-5-W11,11,3,Treasure Lagoon,5,Accuracy adventure,Slow down and identify keys correctly.,DRAFT
+GTQ-5-W12,12,3,Treasure Lagoon,5,Lagoon challenge,Apply the first trimester skills.,DRAFT
+GTQ-5-W13,13,4,Desert Dash,5,"Top row, left","Reach Q, W, E, R, and T.",DRAFT
+GTQ-5-W14,14,4,Desert Dash,5,"Top row, right","Reach Y, U, I, O, and P.",DRAFT
+GTQ-5-W15,15,4,Desert Dash,5,"Bottom row, left","Reach Z, X, C, V, and B.",DRAFT
+GTQ-5-W16,16,4,Desert Dash,5,"Bottom row, right","Reach N, M, comma, and period.",DRAFT
+GTQ-5-W17,17,5,Volcano Escape,5,Shift key discovery,Learn when and how to use Shift.,DRAFT
+GTQ-5-W18,18,5,Volcano Escape,5,Names and capitals,Practice beginning words with capital letters.,DRAFT
+GTQ-5-W19,19,5,Volcano Escape,5,Punctuation practice,"Explore periods, commas, and questions.",DRAFT
+GTQ-5-W20,20,5,Volcano Escape,5,Volcano skill review,Combine capital letters and punctuation.,DRAFT
+GTQ-5-W21,21,6,Frozen Fortress,5,Sentence starting line,Type complete short sentences.,DRAFT
+GTQ-5-W22,22,6,Frozen Fortress,5,Spaces and rhythm,Use the spacebar consistently.,DRAFT
+GTQ-5-W23,23,6,Frozen Fortress,5,Sentence finishing line,Check ending punctuation and spacing.,DRAFT
+GTQ-5-W24,24,6,Frozen Fortress,5,Frozen fortress review,Strengthen sentence accuracy and fluency.,DRAFT
+GTQ-5-W25,25,7,Sky Kingdom,5,Two sentence story,Combine ideas across sentences.,DRAFT
+GTQ-5-W26,26,7,Sky Kingdom,5,Sustained practice,Build steady typing stamina without rushing.,DRAFT
+GTQ-5-W27,27,7,Sky Kingdom,5,Edit and improve,Notice and correct typing errors.,DRAFT
+GTQ-5-W28,28,7,Sky Kingdom,5,Sky kingdom challenge,Apply multi-sentence typing skills.,DRAFT
+GTQ-5-W29,29,8,Space Quest,5,Directions and lists,Type clear instructions and simple lists.,DRAFT
+GTQ-5-W30,30,8,Space Quest,5,Friendly messages,Create useful everyday communications.,DRAFT
+GTQ-5-W31,31,8,Space Quest,5,Research notes,Practice taking short digital notes.,DRAFT
+GTQ-5-W32,32,8,Space Quest,5,Space mission review,Use learned skills across practical tasks.,DRAFT
+GTQ-5-W33,33,9,Gator Championship,5,Your growth mission,Revisit a familiar passage and notice growth.,DRAFT
+GTQ-5-W34,34,9,Gator Championship,5,Accuracy championship,"Focus on careful, correct typing.",DRAFT
+GTQ-5-W35,35,9,Gator Championship,5,Final adventure,Combine keyboard skills from across the year.,DRAFT
+GTQ-5-W36,36,9,Gator Championship,5,Gator graduation,Celebrate progress and plan continued practice.,DRAFT
