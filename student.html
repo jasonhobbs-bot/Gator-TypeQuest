@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gator TypeQuest — Student Adventure</title>
+<style>
+:root {
+  --green:#087b46;
+  --blue:#1464aa;
+  --navy:#10243b;
+  --gold:#ffd166;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(160deg,#10243b,#105d59);
+  color:white;
+  min-height:100vh;
+}
+header {
+  padding:20px;
+  background:#073a32;
+  border-bottom:4px solid var(--gold);
+  text-align:center;
+}
+header h1 {
+  margin:0;
+  font-size:clamp(28px,5vw,48px);
+}
+header p { margin:8px 0 0; opacity:.85; }
+main { max-width:1050px; padding:20px; margin:auto; }
+.panel {
+  background:#fff;
+  color:var(--navy);
+  border-radius:18px;
+  padding:24px;
+  margin:20px 0;
+  box-shadow:0 12px 30px #0003;
+}
+.notice {
+  background:#fff0c5;
+  color:#604500;
+  border-radius:10px;
+  padding:12px;
+  font-weight:bold;
+}
+button,select {
+  font:inherit;
+  padding:13px 18px;
+  border-radius:10px;
+  border:2px solid #bbcbd9;
+}
+button {
+  background:var(--green);
+  border:0;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+button:disabled { background:#80938d; cursor:not-allowed; }
+.worlds {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.world {
+  border-radius:14px;
+  padding:18px 10px;
+  text-align:center;
+  background:#eaf4ff;
+  border:2px solid #c6ddec;
+}
+.world.current { background:#e2f8e8; border-color:var(--green); }
+.world .emoji { font-size:36px; margin-bottom:8px; }
+.world strong { display:block; }
+.world small { display:block; margin-top:6px; color:#526579; }
+.lesson-text {
+  font-size:clamp(23px,4vw,34px);
+  line-height:1.65;
+  padding:20px;
+  background:#edf5ff;
+  border-radius:12px;
+  overflow-wrap:anywhere;
+  white-space:pre-wrap;
+}
+textarea {
+  display:block;
+  width:100%;
+  min-height:130px;
+  margin:16px 0;
+  padding:16px;
+  font:inherit;
+  font-size:22px;
+  line-height:1.5;
+  border:3px solid #bdd2e1;
+  border-radius:12px;
+  resize:vertical;
+}
+textarea:focus { outline:3px solid #71b6ec; }
+.stats {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:20px 0;
+}
+.stat {
+  text-align:center;
+  border-radius:12px;
+  padding:15px 8px;
+  background:#e6f3eb;
+}
+.stat strong { display:block; font-size:28px; color:var(--green); }
+.stat span { font-size:13px; color:#526579; }
+.correct { color:#087b46; }
+.wrong { color:#c62828; text-decoration:underline; }
+.remaining { color:#344d68; }
+.result {
+  margin-top:15px;
+  font-size:20px;
+  font-weight:bold;
+  min-height:30px;
+}
+[hidden] { display:none!important; }
+@media(max-width:650px) {
+  .worlds { grid-template-columns:repeat(2,1fr); }
+  .panel { padding:16px; }
+  .stats { gap:6px; }
+  .stat strong { font-size:23px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>🐊 Gator TypeQuest</h1>
+  <p>Gilbert Elementary School • Typing Adventure</p>
+</header>
+<main>
+<section class="panel">
+  <h2>Welcome, Gator Adventurer!</h2>
+  <p>Practice your keyboard skills to prepare for exciting adventures across nine worlds.</p>
+  <div class="notice">
+    Practice Demo — School Google sign-in and score saving are not enabled yet.
+    Do not enter your name or school email.
+  </div>
+</section>
+<section class="panel">
+  <h2>🌎 Choose Your Adventure World</h2>
+  <div class="worlds" id="worlds"></div>
+  <p><strong>36-week adventure:</strong> Nine worlds with four weeks planned for each.
+     Only the first world's practice demo is active.</p>
+</section>
+<section class="panel">
+  <h2>⌨️ Typing Training Ground</h2>
+  <label for="grade"><strong>Choose Your Grade:</strong></label>
+  <select id="grade">
+    <option value="K">Kindergarten</option>
+    <option value="1">1st Grade</option>
+    <option value="2">2nd Grade</option>
+    <option value="3">3rd Grade</option>
+    <option value="4">4th Grade</option>
+    <option value="5">5th Grade</option>
+  </select>
+  <p><button id="start" type="button">Start Practice</button></p>
+  <div id="training" hidden>
+    <h3>Type the words below:</h3>
+    <div id="lesson" class="lesson-text" aria-label="Typing practice text"></div>
+    <label for="typing"><strong>Your Typing:</strong></label>
+    <textarea id="typing" placeholder="Tap here and start typing..."
+      autocomplete="off" autocapitalize="off" spellcheck="false" disabled></textarea>
+    <div class="stats">
+      <div class="stat"><strong id="wpm">0</strong><span>Words Per Minute</span></div>
+      <div class="stat"><strong id="accuracy">100%</strong><span>Accuracy</span></div>
+      <div class="stat"><strong id="time">0s</strong><span>Time</span></div>
+    </div>
+    <div id="result" class="result" role="status" aria-live="polite"></div>
+    <button id="retry" type="button">Try Another Lesson</button>
+  </div>
+</section>
+</main>
+<script>
+"use strict";
+const worlds = [
+  ["🌴","Gator Jungle"],
+  ["🏝️","Tropical Island"],
+  ["🏰","Castle Kingdom"],
+  ["🏜️","Desert Adventure"],
+  ["❄️","Frozen Mountains"],
+  ["🌊","Ocean Quest"],
+  ["🚀","Space Station"],
+  ["🌋","Volcano Valley"],
+  ["🏆","Gator Champion"]
+];
+const worldContainer = document.getElementById("worlds");
+worlds.forEach((world,index) => {
+  const card = document.createElement("div");
+  card.className = "world" + (index === 0 ? " current" : "");
+  const emoji = document.createElement("div");
+  emoji.className = "emoji";
+  emoji.textContent = world[0];
+  const title = document.createElement("strong");
+  title.textContent = world[1];
+  const detail = document.createElement("small");
+  detail.textContent = index === 0
+    ? "World 1 • Practice Available"
+    : "World " + (index+1) + " • Coming Soon";
+  card.append(emoji,title,detail);
+  worldContainer.appendChild(card);
+});
+const lessons = {
+  K: ["a s d f","cat dog sun","go gator go"],
+  1: ["the green gator","I can type fast.","The sun is bright."],
+  2: ["The little gator swims.","We practice typing every day.","A brave explorer found a map."],
+  3: ["Good typing requires patience and practice.","Our gator explored the mysterious jungle.","Every adventure begins with a new challenge."],
+  4: ["The explorers discovered a hidden castle.","Accuracy matters more than speed when learning to type.","Our keyboard skills improve through consistent practice."],
+  5: ["The courageous adventurer crossed the ancient bridge.","Developing strong keyboarding skills improves digital communication.","Careful preparation helped the explorers solve a difficult mystery."]
+};
+const grade = document.getElementById("grade");
+const startButton = document.getElementById("start");
+const retryButton = document.getElementById("retry");
+const training = document.getElementById("training");
+const lessonBox = document.getElementById("lesson");
+const typing = document.getElementById("typing");
+const wpmBox = document.getElementById("wpm");
+const accuracyBox = document.getElementById("accuracy");
+const timeBox = document.getElementById("time");
+const resultBox = document.getElementById("result");
+let target = "";
+let startedAt = null;
+let timer = null;
+let complete = false;
+let previousLesson = -1;
+function startPractice() {
+  clearInterval(timer);
+  timer = null;
+  const choices = lessons[grade.value];
+  previousLesson = (previousLesson + 1) % choices.length;
+  target = choices[previousLesson];
+  startedAt = null;
+  complete = false;
+  typing.value = "";
+  typing.disabled = false;
+  typing.maxLength = target.length;
+  wpmBox.textContent = "0";
+  accuracyBox.textContent = "100%";
+  timeBox.textContent = "0s";
+  resultBox.textContent = "";
+  training.hidden = false;
+  renderLesson("");
+  typing.focus();
+}
+function renderLesson(answer) {
+  lessonBox.replaceChildren();
+  for (let i = 0; i < target.length; i++) {
+    const span = document.createElement("span");
+    span.textContent = target[i];
+    span.className = i >= answer.length
+      ? "remaining"
+      : (answer[i] === target[i] ? "correct" : "wrong");
+    lessonBox.appendChild(span);
+  }
+}
+function updateStats() {
+  if (startedAt === null) return;
+  const answer = typing.value;
+  let correct = 0;
+  for (let i = 0; i < answer.length; i++) {
+    if (answer[i] === target[i]) correct++;
+  }
+  const seconds = Math.max(1, Math.floor((Date.now()-startedAt)/1000));
+  const minutes = Math.max((Date.now()-startedAt)/60000,1/60);
+  const accuracy = answer.length ? (correct/answer.length)*100 : 100;
+  const wpm = (correct/5)/minutes;
+  timeBox.textContent = seconds + "s";
+  wpmBox.textContent = Math.round(wpm);
+  accuracyBox.textContent = Math.round(accuracy) + "%";
+}
+typing.addEventListener("input", () => {
+  if (complete) return;
+  if (startedAt === null && typing.value.length) {
+    startedAt = Date.now();
+    timer = setInterval(updateStats,1000);
+  }
+  renderLesson(typing.value);
+  updateStats();
+  if (typing.value === target) {
+    complete = true;
+    clearInterval(timer);
+    typing.disabled = true;
+    resultBox.textContent = "🏆 Great job, Gator! Practice complete!";
+    // Demo only: No account information or scores saved.
+  }
+});
+startButton.addEventListener("click",startPractice);
+retryButton.addEventListener("click",startPractice);
+</script>
+</body>
+</html>
